@@ -1,504 +1,7 @@
 {
  "generated": "2026-08-17",
- "note": "7 таблиць (сид) + YugTorg + Atmo (вживу). Ціни не показуються.",
+ "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise. Altek/Vimmer/Solarity — снимок. Ціни не показуються.",
  "items": [
-  {
-   "cat": "inv",
-   "model": "Deye SUN-6K-SG05LP1-EU",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 6,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-8K-SG05LP1-EU",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 8,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-10K-SG02LP1-EU",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 10,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-12K-SG02LP1-EU",
-   "sup": "Sakoenergy",
-   "avail": "soon",
-   "kw": 12,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-16K-SG02LP1-EU",
-   "sup": "Sakoenergy",
-   "avail": "soon",
-   "kw": 16,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-12K-SG05LP3-EU-SM2",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 12,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-15K-SG05LP3-EU-SM2",
-   "sup": "Sakoenergy",
-   "avail": "soon",
-   "kw": 15,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 20,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-20K-SG01HP3-EU-BM4 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "no",
-   "kw": 20,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 30,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-50K-SG01HP3-EU-BM4 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 50,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-80K-SG02HP3-EU-EM6 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kw": 80,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-125K-SG02HP3-EU-GM10 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "soon",
-   "kw": 125,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-50K-SG01HP3-EU-BM4 (HV)",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "kw": 50,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-80K-SG02HP3-EU-EM6 (HV)",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "kw": 80,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
-   "sup": "Intersolar",
-   "avail": "soon",
-   "kw": 20,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-10K-SG05LP3-EU-SM2",
-   "sup": "Intersolar",
-   "avail": "soon",
-   "kw": 10,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
-   "sup": "Intersolar",
-   "avail": "soon",
-   "kw": 30,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-5K-SG03LP1-EU",
-   "sup": "Helius",
-   "avail": "no",
-   "kw": 5,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-6K-SG05LP1-EU",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 6,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-8K-SG05LP1-EU",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 8,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-10K-SG02LP1-EU-AM3",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 10,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-10K-SG05LP3",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 10,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-12K-SG02LP1-EU-AM3",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 12,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-12K-SG05LP3-EU",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 12,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-15K-SG05LP3-EU-SM2",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 15,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-16K-SG01LP1-EU",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 16,
-   "ph": 1,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-16K-SG05LP3-EU-SM2",
-   "sup": "Helius",
-   "avail": "no",
-   "kw": 16,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 20,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-20K-SG01HP3-EU-AM2 (HV)",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 20,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-30K-SG01HP3-EU-BM3 (HV)",
-   "sup": "Helius",
-   "avail": "no",
-   "kw": 30,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
-   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
-   "sup": "Helius",
-   "avail": "soon",
-   "kw": 30,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "bat",
-   "model": "Deye BOS-G Pro 5.1 (HV)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kwh": 5.1,
-   "hv": true
-  },
-  {
-   "cat": "bat",
-   "model": "Deye BOS-B-Pro-Pack16-A3 (240 кВт·год, HV)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "kwh": 240,
-   "hv": true
-  },
-  {
-   "cat": "bat",
-   "model": "Deye SE-F5 Pro C (5,1 кВт·год, LV 48В)",
-   "sup": "Intersolar",
-   "avail": "no",
-   "kwh": 5.1,
-   "hv": false
-  },
-  {
-   "cat": "bat",
-   "model": "Deye SE-F16-С (16 кВт·год, LV 48В)",
-   "sup": "Intersolar",
-   "avail": "no",
-   "kwh": 16,
-   "hv": false
-  },
-  {
-   "cat": "bat",
-   "model": "Deye SE-G5.1 PRO B (5,1 кВт·год, LV 48В)",
-   "sup": "Intersolar",
-   "avail": "no",
-   "kwh": 5.1,
-   "hv": false
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-Mo LR7-72HGD 620W (двостороння)",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "watt": 620,
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 LR7-72HVD 645W",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "watt": 645,
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 LR7-72HVD 650W",
-   "sup": "Sakoenergy",
-   "avail": "yes",
-   "watt": 650,
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 LR7-54HVH 485W",
-   "sup": "Sakoenergy",
-   "avail": "no",
-   "watt": 485,
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko JKM-48QL6-DV 470W",
-   "sup": "Sakoenergy",
-   "avail": "no",
-   "watt": 470
-  },
-  {
-   "cat": "pan",
-   "model": "Longi LR5-54HTH 435М",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "watt": 435
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko JKM-590N-72HL4-BDV bifacial",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "watt": 590,
-   "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view"
-  },
-  {
-   "cat": "pan",
-   "model": "ReneSola RS6-575~600NBG",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "watt": 590
-  },
-  {
-   "cat": "pan",
-   "model": "Longi LR8-66HGD-615M bifacial",
-   "sup": "Intersolar",
-   "avail": "soon",
-   "watt": 615,
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi LR8-66HGD-620M bifacial",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "watt": 620,
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "ReneSola RS5J-640NBG",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "watt": 640
-  },
-  {
-   "cat": "pan",
-   "model": "ReneSola RS9-720-730NBG",
-   "sup": "Intersolar",
-   "avail": "soon",
-   "watt": 720
-  },
-  {
-   "cat": "pan",
-   "model": "Canadian CS6.2-48TD-450 full black",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 450
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko JKM-590N-72HL4-BDV bifacial",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 590,
-   "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko 620W 66HL4M-BDV bifacial",
-   "sup": "Solarity",
-   "avail": "no",
-   "watt": 620,
-   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko 625W 66HL4M-BDV bifacial",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 625,
-   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko 630W 66HL4M-BDV bifacial",
-   "sup": "Solarity",
-   "avail": "soon",
-   "watt": 630,
-   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko 635W 66HL4M-BDV bifacial",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 635
-  },
-  {
-   "cat": "pan",
-   "model": "Longi LR8-66HGD 620W",
-   "sup": "Solarity",
-   "avail": "soon",
-   "watt": 620,
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 645M (LR7-72HVD)",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 645,
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 655M (LR7-72HVH)",
-   "sup": "Solarity",
-   "avail": "soon",
-   "watt": 655,
-   "ds": "https://drive.google.com/file/d/1XX1WB0Pvjqllv5qle992UKZGPpRZawKt/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Longi Hi-MO X10 485M (LR7-54HVH)",
-   "sup": "Solarity",
-   "avail": "yes",
-   "watt": 485,
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
-  },
   {
    "cat": "pan",
    "model": "Solitek Solid Agro 290W (bifacial)",
@@ -580,48 +83,6 @@
    "sup": "Vimmer",
    "avail": "no",
    "watt": 610
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC450-108M 450W (двостороння)",
-   "sup": "SunRise",
-   "avail": "no",
-   "watt": 450
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC450-96M-210R 460W (двостороння)",
-   "sup": "SunRise",
-   "avail": "soon",
-   "watt": 460
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC440-108M FULL BLACK 440W",
-   "sup": "SunRise",
-   "avail": "yes",
-   "watt": 440
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC600-144M 600W (двостороння)",
-   "sup": "SunRise",
-   "avail": "yes",
-   "watt": 600
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC615-132-210R-DG 630W (двостороння)",
-   "sup": "SunRise",
-   "avail": "yes",
-   "watt": 630
-  },
-  {
-   "cat": "pan",
-   "model": "Sunerise JC710-132M-210DG 720W (двостороння)",
-   "sup": "SunRise",
-   "avail": "soon",
-   "watt": 720
   },
   {
    "cat": "inv",
@@ -1488,7 +949,7 @@
    "cat": "bat",
    "model": "Гибридный инвертор (hybrid) Deye SUN-14K-SG01LP1-EU, 14кВ, однофазный , (MPPT 150-425/290A/АКБ 48V)Parallel",
    "sup": "YugTorg",
-   "avail": "yes",
+   "avail": "no",
    "kwh": null,
    "hv": false
   },
@@ -1496,7 +957,7 @@
    "cat": "bat",
    "model": "Гибридный инвертор (hybrid) Deye SUN-16K-SG01LP1-EU, 16кВ, однофазный , (MPPT 150-425/290A/АКБ 48V)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kwh": null,
    "hv": false
   },
@@ -1613,7 +1074,7 @@
    "cat": "bat",
    "model": "Гибридный инвертор (hybrid) Deye SUN-25K-SG01HP3-EU-AM2 25KW, EU HV, 25кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
-   "avail": "yes",
+   "avail": "soon",
    "kwh": null,
    "hv": true
   },
@@ -2259,18 +1720,18 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMNH-66HD630 630Wp N-type Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 630
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Longi LR8-66HGD-620, 620Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
    "watt": 620,
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-66HD630 630Wp N-type Bifacial",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 630
   },
   {
    "cat": "pan",
@@ -2517,6 +1978,1289 @@
    "avail": "no",
    "watt": 460,
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-Mo LR7-72HGD 620w (двухсторонние)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "watt": 620,
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-MO X10 LR7-72HVD 645W (двухсторонние)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "watt": 645,
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-MO X10 LR7-72HVD 650W (односторонние)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "watt": 650,
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-MO X10 LR7-54HVH 485W (односторонние)",
+   "sup": "Sakoenergy",
+   "avail": "no",
+   "watt": 485,
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko JKM-48QL6-DV 470W (односторонние)",
+   "sup": "Sakoenergy",
+   "avail": "no",
+   "watt": 470
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-6K-SG05LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-8K-SG05LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-10K-SG02LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG02LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-16K-SG02LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG05LP3-EU-SM2",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-15K-SG05LP3-EU-SM2",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN20K-SG01HP3-EU-BM4 (20кВт/HV)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (30кВт/HV)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-50K-SG01HP3-EU-BM4 (50кВт/HV)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-80K-SG02HP3-EU-ЕM6 (80кВт/HV)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 80,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-125K-SG02HP3-EU-GM10 (125кВт/HV)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 125,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Акумулятор високовольтний Deye BOS-G Pro 5.1 kwt",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kwh": 5.1,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Блок управління Deye BOS-G Pro PDU",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Стійка Deye під акумулятори 12+1",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kwh": null,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Система накопичення Deye BOS-B-Pro-Pack16-A3 240 kwt",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kwh": 240,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30-G04 (30 кВт)",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kw": 30,
+   "ph": null,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-50K-G04 (50 кВт)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 50,
+   "ph": null,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye SE-G5.1Pro-B (LiFePO4 51,2V 100Ah)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kwh": null,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Аккумуляторная батарея Deye SE-F16-C (LiFePO4 51,2V 314Ah 16kWh)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Аккумуляторная батарея Deye SE-F5 pro-С (LiFePO4 51,2V 100Ah 5kWh)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kwh": 5,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Аккумуляторная батарея Deye RW-M6.1 LiFePO4 6.14 кВт/ч",
+   "sup": "Sakoenergy",
+   "avail": "yes",
+   "kwh": null,
+   "hv": false
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Jinko Tiger Neo N-type 72HL4-590BDV Bifacical (590 Вт)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "watt": 590,
+   "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель ReneSola RS6-575~600NBG-E3 Двостроння (590 Вт)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "watt": 575
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Longi LR8-66HGD-615M Bifacical (615Вт)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "watt": 615,
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Longi LR8-66HGD-620M Bifacical (620Вт)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "watt": 620,
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель ReneSola RS5J-640NBG-E1 N-Type Двостороння (640 Вт) (Укріплена, оцинкована рама)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "watt": 640
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель ReneSola RS9-720-730 NBG-E1 Двостороння (720 Вт)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "watt": 720
+  },
+  {
+   "cat": "inv",
+   "model": "Однофазний інвертор Deye SUN 6-K SG05LP1 EU-AM2-P (6 кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Однофазний інвертор Deye SUN 10-K-SG02LP1-EU AM3-P (10кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Однофазний інвертор Deye SUN 16-K-SG01LP1-EU-AM3-P (16кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kw": 16,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Однофазний інвертор Deye SUN 12-K-SG02LP1-EU AM3-P (12кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Однофазний інвертор Deye SUN 8-K SG05LP1 EU-AM2-P (8 кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-12K-SG-05-LP3-EU-SM2 (12кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-20K-SG05LP3-EU-SM2 (20кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-15K-SG05LP3-EU-SM2 (15кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-10K-SG05LP3-EU-SM2 (10кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-16K-SG05LP3-EU-SM2 (16кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-18K-SG05LP3-EU-SM2 (18кВт/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 18,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-15K-SG01HP3-EU-AM2 (15кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-20K-SG01HP3-EU-AM2 (20кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-30K-SG02HP3-EU-AM3 (30кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-50K-SG01HP3-EU-BM4 (50кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний трифазний інвертор Deye SUN-80K-SG02HP3-EU-EM6 (80кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kw": 80,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Трифазний інвертор Deye SUN-25K-SG01HP3-EU-AM2 (25кВт/HV)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 25,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye SE-F5 Pro \"C\" Version (5,1 кВт*год 48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kwh": 5.1,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye LiFePo4 Deye SE-G5.1 PRO B (5,1 кВт*год 48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kwh": 5.1,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye SE-F16-С 51.2V 314Ah (16 кВт*год/48В)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye BOS-G-Pack5,1 Pro 51,2V (100A)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BMS Модуль Deye BOS-G-PDU-2 (для BOS-G-Pro 5,1)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Блок управління Deye BOS HVB-750V/100A (стара версія)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Серверна стійка Deye BOS (12 мод.)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий трифазний інвертор Deye SUN-15K-G06P3-EU-BM2-P1 (15кВт)",
+   "sup": "Intersolar",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий трифазний інвертор Deye SUN-30K-G04 (30 кВт)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий трифазний інвертор Deye SUN-50K-G04 (50 кВт)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Монтажна платформа Для (Deye 6-8kW + Місце під щит + Місце під АКБ)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": null,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-06K-SG05LP1-EU Deye WiFi (6 kW, 1 фаза, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-08K-SG05LP1-EU DEYE WIFI (8 KW, 1 ФАЗА, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-10K-SG02LP1-EU-AM3 Deye WiFi (10 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-10k-SG05LP3 Deye WiFi (10 kW, 3 фаза, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-12K-SG02LP1-EU-AM3 Deye WiFi (12 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-12K-SG05LP3-EU Deye WiFi (12 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-15K-SG05LP3-EU-SM2 Deye WiFi (15 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-16K-SG01LP1-EU Deye WiFi (16 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-16K-SG05LP3-EU-SM2 Deye WiFi (16 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 16,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-20K-SG05LP3-EU-SM2 Deye WiFi (20 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-20K-SG01HP3-EU-AM2 Deye WiFi (20 kW, 3 фази, 2 MPPT, HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-30K-SG02HP3-EU-AM3 Deye WiFi (30 kW, 3 фази, 3 MPPT, HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-50K-SG01HP3-EU-BM4 Deye WiFi (50 kW, 3 фази, 4 MPPT, HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 50,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-80K-SG02HP3-EU-EM6 Deye WiFi (80 kW, 3 фази, 6 MPPT, HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 80,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "https://www.helius.com.ua/product/gibrydnyj-invertor-deye-sun-100k-sg02hp3-eu-gm10-100-kvt-3-fazy-hv-10-mppt-wifi/?preview_id=8618&preview_nonce=cdcb26a033&_thumbnail_id=8620&preview=true",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 100,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "https://www.helius.com.ua/product/gibrydnyj-invertor-deye-sun-125k-sg02hp3-eu-gm10-125-kvt-3-fazy-vysokovoltnyj-10-mppt-wifi/?preview=true",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 125,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-06K-G Deye WiFi (6 kW, 1 фаза, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-08K-G Deye WiFi (8 kW, 1 фаза, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-10K-G Deye WiFi (10 kW, 1 фаза, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-12K-G06 Deye WiFi (12 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-15K-G06 Deye WiFi (15 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-20K-G05 Deye WiFi (20 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-25K-G04 Deye WiFi (25 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 25,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-25K-G05 Deye WiFi (25 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 25,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-30K-G04 Deye WiFi (30 kW, 3 фази, 2 MPPT)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 30,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-50K-G04 Deye WiFi (50 kW, 3 фази, 4 MPPT)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-80K-G Deye WiFi (80 kW, 3 фази, 4 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 80,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-100K-G Deye WiFi (100 kW, 3 фази, 6 MPPT)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 100,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-125K-G Deye WiFi (125 kW, 3 фази, 8 MPPT)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 125,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "SUN-135K-G Deye WiFi (135 kW, 3 фази, 8 MPPT)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 135,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-G5.1 Pro-B Deye (LiFePO4 51,2V 100Ah 5,12kWh) - helius",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F5 Pro-C Deye (LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F5 Pro-L Deye (LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F12-L Deye (LiFePO4 51,2V 230Ah 11.8 kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 11.8,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F12-С Deye (LiFePO4 51,2V 230Ah 11.8 kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 11.8,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F16-С Deye (LiFePO4 51,2V 314Ah 16.0 kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F16 Plus-L Deye (LiFePO4 51,2V 314Ah 16.0 kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "SE-F12 Max Deye (LiFePO4 51,2V 230Ah 11,8 kWh, IP65)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": 11.8,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-GPack5.1 Deye (High-Voltage LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-A-Pack7.68 Deye (High-Voltage LiFePO4 38,4V 200Ah 7,68kWh)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": 7.68,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-B-Pack14.3 Deye (High-Voltage LiFePO4 51,2V 280Ah 14,3kWh)",
+   "sup": "Helius",
+   "avail": "no",
+   "kwh": 14.3,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-B-Pack16.3 Deye (High-Voltage LiFePO4 51,2V 314Ah 16,08kWh)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": 16.08,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-B-PDU-2 Deye High Voltage control box",
+   "sup": "Helius",
+   "avail": "no",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-B-PDU2-А Deye High Voltage control box",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-G-PDU-2 Deye",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-A-PDU2 Deye",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "MS-GS215-2H3 Deye (100 kW (380 / 400 Vac, 50 / 60 Hz)High-Voltage 215 kWh LiFePO4)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": 215,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE F240 (GE-F240-BC-2-A3-EU, LIFEPO4, 240 КВТ·ГОД, C&I ESS)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": 240,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Стандартна стійка 19 дюймів, (12 шт.) 3U-HRACK Deye (Стійка для BOS-G PRO)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Стандартна стійка, (8 шт.) 3U-HRACK Deye (Стійка для BOS-G PRO)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-A-RACK-11 Deye",
+   "sup": "Helius",
+   "avail": "soon",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BOS-A-Rack14 Deye (14 шт.)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-06K-SG05LP1-EU Deye WiFi (6 kW, 1 фаза, 2 MPPT, LV)",
+   "sup": "Helius",
+   "avail": "yes",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Sunerise JC450-108M - 450 Вт (Двостороння) Розміри: 1722*1134*30мм Вага: 20кг",
+   "sup": "SunRise",
+   "avail": "no",
+   "watt": 450
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Sunerise JC450-96M-210R - 460 Вт (Двостороння) Розміри: 1762*1134*30мм Вага: 24кг",
+   "sup": "SunRise",
+   "avail": "soon",
+   "watt": 460
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель 440 Вт Sunerise FULL BLACK JC440-108M N-тип (Одностороння)",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 440
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Sunerise JC600-144M - 600 Вт (Двостороння) Розміри: 2279*1134*30мм Вага: 26кг",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 600
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Sunerise JC615-132-210R-DG - 630 Вт (Двостороння) Розміри: 2382*1134*30мм Вага: 32,4кг",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 132
+  },
+  {
+   "cat": "pan",
+   "model": "Сонячна панель Sunerise JC710-132M-210DG - 720 Вт (Двостороння) Розміри: 2384*1303*33 мм Вага: 37,9кг",
+   "sup": "SunRise",
+   "avail": "soon",
+   "watt": 720
+  },
+  {
+   "cat": "pan",
+   "model": "Системи накопичення та зберігання енергії 2в1 - 5 кВт - 10 кВт год - JC-UV-4250 Sunerise",
+   "sup": "SunRise",
+   "avail": "no",
+   "watt": 4250
+  },
+  {
+   "cat": "pan",
+   "model": "Canadian Solar 450w CS6.2-48TD-450 full black",
+   "sup": "Solarity",
+   "avail": "yes",
+   "watt": 450
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 620W Jinko Bifacial 66HL4M-BDV bifacial (короткий кабель)",
+   "sup": "Solarity",
+   "avail": "no",
+   "watt": 620,
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 625W Jinko Bifacial 66HL4M-BDV bifacial",
+   "sup": "Solarity",
+   "avail": "yes",
+   "watt": 625,
+   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 630W Jinko Bifacial 66HL4M-BDV bifacial",
+   "sup": "Solarity",
+   "avail": "soon",
+   "watt": 630,
+   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 635W Jinko Bifacial 66HL4M-BDV bifacial",
+   "sup": "Solarity",
+   "avail": "yes",
+   "watt": 635
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko Solar 450W Tiger Neo N-type black frame bifacial",
+   "sup": "Solarity",
+   "avail": "no",
+   "watt": 450,
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view"
+  },
+  {
+   "cat": "pan",
+   "model": "LONGI LR8-66HGD 620 W Silver Frame Mono Bifacial",
+   "sup": "Solarity",
+   "avail": "soon",
+   "watt": 620,
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+  },
+  {
+   "cat": "pan",
+   "model": "LONGi Hi-MO 6m 585W Silver Frame Mono гарантія 15р",
+   "sup": "Solarity",
+   "avail": "no",
+   "watt": 585
+  },
+  {
+   "cat": "pan",
+   "model": "LONGi Hi-MO 6M 440W Full Black Mono",
+   "sup": "Solarity",
+   "avail": "no",
+   "watt": 440
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-MO7 LR8-445-48HGD black frame",
+   "sup": "Solarity",
+   "avail": "no",
+   "watt": 445,
+   "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view"
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-5K-SG03LP1-EU",
+   "sup": "Solarity",
+   "avail": "no",
+   "kw": 5,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-6K-SG05LP1-EU-AM2-P",
+   "sup": "Solarity",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-8K-SG05LP1-EU-AM2-P",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-10K-SG02-LP1EU-AM3 (1ф)",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG02-LP1EU-AM3 (1ф)",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 12,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-10K-SG04LP3-EU",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 10,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG05LP3-EU",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-15K-SG05LP3-EU-SM2",
+   "sup": "Solarity",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-20K-SG01 HP3-EU-AM2 HV",
+   "sup": "Solarity",
+   "avail": "no",
+   "kw": 20,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-25K-SG01HP3-EU-BM3",
+   "sup": "Solarity",
+   "avail": "no",
+   "kw": 25,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30K-SG02HP3-EU-AM3 New",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30K-SG01HP3-EU-BM3",
+   "sup": "Solarity",
+   "avail": "no",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-50K-SG01HP3-EU-BM4",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-80K-SG02HP3-EU-EM6",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 80,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-125K-SG02HP3-EU-GM10",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kw": 125,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Deye BOS-G PRO LiFePO4 HV 51.2v 100AH 5.12kwh",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-A LiFePO4 HV 38.4v 200AH 7.68kwh",
+   "sup": "Solarity",
+   "avail": "yes",
+   "kwh": 7.68,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "BMS DEYE BOS-A 1000V 160A (BOS-A-PDU-2 1000V/160A)",
+   "sup": "Solarity",
+   "avail": "soon",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
+   "model": "Deye SE-F5 Pro-C",
+   "sup": "Solarity",
+   "avail": "soon",
+   "kwh": null,
+   "hv": false
   }
  ]
 }
