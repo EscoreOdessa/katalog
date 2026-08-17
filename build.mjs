@@ -146,17 +146,113 @@ async function atmo() {
   return items;
 }
 
+// ---------- Google Sheets постачальників (публічні, gviz CSV, без логіну) ----------
+// Живі: Sakoenergy, Intersolar, Helius, SunRise + Solarity (через публічне дзеркало IMPORTRANGE).
+// Altek/Vimmer поки лишаються сидом (нестандартна верстка).
+// Дзеркало Solarity: приватна таблиця постачальника → Anna робить публічне дзеркало з 3 вкладками
+// (panels / inv / bat, кожна IMPORTRANGE відповідної вкладки Solarity). ID підставляється нижче.
+const SOLARITY_MIRROR = process.env.SOLARITY_MIRROR || "1i3u_awTfs-TMYt1YvHqXmfzguB_ThPGSt4bJYh4vg70"; // публічне дзеркало Solarity
+const SHEETS_LIVE = [
+  { sup: "Sakoenergy", id: "1fL5fwlGeWSeiogJFD6NeXQrmtdD3-SeDZljh0XYMBRc" },
+  { sup: "Intersolar", id: "1urSlWzmui3nszA03kA9XFUoXgFhUHwUFRfraaiC5hE8" },
+  { sup: "Helius", id: "1ddbl4d574RN5Q4WDMg4WW13heV_hOyYy" },
+  { sup: "SunRise", id: "1Wog9MpKlV90ItO3GfagvxUHqGbWPLiZJ9fJnL_KbAFc" },
+  ...(SOLARITY_MIRROR ? [
+    { sup: "Solarity", id: SOLARITY_MIRROR, tab: "panels" },
+    { sup: "Solarity", id: SOLARITY_MIRROR, tab: "inv" },
+    { sup: "Solarity", id: SOLARITY_MIRROR, tab: "bat" },
+  ] : []),
+];
+const KNOWN_BRAND = /deye|longi|jinko|ja solar|\bja\b|canadian|risen|trina|tongwei|renesola|luxen|sunerise|solitek/i;
+const normCell = (s) => {
+  const v = (s || "").replace(/[‐‑‒–—−]/g, "-").replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  return /^#(REF|N\/A|ERROR|VALUE|DIV|NAME|NUM|NULL)!?/i.test(v) ? "" : v; // ігнор помилок формул (#REF! у колонці бренду)
+};
+function sectionOf(cells) {
+  const ne = cells.map(normCell).filter(Boolean);
+  const uniq = [...new Set(ne)];
+  if (uniq.length !== 1 || uniq[0].length >= 60) return "";
+  const v = uniq[0];
+  // не плутати з рядком-товаром (модель): напр. "SUN-5K", "450 Вт", "BOS-G"
+  if (/\d{2,}\s*(вт|w|kw|кв|год)/i.test(v) || /(SUN|BOS|SE-)[\s-]?\d/i.test(v)) return "";
+  return v;
+}
+function parseCSV(s) {
+  const rows = []; let row = [], cur = "", q = false;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (q) { if (c === '"') { if (s[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+    else { if (c === '"') q = true; else if (c === ",") { row.push(cur); cur = ""; } else if (c === "\n") { row.push(cur); rows.push(row); row = []; cur = ""; } else if (c === "\r") {} else cur += c; }
+  }
+  if (cur.length || row.length) { row.push(cur); rows.push(row); }
+  return rows;
+}
+function sheetAvail(t) {
+  // Увага: \b у JS-regex не працює з кирилицею — не використовувати навколо укр/рос слів.
+  const s = (t || "").toLowerCase();
+  if (/нема|стоп|розпрод|закінчил|знято|відсутн|нет налич|нет в/.test(s)) return "no";
+  if (/в наявн|наявн|сьогодн|в налич/.test(s)) return "yes";
+  return "soon"; // очікується/предзамовлення/в дорозі/в роботі/дата/порожньо → консервативно "скоро"
+}
+async function sheets() {
+  const items = [];
+  for (const { sup, id, tab } of SHEETS_LIVE) {
+    const label = sup + (tab ? "/" + tab : "");
+    try {
+      const url = `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:csv` + (tab ? `&sheet=${encodeURIComponent(tab)}` : "");
+      const res = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (catalog-bot ESCORE)" }, redirect: "follow" });
+      if (!res.ok) { console.warn(`${label}: HTTP ${res.status}`); continue; }
+      const rows = parseCSV(await res.text());
+      let availCol = -1;
+      for (let i = 0; i < Math.min(rows.length, 25) && availCol < 0; i++)
+        for (let j = 0; j < rows[i].length; j++) if (/наявн|статус|status/i.test(rows[i][j] || "")) { availCol = j; break; }
+      let section = "", n = 0;
+      for (const cells of rows) {
+        const sec = sectionOf(cells); if (sec) { section = sec; continue; }
+        // 1) пряме розпізнавання: перша ячейка, що класифікується за назвою
+        let cat = null, model = null;
+        for (const c of cells) { const cc = normCell(c); if (cc.length >= 8) { const k = classify(cc); if (k) { cat = k; model = cc; break; } } }
+        // 2) фолбек для секцій без бренду в рядку (напр. Deye у Solarity): найдовша «літерна» ячейка + бренд секції
+        if (!cat) {
+          let cand = ""; for (const c of cells) { const cc = normCell(c); if (/[a-zа-яіїєґ]/i.test(cc) && cc.length > cand.length) cand = cc; }
+          if (cand.length >= 6) {
+            let name = cand;
+            if (!KNOWN_BRAND.test(name) && /deye/i.test(section)) name = "Deye " + name;
+            const k = classify(name); if (k) { cat = k; model = name; }
+          }
+        }
+        if (!cat) continue;
+        model = normCell(model);
+        if (/бренд|модель|наявність|прайс|найменування/i.test(model)) continue; // рядок-шапка, не товар
+        let raw = availCol >= 0 ? (cells[availCol] || "") : "";
+        if (!raw) raw = cells.find((c) => /наявн|немає|стоп|дороз|очіку|замов/i.test(c || "")) || "";
+        const avail = sheetAvail(raw);
+        if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup, avail, ...s }); n++; } }
+        else if (cat === "bat") { const s = parseBattery(model); items.push({ cat, model, sup, avail, ...s }); n++; }
+        else { const watt = parsePanelWatt(model); if (watt) { items.push({ cat, model, sup, avail, watt, brand: panelBrand(model) }); n++; } }
+      }
+      console.log(`${label}: ${n} позицій`);
+    } catch (e) { console.warn(`${label}: ${e.message}`); }
+  }
+  return items;
+}
+
 // ---------- main ----------
 async function main() {
   const prev = JSON.parse(readFileSync("catalog.json", "utf8"));
-  const seed = (prev.items || []).filter((i) => i.sup !== "YugTorg" && i.sup !== "Atmo");
   const live = await yugtorg();
   let liveAtmo = [];
   try { liveAtmo = await atmo(); } catch (e) { console.warn("Atmo failed: " + e.message); }
-  const items = [...seed, ...live, ...liveAtmo];
+  let liveSheets = [];
+  try { liveSheets = await sheets(); } catch (e) { console.warn("sheets failed: " + e.message); }
+  const allLive = [...live, ...liveAtmo, ...liveSheets];
+  // будь-який постачальник, що дав живі дані, замінює свій сид; хто не відповів — лишається зі снимка
+  const gotSups = new Set(allLive.map((i) => i.sup));
+  const seed = (prev.items || []).filter((i) => !gotSups.has(i.sup));
+  const items = [...seed, ...allLive];
   for (const it of items) { if (!it.ds) { const ds = datasheetFor(it); if (ds) it.ds = ds; } delete it.brand; }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "7 таблиць (сид) + YugTorg + Atmo (вживу). Ціни не показуються.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise. Altek/Vimmer/Solarity — снимок. Ціни не показуються.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
-  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length})`);
+  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length})`);
 }
 main();
