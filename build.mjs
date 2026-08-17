@@ -1,6 +1,6 @@
 // build.mjs — самодостатній збірник каталогу (для GitHub Action).
 // Читає наявний public catalog.json як СИД (7 таблиць), оновлює живі джерела
-// (YugTorg зараз; Atmo додамо пізніше) і перезаписує catalog.json. Ціни не показуємо.
+// (YugTorg + Atmo) і перезаписує catalog.json. Ціни не показуємо.
 import { readFileSync, writeFileSync } from "fs";
 
 // ---------- helpers ----------
@@ -83,15 +83,80 @@ async function yugtorg() {
   return items;
 }
 
+// ---------- Atmo (api-my.atmo.pro, JSON API, логін email/пароль → Bearer-токен) ----------
+const ATMO_BASE = "https://api-my.atmo.pro";
+const ATMO_CATS = [448, 450, 202]; // Інвертори, Акумуляторні батареї, Фотоелектричні модулі
+function deepFindToken(o) {
+  if (!o || typeof o !== "object") return null;
+  for (const k of Object.keys(o)) {
+    const v = o[k];
+    if (typeof v === "string" && /token/i.test(k) && !/expir/i.test(k) && v.length > 20) return v;
+  }
+  for (const k of Object.keys(o)) { const r = deepFindToken(o[k]); if (r) return r; }
+  return null;
+}
+function atmoAvail(q) {
+  if (!q) return "no";
+  if ((q.available || 0) > 0 || (q.free || 0) > 0) return "yes";
+  if ((q.expected || 0) > 0) return "soon";
+  return "no";
+}
+async function atmoLogin() {
+  const email = process.env.ATMO_EMAIL, password = process.env.ATMO_PASSWORD;
+  if (!email || !password) { console.warn("Atmo: немає ATMO_EMAIL/ATMO_PASSWORD — пропускаю"); return null; }
+  const res = await fetch(`${ATMO_BASE}/api/v1/auth/login`, {
+    method: "POST",
+    headers: { "content-type": "application/json", accept: "application/json" },
+    body: JSON.stringify({ email, password }),
+  });
+  if (!res.ok) { console.warn("Atmo login: HTTP " + res.status + " (перевір ATMO_EMAIL/ATMO_PASSWORD)"); return null; }
+  const tok = deepFindToken(await res.json());
+  if (!tok) console.warn("Atmo: токен не знайдено у відповіді логіна");
+  return tok;
+}
+async function atmo() {
+  const tok = await atmoLogin();
+  if (!tok) return [];
+  const H = { headers: { authorization: "Bearer " + tok, accept: "application/json" } };
+  const items = [];
+  for (const cid of ATMO_CATS) {
+    for (let page = 1; page <= 40; page++) {
+      let j;
+      try {
+        const url = `${ATMO_BASE}/api/v1/products?pagination[page]=${page}&pagination[per_page]=100&filters[categoryId]=${cid}`;
+        const res = await fetch(url, H);
+        if (!res.ok) { console.warn(`Atmo cat ${cid} p${page}: HTTP ${res.status}`); break; }
+        j = await res.json();
+      } catch (e) { console.warn(`Atmo cat ${cid} p${page}: ${e.message}`); break; }
+      const rows = (j.data && j.data.data) || [];
+      if (!rows.length) break;
+      for (const p of rows) {
+        const name = p.name || "";
+        const cat = classify(name); if (!cat) continue;
+        const avail = atmoAvail(p.quantity);
+        if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
+        else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
+        else { const watt = parsePanelWatt(name); if (watt) items.push({ cat, model: name, sup: "Atmo", avail, watt, brand: panelBrand(name) }); }
+      }
+      const pi = j.data && j.data.paginatorInfo;
+      if (pi && (pi.hasMorePages === false || (pi.currentPage && pi.lastPage && pi.currentPage >= pi.lastPage))) break;
+    }
+  }
+  console.log(`Atmo: ${items.length} позицій`);
+  return items;
+}
+
 // ---------- main ----------
 async function main() {
   const prev = JSON.parse(readFileSync("catalog.json", "utf8"));
   const seed = (prev.items || []).filter((i) => i.sup !== "YugTorg" && i.sup !== "Atmo");
-  const live = await yugtorg();            // Atmo додамо, коли зробимо автологін
-  const items = [...seed, ...live];
+  const live = await yugtorg();
+  let liveAtmo = [];
+  try { liveAtmo = await atmo(); } catch (e) { console.warn("Atmo failed: " + e.message); }
+  const items = [...seed, ...live, ...liveAtmo];
   for (const it of items) { if (!it.ds) { const ds = datasheetFor(it); if (ds) it.ds = ds; } delete it.brand; }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "7 таблиць (сид) + YugTorg (вживу). Ціни не показуються.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "7 таблиць (сид) + YugTorg + Atmo (вживу). Ціни не показуються.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
-  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + вживу ${live.length})`);
+  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length})`);
 }
 main();
