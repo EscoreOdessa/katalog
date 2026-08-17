@@ -1,6 +1,6 @@
 {
- "generated": "SAMPLE",
- "note": "Зразкові дані з 3 прайсів. Замінюється build.mjs.",
+ "generated": "2026-08 (знімок прайсів)",
+ "note": "Реальні дані з прайсів постачальників. Ціни не показуються.",
  "items": [
   {
    "cat": "inv",
@@ -76,7 +76,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN20K-SG01HP3-EU-BM4",
+   "model": "Deye SUN-20K-SG01HP3-EU-BM4 (HV)",
    "sup": "Sakoenergy",
    "avail": "no",
    "kw": 20,
@@ -85,7 +85,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-30K-SG02HP3-EU-AM3",
+   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "kw": 30,
@@ -94,7 +94,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-50K-SG01HP3-EU-BM4",
+   "model": "Deye SUN-50K-SG01HP3-EU-BM4 (HV)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "kw": 50,
@@ -103,7 +103,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-80K-SG02HP3-EU-EM6",
+   "model": "Deye SUN-80K-SG02HP3-EU-EM6 (HV)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "kw": 80,
@@ -112,7 +112,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-125K-SG02HP3-EU-GM10",
+   "model": "Deye SUN-125K-SG02HP3-EU-GM10 (HV)",
    "sup": "Sakoenergy",
    "avail": "soon",
    "kw": 125,
@@ -121,7 +121,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-50K-SG01HP3-EU-BM4",
+   "model": "Deye SUN-50K-SG01HP3-EU-BM4 (HV)",
    "sup": "Intersolar",
    "avail": "yes",
    "kw": 50,
@@ -130,7 +130,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-80K-SG02HP3-EU-EM6",
+   "model": "Deye SUN-80K-SG02HP3-EU-EM6 (HV)",
    "sup": "Intersolar",
    "avail": "yes",
    "kw": 80,
@@ -157,7 +157,7 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-30K-SG02HP3-EU-AM3",
+   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
    "sup": "Intersolar",
    "avail": "soon",
    "kw": 30,
@@ -165,8 +165,134 @@
    "hv": true
   },
   {
+   "cat": "inv",
+   "model": "Deye SUN-5K-SG03LP1-EU",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 5,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-6K-SG05LP1-EU",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-8K-SG05LP1-EU",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-10K-SG02LP1-EU-AM3",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-10K-SG05LP3",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG02LP1-EU-AM3",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG05LP3-EU",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-15K-SG05LP3-EU-SM2",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-16K-SG01LP1-EU",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-16K-SG05LP3-EU-SM2",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 16,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-20K-SG05LP3-EU-SM2",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-20K-SG01HP3-EU-AM2 (HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30K-SG01HP3-EU-BM3 (HV)",
+   "sup": "Helius",
+   "avail": "no",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-30K-SG02HP3-EU-AM3 (HV)",
+   "sup": "Helius",
+   "avail": "soon",
+   "kw": 30,
+   "ph": 3,
+   "hv": true
+  },
+  {
    "cat": "bat",
-   "model": "Deye BOS-G Pro 5.1",
+   "model": "Deye BOS-G Pro 5.1 (HV)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "kwh": 5.1,
@@ -174,7 +300,7 @@
   },
   {
    "cat": "bat",
-   "model": "Deye BOS-B-Pro-Pack16-A3 (240 кВт·год)",
+   "model": "Deye BOS-B-Pro-Pack16-A3 (240 кВт·год, HV)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "kwh": 240,
@@ -182,7 +308,7 @@
   },
   {
    "cat": "bat",
-   "model": "Deye SE-F5 Pro C (5,1 кВт·год, 48В)",
+   "model": "Deye SE-F5 Pro C (5,1 кВт·год, LV 48В)",
    "sup": "Intersolar",
    "avail": "no",
    "kwh": 5.1,
@@ -190,7 +316,7 @@
   },
   {
    "cat": "bat",
-   "model": "Deye SE-F16-С (16 кВт·год, 48В)",
+   "model": "Deye SE-F16-С (16 кВт·год, LV 48В)",
    "sup": "Intersolar",
    "avail": "no",
    "kwh": 16,
@@ -198,7 +324,7 @@
   },
   {
    "cat": "bat",
-   "model": "Deye SE-G5.1 PRO B (5,1 кВт·год, 48В)",
+   "model": "Deye SE-G5.1 PRO B (5,1 кВт·год, LV 48В)",
    "sup": "Intersolar",
    "avail": "no",
    "kwh": 5.1,
@@ -206,7 +332,7 @@
   },
   {
    "cat": "pan",
-   "model": "Longi LR7-72HGD 620W (двостороння)",
+   "model": "Longi Hi-Mo LR7-72HGD 620W (двостороння)",
    "sup": "Sakoenergy",
    "avail": "yes",
    "watt": 620,
@@ -245,14 +371,14 @@
   },
   {
    "cat": "pan",
-   "model": "Longi LR5-54HTH 435M",
+   "model": "Longi LR5-54HTH 435М",
    "sup": "Intersolar",
    "avail": "yes",
    "watt": 435
   },
   {
    "cat": "pan",
-   "model": "Jinko 72HL4-590BDV bifacial",
+   "model": "Jinko JKM-590N-72HL4-BDV bifacial",
    "sup": "Intersolar",
    "avail": "yes",
    "watt": 590,
@@ -267,7 +393,7 @@
   },
   {
    "cat": "pan",
-   "model": "Longi LR8-66HGD-615M",
+   "model": "Longi LR8-66HGD-615M bifacial",
    "sup": "Intersolar",
    "avail": "soon",
    "watt": 615,
@@ -275,7 +401,7 @@
   },
   {
    "cat": "pan",
-   "model": "Longi LR8-66HGD-620M",
+   "model": "Longi LR8-66HGD-620M bifacial",
    "sup": "Intersolar",
    "avail": "yes",
    "watt": 620,
@@ -304,7 +430,7 @@
   },
   {
    "cat": "pan",
-   "model": "Jinko 590N 72HL4-BDV bifacial",
+   "model": "Jinko JKM-590N-72HL4-BDV bifacial",
    "sup": "Solarity",
    "avail": "yes",
    "watt": 590,
@@ -351,7 +477,7 @@
   },
   {
    "cat": "pan",
-   "model": "Longi Hi-MO X10 645M",
+   "model": "Longi Hi-MO X10 645M (LR7-72HVD)",
    "sup": "Solarity",
    "avail": "yes",
    "watt": 645,
@@ -359,7 +485,7 @@
   },
   {
    "cat": "pan",
-   "model": "Longi Hi-MO X10 655M",
+   "model": "Longi Hi-MO X10 655M (LR7-72HVH)",
    "sup": "Solarity",
    "avail": "soon",
    "watt": 655,
@@ -367,11 +493,135 @@
   },
   {
    "cat": "pan",
-   "model": "Longi Hi-MO X10 485M",
+   "model": "Longi Hi-MO X10 485M (LR7-54HVH)",
    "sup": "Solarity",
    "avail": "yes",
    "watt": 485,
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Solitek Solid Agro 290W (bifacial)",
+   "sup": "Altek",
+   "avail": "yes",
+   "watt": 290
+  },
+  {
+   "cat": "pan",
+   "model": "Luxen LNDX-455ND (bifacial full black)",
+   "sup": "Altek",
+   "avail": "soon",
+   "watt": 455
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko JKM-460N-48HL4M-DV (single black)",
+   "sup": "Altek",
+   "avail": "yes",
+   "watt": 460,
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko JKM465N-48QL6-BDV",
+   "sup": "Altek",
+   "avail": "yes",
+   "watt": 465,
+   "ds": "https://drive.google.com/file/d/1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko JKM475N-48QL6-DV",
+   "sup": "Altek",
+   "avail": "yes",
+   "watt": 475
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko JKM-620N-66HL4M-BDV (bifacial)",
+   "sup": "Altek",
+   "avail": "yes",
+   "watt": 620,
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view"
+  },
+  {
+   "cat": "pan",
+   "model": "JA Solar JAM72D42 BL 640W (bifacial)",
+   "sup": "Vimmer",
+   "avail": "yes",
+   "watt": 640
+  },
+  {
+   "cat": "pan",
+   "model": "JA Solar JAM72D42 LB 645W (bifacial)",
+   "sup": "Vimmer",
+   "avail": "soon",
+   "watt": 645,
+   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view"
+  },
+  {
+   "cat": "pan",
+   "model": "JA Solar JAM54D40 LB 465W (bifacial)",
+   "sup": "Vimmer",
+   "avail": "yes",
+   "watt": 465,
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Luxen LNDX-450ND full black 450W",
+   "sup": "Vimmer",
+   "avail": "yes",
+   "watt": 450
+  },
+  {
+   "cat": "pan",
+   "model": "Longi Hi-MO LR8-66HGD 610W",
+   "sup": "Vimmer",
+   "avail": "no",
+   "watt": 610
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC450-108M 450W (двостороння)",
+   "sup": "SunRise",
+   "avail": "no",
+   "watt": 450
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC450-96M-210R 460W (двостороння)",
+   "sup": "SunRise",
+   "avail": "soon",
+   "watt": 460
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC440-108M FULL BLACK 440W",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 440
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC600-144M 600W (двостороння)",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 600
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC615-132-210R-DG 630W (двостороння)",
+   "sup": "SunRise",
+   "avail": "yes",
+   "watt": 630
+  },
+  {
+   "cat": "pan",
+   "model": "Sunerise JC710-132M-210DG 720W (двостороння)",
+   "sup": "SunRise",
+   "avail": "soon",
+   "watt": 720
   }
  ]
 }
