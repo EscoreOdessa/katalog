@@ -1,0 +1,26 @@
+name: refresh-catalog
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 5 * * *"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build catalog
+        env:
+          YUGTORG_COOKIE: ${{ secrets.YUGTORG_COOKIE }}
+        run: node build.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "bot@escore"
+          git add catalog.json
+          git diff --staged --quiet || git commit -m "chore: refresh catalog"
+          git push
