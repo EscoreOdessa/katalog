@@ -39,7 +39,7 @@ function parseInverter(name) {
   return { kw: kwM ? Number(kwM[1]) : null, ph, hv: /\bHV\b|HP3|HP1/.test(s) };
 }
 function parseBattery(name) {
-  const m = name.match(/([\d.,]+)\s*(?:кВт[·*]?год|kwt|kwh)/i);
+  const m = name.match(/([\d.,]+)\s*(?:кВт\s*[·*\-]?\s*год|квт\s*[·*\-]?\s*год|kwt|kwh)/i);
   return { kwh: m ? Number(m[1].replace(",", ".")) : null, hv: /BOS|HV/i.test(name) && !/48\s?[ВB]/i.test(name) };
 }
 function parsePanelWatt(name) { const m = name.match(/(\d{3,4})\s*(?:w|вт|wp)\b/i) || name.match(/\b(\d{3,4})\b/); return m ? Number(m[1]) : null; }
@@ -85,7 +85,7 @@ async function yugtorg() {
 
 // ---------- Atmo (api-my.atmo.pro, JSON API, логін email/пароль → Bearer-токен) ----------
 const ATMO_BASE = "https://api-my.atmo.pro";
-const ATMO_CATS = [448, 450, 202]; // Інвертори, Акумуляторні батареї, Фотоелектричні модулі
+const ATMO_CATS = [448, 494, 202]; // Інвертори (448), Акумуляторні батареї (494), Фотоелектричні модулі (202)
 function deepFindToken(o) {
   if (!o || typeof o !== "object") return null;
   for (const k of Object.keys(o)) {
