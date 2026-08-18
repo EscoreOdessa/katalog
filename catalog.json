@@ -1198,27 +1198,30 @@
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-14K-SG01LP1-EU, 14кВ, однофазный , (MPPT 150-425/290A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 14,
+   "ph": 1,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-16K-SG01LP1-EU, 16кВ, однофазный , (MPPT 150-425/290A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kw": 16,
+   "ph": 1,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-18K-SG01LP1-EU, 18кВ, однофазный , (MPPT 150-425/290A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 18,
+   "ph": 1,
    "hv": false
   },
   {
@@ -1258,43 +1261,48 @@
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-14K-SG05LP3-EU-SM2, WI-FI,14кВ,трехфазный, (MPPT 160-650/280A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 14,
+   "ph": 3,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-15K-SG05LP3-EU-SM2, WI-FI,15кВ,трехфазный, (MPPT 160-650/280A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "soon",
-   "kwh": null,
+   "kw": 15,
+   "ph": 3,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-16K-SG05LP3-EU-SM2, WI-FI,16кВт,трехфазный, (MPPT 160-650/280A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 16,
+   "ph": 3,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-18K-SG05LP3-EU-SM2, WI-FI,18кВт,трехфазный, (MPPT 160-650/280A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 18,
+   "ph": 3,
    "hv": false
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-20K-SG05LP3-EU-SM2, WI-FI,20кВт,трехфазный, (MPPT 160-650/350A/АКБ 48V)Parallel",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kw": 20,
+   "ph": 3,
    "hv": false
   },
   {
@@ -1307,75 +1315,84 @@
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-15K-SG01HP3-EU-AM2 HV, 15кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 15,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-20K-SG01HP3-EU-AM2 20KW, EU HV, 20кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
    "avail": "soon",
-   "kwh": null,
+   "kw": 20,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-25K-SG01HP3-EU-AM2 25KW, EU HV, 25кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
    "avail": "soon",
-   "kwh": null,
+   "kw": 25,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-30K-SG01HP3-EU-BM3 30KW, EU,30кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
-   "hv": false
+   "kw": 30,
+   "ph": 3,
+   "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-30K-SG02HP3-EU-AM3 30KW, EU,30кВт, трехфазный, (MPPT 150-850/75A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
-   "hv": false
+   "kw": 30,
+   "ph": 3,
+   "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-40K-SG01HP3-EU-BM4 HV, 40кВт, трехфазный, (MPPT 150-850/36A/АКБ 160-800V/50A)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 40,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-50K-SG01HP3-EU-BM4 HV, 50кВт, трехфазный, (MPPT 150-850/36A/АКБ 160-800V/50A)Parallel",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kw": 50,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-60K-SG02HP3-EU-EM6 HV, 60кВт, трехфазный, (MPPT 150-1000/36A/АКБ 150-800V/50A)Parallel",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kw": 60,
+   "ph": 3,
    "hv": true
   },
   {
-   "cat": "bat",
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-80K-SG02HP3-EU-EM6 HV, 80кВт, трехфазный, (MPPT 150-1000/36A/АКБ 150-800V/50A)Parallel",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kw": 80,
+   "ph": 3,
    "hv": true
   },
   {
@@ -1443,7 +1460,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 SE-G5.1 Pro-B 51,2V 100AH, 5,12kW BMS50A@16S до 32 parallel CAN/RS485, IP21, 6000Cycles, (445*133*540),45kg",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kwh": 5.12,
    "hv": false
   },
   {
@@ -1459,7 +1476,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 RW-F10.6, 51,2V 208Ah 10.64KW, BMS125@16S до 32 parallel, CAN&RS485, IP21, 6000Cycles, (600*750*200), 99kg",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kwh": 10.64,
    "hv": false
   },
   {
@@ -1475,7 +1492,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 RW-F16, 51,2V 314Ah 16KW, BMS125A до 32 parallel, CAN&RS485, IP20, 6000Cycles,(480*830*235), 122kg",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kwh": 16,
    "hv": false
   },
   {
@@ -1483,7 +1500,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 SE-F16-C, 51,2V 314Ah 16KW, BMS125A до 32 parallel, CAN&RS485, IP20, 6000Cycles,(480*830*235), 122kg",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kwh": 16,
    "hv": false
   },
   {
@@ -1491,7 +1508,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 SE-F16-L, 51,2V 314Ah 16KW, BMS125A до 32 parallel, CAN&RS485, Bluetooth, IP20, 6000Cycles,(400*708*233), 107kg",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kwh": 16,
    "hv": false
   },
   {
@@ -1611,7 +1628,7 @@
    "model": "Акумуляторная батарея High-Voltage DEYE BOS-B-Pack16-A3 LiFePO4 HV, 51.2V 314Ah, 16.08KW/h, BMS180A, 6000 cycles, IP20, 795x526x274mm, 132kg",
    "sup": "YugTorg",
    "avail": "yes",
-   "kwh": null,
+   "kwh": 16.08,
    "hv": true
   },
   {
@@ -1659,15 +1676,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-25K-SG01HP3-EU-AM2 (25 кВт, 3 фази, 2 МРРТ, HV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 25,
-   "ph": 3,
-   "hv": true
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-20K-SG05LP3-EU-SM2 (20 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "soon",
@@ -1692,6 +1700,15 @@
    "kw": 12,
    "ph": 1,
    "hv": false
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-25K-SG01HP3-EU-AM2 (25 кВт, 3 фази, 2 МРРТ, HV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 25,
+   "ph": 3,
+   "hv": true
   },
   {
    "cat": "inv",
@@ -1809,19 +1826,19 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 5.12,
-   "hv": true
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F16-C (16 кВт·год/51,2 В LV)",
    "sup": "Atmo",
    "avail": "no",
    "kwh": 16,
    "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kwh": 5.12,
+   "hv": true
   },
   {
    "cat": "bat",
@@ -1928,6 +1945,15 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM72D40-605/LB 605 Wp, Bifacial N-type",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 605,
+   "dim": null,
+   "size": "large"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -1935,15 +1961,6 @@
    "dim": null,
    "size": "large",
    "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D40-605/LB 605 Wp, Bifacial N-type",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 605,
-   "dim": null,
-   "size": "large"
   },
   {
    "cat": "pan",
@@ -2003,16 +2020,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-48HE455 455 Wp N-Type Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -2038,6 +2045,16 @@
    "watt": 470,
    "dim": null,
    "size": "med"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
   },
   {
    "cat": "pan",
@@ -2312,6 +2329,15 @@
    "watt": 625,
    "dim": null,
    "size": "large"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40-440/LB 440 Wp, Mono",
+   "sup": "Atmo",
+   "avail": "no",
+   "watt": 440,
+   "dim": null,
+   "size": "small"
   },
   {
    "cat": "pan",
@@ -2869,7 +2895,7 @@
    "model": "Монтажна платформа Для (Deye 6-8kW + Місце під щит + Місце під АКБ)",
    "sup": "Intersolar",
    "avail": "yes",
-   "kwh": null,
+   "kwh": 8,
    "hv": false
   },
   {
@@ -3275,7 +3301,7 @@
    "model": "MS-GS215-2H3 Deye (100 kW (380 / 400 Vac, 50 / 60 Hz)High-Voltage 215 kWh LiFePO4)",
    "sup": "Helius",
    "avail": "yes",
-   "kwh": 215,
+   "kwh": 100,
    "hv": false
   },
   {
