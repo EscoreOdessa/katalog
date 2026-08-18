@@ -42,7 +42,41 @@ function parseBattery(name) {
   const m = name.match(/([\d.,]+)\s*(?:кВт\s*[·*\-]?\s*год|квт\s*[·*\-]?\s*год|kwt|kwh)/i);
   return { kwh: m ? Number(m[1].replace(",", ".")) : null, hv: /BOS|HV/i.test(name) && !/48\s?[ВB]/i.test(name) };
 }
-function parsePanelWatt(name) { const m = name.match(/(\d{3,4})\s*(?:w|вт|wp)\b/i) || name.match(/\b(\d{3,4})\b/); return m ? Number(m[1]) : null; }
+function parsePanelWatt(name) {
+  const s = name || "";
+  // 1) явна одиниця: "620 W", "450Вт", "600 Wp"
+  const u = s.match(/(\d{3,4})\s*(?:wp|w|вт|ватт)\b/i);
+  if (u) return Number(u[1]);
+  // 2) інакше — перше число 100..900, що НЕ є частиною габариту (не оточене * х ×)
+  const re = /(?<![\d.,])(\d{3,4})(?![\d.,])/g; let m;
+  while ((m = re.exec(s))) {
+    const n = Number(m[1]); if (n < 100 || n > 900) continue; // 1722/2382 тощо — це розмір, не ват
+    const before = s.slice(Math.max(0, m.index - 2), m.index);
+    const after = s.slice(re.lastIndex, re.lastIndex + 2);
+    if (/[*хx×]\s*$/i.test(before) || /^\s*[*хx×]/i.test(after)) continue; // частина розміру
+    return n;
+  }
+  return null;
+}
+function parseDim(s) { // повертає {dim:"1722×1134", len:1722} з тексту, якщо є габарит
+  const m = (s || "").match(/(\d{3,4})\s*[*хx×]\s*(\d{3,4})/i);
+  if (!m) return null;
+  const a = Number(m[1]), b = Number(m[2]);
+  if (a < 300 || b < 300 || a > 3000 || b > 3000) return null;
+  return { dim: Math.max(a, b) + "×" + Math.min(a, b), len: Math.max(a, b) };
+}
+function panelSize(len, watt) { // 'small' | 'med' | 'large'
+  // Пороги від Anna: малі ≤465Вт (≈1762мм), середні 466–485Вт (≈1800мм), великі >485Вт.
+  if (watt != null) return watt <= 465 ? "small" : watt <= 485 ? "med" : "large";
+  if (len) return len <= 1780 ? "small" : len <= 1850 ? "med" : "large";
+  return null;
+}
+function panelInfo(name, cells) { // watt (виправлено) + розмір + клас
+  const watt = parsePanelWatt(name);
+  let d = parseDim(name);
+  if (!d && cells) for (const c of cells) { d = parseDim(c); if (d) break; } // напр. колонка «Розмір» у таблиці
+  return { watt, dim: d ? d.dim : null, len: d ? d.len : null, size: panelSize(d ? d.len : null, watt) };
+}
 function panelBrand(name) { const b = name.match(/\b(Longi|Jinko|JA Solar|JA|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i); return b ? b[1] : null; }
 const D = (id) => "https://drive.google.com/file/d/" + id + "/view";
 function datasheetFor(it) {
@@ -75,7 +109,7 @@ async function yugtorg() {
         const cat = classify(name); if (!cat) continue;
         if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "YugTorg", avail, ...s }); }
         else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "YugTorg", avail, ...s }); }
-        else { const watt = parsePanelWatt(name); if (watt) items.push({ cat, model: name, sup: "YugTorg", avail, watt, brand: panelBrand(name) }); }
+        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "YugTorg", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size }); }
       }
     }
   }
@@ -136,7 +170,7 @@ async function atmo() {
         const avail = atmoAvail(p.quantity);
         if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
         else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
-        else { const watt = parsePanelWatt(name); if (watt) items.push({ cat, model: name, sup: "Atmo", avail, watt, brand: panelBrand(name) }); }
+        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "Atmo", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size }); }
       }
       const pi = j.data && j.data.paginatorInfo;
       if (pi && (pi.hasMorePages === false || (pi.currentPage && pi.lastPage && pi.currentPage >= pi.lastPage))) break;
@@ -229,7 +263,7 @@ async function sheets() {
         const avail = sheetAvail(raw);
         if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup, avail, ...s }); n++; } }
         else if (cat === "bat") { const s = parseBattery(model); items.push({ cat, model, sup, avail, ...s }); n++; }
-        else { const watt = parsePanelWatt(model); if (watt) { items.push({ cat, model, sup, avail, watt, brand: panelBrand(model) }); n++; } }
+        else { const pi = panelInfo(model, cells); if (pi.watt != null || pi.len != null) { items.push({ cat, model, sup, avail, watt: pi.watt, brand: panelBrand(model), dim: pi.dim, size: pi.size }); n++; } }
       }
       console.log(`${label}: ${n} позицій`);
     } catch (e) { console.warn(`${label}: ${e.message}`); }

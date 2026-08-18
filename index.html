@@ -54,8 +54,9 @@
 <script>
 let DATA = [];
 const AV = {yes:['b-yes','В наявності'], soon:['b-soon','Очікується'], no:['b-no','Немає']};
+const SIZE_L = {small:'малий', med:'середній', large:'великий'};
 let cat='inv';
-const state={onlyAvail:true, ph:'', hv:'', kwMin:'', kwMax:'', kwhMin:'', kwhMax:'', wattMin:'', wattMax:''};
+const state={onlyAvail:true, ph:'', hv:'', kwMin:'', kwMax:'', kwhMin:'', kwhMax:'', wattMin:'', wattMax:'', size:''};
 const tabs=document.getElementById('tabs'), filtersEl=document.getElementById('filters'),
       thead=document.getElementById('thead'), tbody=document.getElementById('tbody'),
       countEl=document.getElementById('count'), banner=document.getElementById('banner');
@@ -82,6 +83,7 @@ function filtersHtml(){
     <div class="f"><label>до, кВт·год</label><input type="number" inputmode="decimal" id="f-kwhmax" value="${state.kwhMax}"></div>
     <div class="f"><label>Напруга</label><select id="f-hv"><option value="">будь-яка</option><option value="hv">HV</option><option value="lv">LV</option></select></div>${avail}`;
   return `
+    <div class="f"><label>Розмір</label><select id="f-size"><option value="">будь-який</option><option value="small">Малі (≤465 Вт)</option><option value="med">Середні (480–485)</option><option value="large">Великі (&gt;485)</option></select></div>
     <div class="f"><label>Потужність від, Вт</label><input type="number" inputmode="numeric" id="f-wattmin" value="${state.wattMin}"></div>
     <div class="f"><label>до, Вт</label><input type="number" inputmode="numeric" id="f-wattmax" value="${state.wattMax}"></div>${avail}`;
 }
@@ -89,6 +91,7 @@ function bind(){const g=id=>document.getElementById(id);
   if(g('f-avail'))g('f-avail').onchange=e=>{state.onlyAvail=e.target.checked;renderTable();};
   if(g('f-ph')){g('f-ph').value=state.ph;g('f-ph').onchange=e=>{state.ph=e.target.value;renderTable();};}
   if(g('f-hv')){g('f-hv').value=state.hv;g('f-hv').onchange=e=>{state.hv=e.target.value;renderTable();};}
+  if(g('f-size')){g('f-size').value=state.size;g('f-size').onchange=e=>{state.size=e.target.value;renderTable();};}
   if(g('f-kwmin'))g('f-kwmin').oninput=e=>{state.kwMin=e.target.value;renderTable();};
   if(g('f-kwmax'))g('f-kwmax').oninput=e=>{state.kwMax=e.target.value;renderTable();};
   if(g('f-kwhmin'))g('f-kwhmin').oninput=e=>{state.kwhMin=e.target.value;renderTable();};
@@ -107,11 +110,13 @@ function match(it){
     if(a!=null&&(it.kwh==null||it.kwh<a))return false; if(b!=null&&(it.kwh==null||it.kwh>b))return false;
     if(state.hv==='hv'&&!it.hv)return false; if(state.hv==='lv'&&it.hv)return false;}
   if(cat==='pan'){const a=num(state.wattMin),b=num(state.wattMax);
-    if(a!=null&&it.watt<a)return false; if(b!=null&&it.watt>b)return false;}
+    if(a!=null||b!=null){ if(it.watt==null)return false; if(a!=null&&it.watt<a)return false; if(b!=null&&it.watt>b)return false; }
+    if(state.size&&it.size!==state.size)return false;}
   return true;
 }
-function specCols(){return cat==='inv'?['Потужність','Фазність','Напруга АКБ']:cat==='bat'?['Ємність','Напруга']:['Потужність'];}
-function specVals(it){return cat==='inv'?[it.kw+' кВт',it.ph+'-фазний',it.hv?'HV':'LV']:cat==='bat'?[it.kwh+' кВт·год',it.hv?'HV':'LV']:[it.watt+' Вт'];}
+function specCols(){return cat==='inv'?['Потужність','Фазність','Напруга АКБ']:cat==='bat'?['Ємність','Напруга']:['Потужність','Розмір'];}
+function panSize(it){return it.dim?it.dim+' мм':(it.size?SIZE_L[it.size]:'—');}
+function specVals(it){return cat==='inv'?[it.kw+' кВт',it.ph+'-фазний',it.hv?'HV':'LV']:cat==='bat'?[(it.kwh!=null?it.kwh+' кВт·год':'—'),it.hv?'HV':'LV']:[(it.watt!=null?it.watt+' Вт':'—'),panSize(it)];}
 // Фільтри перебудовуються ЛИШЕ при зміні вкладки (щоб поле вводу не втрачало фокус під час набору).
 function renderFilters(){
   filtersEl.innerHTML=filtersHtml();bind();
