@@ -1643,7 +1643,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-50K-SG01HP3-EU-BM4 (50 кВт, 3 фази, 4 МРРТ, HV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 50,
    "ph": 3,
    "hv": true
@@ -1652,7 +1652,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 12,
    "ph": 3,
    "hv": false
@@ -1661,7 +1661,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-25K-SG01HP3-EU-AM2 (25 кВт, 3 фази, 2 МРРТ, HV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 25,
    "ph": 3,
    "hv": true
@@ -1670,7 +1670,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-20K-SG05LP3-EU-SM2 (20 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 20,
    "ph": 3,
    "hv": false
@@ -1679,7 +1679,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-8K-SG05LP1-EU-AM2-PLUS (8 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kw": 8,
    "ph": 1,
    "hv": false
@@ -1688,7 +1688,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 12,
    "ph": 1,
    "hv": false
@@ -1697,7 +1697,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-30K-SG02HP3-EU (30 кВт, 3 фази, 3 МРРТ, HV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kw": 30,
    "ph": 3,
    "hv": true
@@ -1706,7 +1706,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-10K-SG05LP3-EU-SM2 (10 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 10,
    "ph": 3,
    "hv": false
@@ -1715,7 +1715,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-15K-SG05LP3-EU-SM2 (15 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 15,
    "ph": 3,
    "hv": false
@@ -1724,7 +1724,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3 (12 кВт, 1 фаза, 3 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kw": 12,
    "ph": 1,
    "hv": false
@@ -1819,7 +1819,7 @@
    "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F16-C (16 кВт·год/51,2 В LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kwh": 16,
    "hv": false
   },
@@ -1827,7 +1827,7 @@
    "cat": "bat",
    "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kwh": 5.12,
    "hv": false
   },
@@ -1835,7 +1835,7 @@
    "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kwh": 11.8,
    "hv": false
   },
@@ -1843,7 +1843,7 @@
    "cat": "bat",
    "model": "Система керування Deye BOS-G-PDU-2 (BMS) для Deye BOS-G-Pack5.1",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kwh": null,
    "hv": true
   },
@@ -1851,7 +1851,7 @@
    "cat": "bat",
    "model": "Акумуляторна стійка Deye BOS-A-Rack14 для Deye BOS-A-Pack7.68",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kwh": null,
    "hv": true
   },
@@ -1859,7 +1859,7 @@
    "cat": "bat",
    "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-GM5.1",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kwh": null,
    "hv": true
   },
@@ -2139,7 +2139,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 465,
    "dim": null,
    "size": "small",
@@ -2149,7 +2149,7 @@
    "cat": "pan",
    "model": "PV модуль Longi LR7-54HVH-485, 485Wp, Mono (Black Frame)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 485,
    "dim": null,
    "size": "med",
@@ -2159,7 +2159,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "watt": 460,
    "dim": null,
    "size": "small",
@@ -2169,7 +2169,7 @@
    "cat": "pan",
    "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "watt": 650,
    "dim": null,
    "size": "large",
@@ -2179,7 +2179,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "watt": 465,
    "dim": null,
    "size": "small",
@@ -2189,7 +2189,7 @@
    "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-54HD505 505Wp N-Type Bifacial (Black Frame)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "watt": 505,
    "dim": null,
    "size": "large"
@@ -2198,7 +2198,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D41-445/LB 445Wp, Mono",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 445,
    "dim": null,
    "size": "small"
@@ -2207,7 +2207,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM72D40-595/LB 595 Wp, Bifacial N-type",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 595,
    "dim": null,
    "size": "large"
@@ -2216,7 +2216,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D41-450/LB 450Wp, Mono",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 450,
    "dim": null,
    "size": "small"
@@ -2225,7 +2225,7 @@
    "cat": "pan",
    "model": "PV модуль JA Solar JAM54D41-455/LR 455Wp, Mono",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "watt": 455,
    "dim": null,
    "size": "small"
