@@ -25,8 +25,9 @@ function normAvail(t) {
 }
 function classify(name) {
   const s = name || "";
-  if (/deye/i.test(s) && /(BOS|SE-F|SE-G|LiFePO|акумул|батаре|АКБ)/i.test(s)) return "bat";
+  // ІНВЕРТОР перевіряємо ПЕРШИМ: у гібридного інвертора в описі може бути «АКБ/батарея», але це інвертор.
   if (/deye/i.test(s) && /(інверт|инверт|SUN-?\d)/i.test(s)) return "inv";
+  if (/deye/i.test(s) && /(BOS|SE-F|SE-G|LiFePO|LFP|акумул|аккумул|батаре|АКБ)/i.test(s)) return "bat";
   if (/(сонячн(а|у) панел|солнечн(ая|ую) панел|фотомодул)/i.test(s) ||
       /\b(Longi|Jinko|JA Solar|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i.test(s)) return "pan";
   return null;
@@ -39,7 +40,8 @@ function parseInverter(name) {
   return { kw: kwM ? Number(kwM[1]) : null, ph, hv: /\bHV\b|HP3|HP1/.test(s) };
 }
 function parseBattery(name) {
-  const m = name.match(/([\d.,]+)\s*(?:кВт\s*[·*\-]?\s*год|квт\s*[·*\-]?\s*год|kwt|kwh)/i);
+  // ємність акумулятора: «5,12 кВт·год», «16 kWh», а також «16KW»/«16 кВт» (постачальники часто пишуть kW замість kWh).
+  const m = name.match(/([\d.,]+)\s*(?:кВт[\s·*\-]*год|квт[\s·*\-]*год|kwh|kwt|kw\b|квт\b)/i);
   return { kwh: m ? Number(m[1].replace(",", ".")) : null, hv: /BOS|HV/i.test(name) && !/48\s?[ВB]/i.test(name) };
 }
 function parsePanelWatt(name) {
