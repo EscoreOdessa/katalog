@@ -131,9 +131,12 @@ function deepFindToken(o) {
 }
 function atmoAvail(q) {
   if (!q) return "no";
-  if ((q.available || 0) > 0 || (q.free || 0) > 0) return "yes";
-  if ((q.expected || 0) > 0) return "soon";
-  return "no";
+  // ВАЖЛИВО: available = free + reserved. Орієнтуємось на ВІЛЬНИЙ залишок (без резерву),
+  // інакше повністю зарезервовані позиції хибно показуються як «в наявності».
+  const free = (typeof q.free === "number") ? q.free : (q.available || 0) - (q.reserved || 0);
+  if (free > 0) return "yes";
+  if ((q.expected || 0) > 0) return "soon"; // вільного немає, але очікується поставка
+  return "no";                              // все в резерві / немає
 }
 async function atmoLogin() {
   const email = process.env.ATMO_EMAIL, password = process.env.ATMO_PASSWORD;
