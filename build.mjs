@@ -156,22 +156,12 @@ function atmoAvail(q) {
   if ((q.expected || 0) > 0) return "soon"; // вільного немає, але очікується поставка
   return "no";                              // все в резерві / немає
 }
-// Ціна Atmo: Готівка = «ціна ФОП дилерська», ПДВ = «ціна ТОВ дилерська».
-// Структура JSON точно невідома — глибокий пошук об'єктів «назва+значення» за міткою.
+// Ціна Atmo (структура API підтверджена на живих даних):
+//   Готівка «ціна ФОП дилерська» = cashPrices.dealer.price
+//   ПДВ    «ціна ТОВ дилерська»  = cashlessPrices.dealer.price
 function atmoPrice(p) {
-  let cash = null, vat = null;
-  const visit = (o) => {
-    if (!o || typeof o !== "object") return;
-    if (Array.isArray(o)) { o.forEach(visit); return; }
-    const label = [o.name, o.title, o.label, o.type, o.priceType, o.caption, o.description].find((x) => typeof x === "string") || "";
-    const val = [o.value, o.price, o.amount, o.sum, o.cost, o.val].find((x) => x != null);
-    if (label && val != null) {
-      if (/фоп/i.test(label) && /дилер/i.test(label)) { const v = parsePrice(val); if (v != null) cash = v; }
-      else if (/тов/i.test(label) && /дилер/i.test(label)) { const v = parsePrice(val); if (v != null) vat = v; }
-    }
-    for (const k of Object.keys(o)) visit(o[k]);
-  };
-  visit(p);
+  const cash = parsePrice(p && p.cashPrices && p.cashPrices.dealer && p.cashPrices.dealer.price);
+  const vat = parsePrice(p && p.cashlessPrices && p.cashlessPrices.dealer && p.cashlessPrices.dealer.price);
   const out = {}; if (cash != null) out.cash = cash; if (vat != null) out.vat = vat;
   return Object.keys(out).length ? out : null;
 }
@@ -320,7 +310,7 @@ async function sheets() {
       let cfg = null;
       if (sup === "Solarity") {
         if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95 }; // J/K/L, G/H/I
-        else { const c = findCol(rows, /ціна\s*шт\s*без\s*пдв/i), v = findCol(rows, /ціна\s*шт\s*з\s*пдв/i); cfg = { cash: c >= 0 ? c : null, vat: v >= 0 ? v : null, factor: 0.95 }; }
+        else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ
       } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
       let section = "", n = 0, np = 0;
       for (const cells of rows) {
