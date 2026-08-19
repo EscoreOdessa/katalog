@@ -2480,6 +2480,65 @@
   },
   {
    "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-PLUS (6 кВт, 1 фаза, 2 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 745,
+    "vat": 894,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-8K-SG05LP1-EU-AM2-PLUS (8 кВт, 1 фаза, 2 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1020,
+    "vat": 1224,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cash": 1500,
+    "vat": 1800,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-10K-SG02LP1-EU-AM3 (10 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 10,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1400,
+    "vat": 1680,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-50K-SG01HP3-EU-BM4 (50 кВт, 3 фази, 4 МРРТ, HV)",
    "sup": "Atmo",
    "avail": "soon",
@@ -2505,36 +2564,6 @@
     "vat": 2760,
     "cur": "$"
    }
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 12,
-   "ph": 3,
-   "hv": false,
-   "price": {
-    "cash": 1500,
-    "vat": 1800,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-8K-SG05LP1-EU-AM2-PLUS (8 кВт, 1 фаза, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kw": 8,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1020,
-    "vat": 1224,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2625,20 +2654,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-PLUS (6 кВт, 1 фаза, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 6,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 745,
-    "vat": 894,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-125K-SG02HP3-EU-GM10 (125 кВт, 3 фази, 10 МРРТ, HV)",
    "sup": "Atmo",
    "avail": "soon",
@@ -2693,21 +2708,6 @@
     "vat": 1800,
     "cur": "$"
    }
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-10K-SG02LP1-EU-AM3 (10 кВт, 1 фаза, 3 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kw": 10,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1400,
-    "vat": 1680,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "bat",
@@ -2984,21 +2984,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-48HE450 450 Wp N-Type Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 450,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 74.21,
-    "vat": 89.12,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-66HD615 615 Wp N-type Bifacial",
    "sup": "Atmo",
    "avail": "yes",
@@ -3011,6 +2996,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMNH-48HE450 450 Wp N-Type Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 450,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 74.21,
+    "vat": 89.12,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -5002,7 +5002,7 @@
    "price": {
     "cashTiers": [
      0.19,
-     0.19,
+     0.185,
      null
     ],
     "cur": "$/Вт"
@@ -5019,9 +5019,9 @@
    "size": "large",
    "price": {
     "vatTiers": [
-     0.18,
-     0.18,
-     0.18
+     0.181,
+     0.178,
+     0.176
     ],
     "cur": "$/Вт"
    },
@@ -5047,14 +5047,14 @@
    "size": "large",
    "price": {
     "cashTiers": [
-     0.16,
-     0.16,
+     0.163,
+     0.162,
      null
     ],
     "vatTiers": [
-     0.18,
-     0.18,
-     0.18
+     0.182,
+     0.181,
+     0.179
     ],
     "cur": "$/Вт"
    },
@@ -5070,8 +5070,8 @@
    "size": "large",
    "price": {
     "cashTiers": [
-     0.16,
-     0.16,
+     0.165,
+     0.163,
      null
     ],
     "cur": "$/Вт"
@@ -5088,8 +5088,8 @@
    "size": "large",
    "price": {
     "cashTiers": [
-     0.17,
-     0.17,
+     0.169,
+     0.166,
      null
     ],
     "cur": "$/Вт"
@@ -5116,7 +5116,7 @@
    "price": {
     "cashTiers": [
      0.18,
-     0.17,
+     0.175,
      null
     ],
     "cur": "$/Вт"
@@ -5143,14 +5143,14 @@
    "size": "large",
    "price": {
     "cashTiers": [
-     0.17,
-     0.17,
+     0.175,
+     0.172,
      null
     ],
     "vatTiers": [
-     0.19,
-     0.18,
-     0.18
+     0.186,
+     0.183,
+     0.181
     ],
     "cur": "$/Вт"
    },
