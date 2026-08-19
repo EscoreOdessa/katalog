@@ -75,7 +75,8 @@
    "model": "Luxen LNDX-450ND full black 450W",
    "sup": "Vimmer",
    "avail": "yes",
-   "watt": 450
+   "watt": 450,
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -530,7 +531,8 @@
    "avail": "yes",
    "watt": 450,
    "dim": "2093×1038",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -539,7 +541,8 @@
    "avail": "no",
    "watt": 455,
    "dim": "2093×1038",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1r5FACncUZe5tG2zlRI7j5RS2vjSdzbhd/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -877,7 +880,8 @@
    "avail": "no",
    "watt": 435,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1eWYK272pHO0wg-fr8sRCQpLD3sdFfE8z/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -886,7 +890,8 @@
    "avail": "no",
    "watt": 450,
    "dim": "2102×1040",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -895,7 +900,8 @@
    "avail": "no",
    "watt": 460,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1JI507HdpAT3inYaS9X4b02U-t0w7uuOi/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -904,7 +910,8 @@
    "avail": "no",
    "watt": 575,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1v1uwEvN0jQ1EmXwbPaUMv0sOfuMWsmhu/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -913,7 +920,8 @@
    "avail": "no",
    "watt": 610,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1_4ri2a8aq65O73KNRSr3ccmfcPRCa_zC/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -922,7 +930,8 @@
    "avail": "yes",
    "watt": 615,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -931,7 +940,8 @@
    "avail": "no",
    "watt": 620,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -949,7 +959,8 @@
    "avail": "yes",
    "watt": 630,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1150,7 +1161,8 @@
    "avail": "yes",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1177,7 +1189,8 @@
    "avail": "yes",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1186,7 +1199,8 @@
    "avail": "soon",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1195,7 +1209,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1231,7 +1246,8 @@
    "avail": "no",
    "kw": 10,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1xqaaS458BIQN3EPtkBIAJ7FKDAJQLOtY/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1258,7 +1274,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1276,7 +1293,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1667,15 +1685,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 12,
-   "ph": 3,
-   "hv": false
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-20K-SG05LP3-EU-SM2 (20 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "soon",
@@ -1685,12 +1694,23 @@
   },
   {
    "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-8K-SG05LP1-EU-AM2-PLUS (8 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "no",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1717,7 +1737,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1735,7 +1756,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1744,7 +1766,8 @@
    "avail": "no",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1771,7 +1794,8 @@
    "avail": "soon",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -1798,7 +1822,8 @@
    "avail": "no",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "bat",
@@ -1850,14 +1875,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kwh": 11.8,
-   "hv": false
-  },
-  {
-   "cat": "bat",
    "model": "Система керування Deye BOS-G-PDU-2 (BMS) для Deye BOS-G-Pack5.1",
    "sup": "Atmo",
    "avail": "no",
@@ -1866,17 +1883,17 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна стійка Deye BOS-A-Rack14 для Deye BOS-A-Pack7.68",
+   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
    "sup": "Atmo",
    "avail": "soon",
-   "kwh": null,
-   "hv": true
+   "kwh": 11.8,
+   "hv": false
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-GM5.1",
+   "model": "Акумуляторна стійка Deye BOS-A-Rack14 для Deye BOS-A-Pack7.68",
    "sup": "Atmo",
-   "avail": "no",
+   "avail": "soon",
    "kwh": null,
    "hv": true
   },
@@ -1898,6 +1915,14 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-GM5.1",
+   "sup": "Atmo",
+   "avail": "no",
+   "kwh": null,
+   "hv": true
+  },
+  {
+   "cat": "bat",
    "model": "Акумуляторний блок Deye HV BOS-A-Pack7.68 (7,68 кВт·год/38,4 В)",
    "sup": "Atmo",
    "avail": "no",
@@ -1912,7 +1937,7 @@
    "watt": 630,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view"
+   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1922,7 +1947,7 @@
    "watt": 610,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view"
+   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1931,7 +1956,8 @@
    "avail": "yes",
    "watt": 575,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1950,7 +1976,7 @@
    "watt": 645,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view"
+   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1960,7 +1986,7 @@
    "watt": 615,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1970,7 +1996,7 @@
    "watt": 635,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view"
+   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1979,7 +2005,8 @@
    "avail": "yes",
    "watt": 615,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1988,7 +2015,8 @@
    "avail": "yes",
    "watt": 450,
    "dim": null,
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1997,7 +2025,8 @@
    "avail": "yes",
    "watt": 625,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2006,26 +2035,8 @@
    "avail": "yes",
    "watt": 630,
    "dim": null,
-   "size": "large"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Longi LR8-66HGD-620, 620Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 620,
-   "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-48HE455 455 Wp N-Type Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 455,
-   "dim": null,
-   "size": "small"
+   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2035,17 +2046,17 @@
    "watt": 650,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
+   "model": "PV модуль Tongwei Solar TWMNH-48HE455 455 Wp N-Type Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 645,
+   "watt": 455,
    "dim": null,
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1gELsu3udRZ0ZQxKyi7ba6_TPlwRH8PoI/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2055,7 +2066,17 @@
    "watt": 630,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view"
+   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR8-66HGD-620, 620Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 620,
+   "dim": null,
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2073,7 +2094,8 @@
    "avail": "yes",
    "watt": 635,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2083,7 +2105,7 @@
    "watt": 620,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view"
+   "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2093,7 +2115,17 @@
    "watt": 480,
    "dim": null,
    "size": "med",
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2112,7 +2144,7 @@
    "watt": 590,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1eSkLlyrdzWbX8Qq-mQu1lP_oOokyCQLM/view"
+   "ds": "https://drive.google.com/file/d/1eSkLlyrdzWbX8Qq-mQu1lP_oOokyCQLM/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2122,7 +2154,7 @@
    "watt": 445,
    "dim": null,
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view"
+   "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2150,7 +2182,7 @@
    "watt": 465,
    "dim": null,
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2160,7 +2192,7 @@
    "watt": 485,
    "dim": null,
    "size": "med",
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2180,7 +2212,7 @@
    "watt": 460,
    "dim": null,
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2199,7 +2231,8 @@
    "avail": "soon",
    "watt": 505,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1KiUTf4rHfDojKZl9mR1dIvhUaiqGMsQc/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2226,7 +2259,8 @@
    "avail": "no",
    "watt": 450,
    "dim": null,
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2245,7 +2279,7 @@
    "watt": 465,
    "dim": null,
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2254,7 +2288,8 @@
    "avail": "soon",
    "watt": 635,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2291,7 +2326,8 @@
    "avail": "no",
    "watt": 450,
    "dim": null,
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2309,7 +2345,8 @@
    "avail": "no",
    "watt": 590,
    "dim": null,
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1I_AjCtVIM75JJSzLy3haKoXjg2gSYIe5/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2319,7 +2356,7 @@
    "watt": 620,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view"
+   "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2347,7 +2384,7 @@
    "watt": 460,
    "dim": null,
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2357,7 +2394,7 @@
    "watt": 620,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view"
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2367,7 +2404,7 @@
    "watt": 645,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2377,7 +2414,7 @@
    "watt": 650,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2387,7 +2424,7 @@
    "watt": 485,
    "dim": null,
    "size": "med",
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2396,7 +2433,8 @@
    "avail": "no",
    "watt": 470,
    "dim": null,
-   "size": "med"
+   "size": "med",
+   "ds": "https://drive.google.com/file/d/1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2405,7 +2443,8 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2414,7 +2453,8 @@
    "avail": "yes",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2423,7 +2463,8 @@
    "avail": "soon",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2432,7 +2473,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2450,7 +2492,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2459,7 +2502,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2624,7 +2668,7 @@
    "watt": 615,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2634,7 +2678,7 @@
    "watt": 620,
    "dim": null,
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2649,7 +2693,7 @@
    "cat": "pan",
    "model": "Сонячна панель ReneSola RS9-720-730 NBG-E1 Двостороння (720 Вт)",
    "sup": "Intersolar",
-   "avail": "soon",
+   "avail": "yes",
    "watt": 720,
    "dim": null,
    "size": "large"
@@ -2661,16 +2705,18 @@
    "avail": "soon",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
    "model": "Однофазний інвертор Deye SUN 10-K-SG02LP1-EU AM3-P (10кВт/48В)",
    "sup": "Intersolar",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2688,7 +2734,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2697,7 +2744,8 @@
    "avail": "soon",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2706,7 +2754,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2724,7 +2773,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2923,7 +2973,8 @@
    "avail": "soon",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2941,7 +2992,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2950,7 +3002,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2959,7 +3012,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3432,7 +3486,8 @@
    "avail": "yes",
    "watt": 450,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3442,7 +3497,7 @@
    "watt": 590,
    "dim": "2274×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view"
+   "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3452,7 +3507,7 @@
    "watt": 620,
    "dim": "2382×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view"
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3462,7 +3517,7 @@
    "watt": 625,
    "dim": "2382×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view"
+   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3472,7 +3527,7 @@
    "watt": 630,
    "dim": "2382×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
+   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3491,7 +3546,7 @@
    "watt": 450,
    "dim": "1762×1134",
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view"
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3501,7 +3556,7 @@
    "watt": 465,
    "dim": "1762×1134",
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz/view"
+   "ds": "https://drive.google.com/file/d/1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3511,7 +3566,7 @@
    "watt": 460,
    "dim": "1762×1134",
    "size": "small",
-   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view"
+   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3521,7 +3576,7 @@
    "watt": 620,
    "dim": "2382×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3567,7 +3622,8 @@
    "avail": "soon",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3576,7 +3632,8 @@
    "avail": "soon",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3585,7 +3642,8 @@
    "avail": "soon",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3594,7 +3652,8 @@
    "avail": "yes",
    "kw": 12,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3603,7 +3662,8 @@
    "avail": "yes",
    "kw": 10,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1xqaaS458BIQN3EPtkBIAJ7FKDAJQLOtY/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3612,7 +3672,8 @@
    "avail": "soon",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3621,7 +3682,8 @@
    "avail": "soon",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
