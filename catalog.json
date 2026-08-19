@@ -92,7 +92,12 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 440,
+    "cur": "у.е.",
+    "vat": 500
+   }
   },
   {
    "cat": "inv",
@@ -101,7 +106,12 @@
    "avail": "no",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 550,
+    "cur": "у.е.",
+    "vat": 670
+   }
   },
   {
    "cat": "inv",
@@ -110,7 +120,12 @@
    "avail": "no",
    "kw": 10,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 590,
+    "cur": "у.е.",
+    "vat": 740
+   }
   },
   {
    "cat": "inv",
@@ -128,7 +143,11 @@
    "avail": "no",
    "kw": 10,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 630,
+    "cur": null
+   }
   },
   {
    "cat": "inv",
@@ -137,7 +156,12 @@
    "avail": "no",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 600,
+    "cur": "у.е.",
+    "vat": 725
+   }
   },
   {
    "cat": "inv",
@@ -155,7 +179,12 @@
    "avail": "no",
    "kw": 15,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 780,
+    "cur": "у.е.",
+    "vat": 820
+   }
   },
   {
    "cat": "inv",
@@ -164,7 +193,11 @@
    "avail": "no",
    "kw": 18,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "vat": 950,
+    "cur": "у.е."
+   }
   },
   {
    "cat": "inv",
@@ -173,7 +206,12 @@
    "avail": "yes",
    "kw": 20,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 800,
+    "cur": "у.е.",
+    "vat": 910
+   }
   },
   {
    "cat": "inv",
@@ -182,7 +220,12 @@
    "avail": "yes",
    "kw": 25,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 885,
+    "cur": "у.е.",
+    "vat": 1060
+   }
   },
   {
    "cat": "inv",
@@ -191,7 +234,12 @@
    "avail": "yes",
    "kw": 30,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1100,
+    "cur": "у.е.",
+    "vat": 1270
+   }
   },
   {
    "cat": "inv",
@@ -200,7 +248,12 @@
    "avail": "yes",
    "kw": 35,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1110,
+    "cur": "у.е.",
+    "vat": 1340
+   }
   },
   {
    "cat": "inv",
@@ -209,7 +262,11 @@
    "avail": "no",
    "kw": 45,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "vat": 2100,
+    "cur": "у.е."
+   }
   },
   {
    "cat": "inv",
@@ -218,7 +275,12 @@
    "avail": "yes",
    "kw": 50,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1570,
+    "cur": "у.е.",
+    "vat": 1880
+   }
   },
   {
    "cat": "inv",
@@ -227,7 +289,12 @@
    "avail": "yes",
    "kw": 50,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1370,
+    "cur": "у.е.",
+    "vat": 1880
+   }
   },
   {
    "cat": "inv",
@@ -236,7 +303,12 @@
    "avail": "yes",
    "kw": 60,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2020,
+    "cur": "у.е.",
+    "vat": 2430
+   }
   },
   {
    "cat": "inv",
@@ -245,7 +317,12 @@
    "avail": "yes",
    "kw": 80,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2350,
+    "cur": "у.е.",
+    "vat": 2790
+   }
   },
   {
    "cat": "inv",
@@ -254,7 +331,12 @@
    "avail": "yes",
    "kw": 100,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2590,
+    "cur": "у.е.",
+    "vat": 2770
+   }
   },
   {
    "cat": "inv",
@@ -263,7 +345,12 @@
    "avail": "no",
    "kw": 110,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2650,
+    "cur": "у.е.",
+    "vat": 3200
+   }
   },
   {
    "cat": "inv",
@@ -272,7 +359,12 @@
    "avail": "yes",
    "kw": 120,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 3400,
+    "cur": "у.е.",
+    "vat": 3760
+   }
   },
   {
    "cat": "inv",
@@ -281,7 +373,12 @@
    "avail": "yes",
    "kw": 125,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 3570,
+    "cur": "у.е.",
+    "vat": 4200
+   }
   },
   {
    "cat": "inv",
@@ -290,7 +387,12 @@
    "avail": "no",
    "kw": 130,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 3950,
+    "cur": "у.е.",
+    "vat": 4550
+   }
   },
   {
    "cat": "inv",
@@ -299,7 +401,12 @@
    "avail": "yes",
    "kw": 135,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 4200,
+    "cur": "у.е.",
+    "vat": 4580
+   }
   },
   {
    "cat": "pan",
@@ -308,7 +415,12 @@
    "avail": "yes",
    "watt": 380,
    "dim": "1692×1029",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 57,
+    "cur": "у.е.",
+    "vat": 66
+   }
   },
   {
    "cat": "pan",
@@ -317,7 +429,12 @@
    "avail": "no",
    "watt": 435,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 71,
+    "cur": "у.е.",
+    "vat": 71
+   }
   },
   {
    "cat": "pan",
@@ -327,6 +444,11 @@
    "watt": 450,
    "dim": "1762×1134",
    "size": "small",
+   "price": {
+    "cash": 80,
+    "cur": "у.е.",
+    "vat": 80
+   },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
@@ -336,7 +458,12 @@
    "avail": "no",
    "watt": 445,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 83,
+    "cur": "у.е.",
+    "vat": 83
+   }
   },
   {
    "cat": "pan",
@@ -354,7 +481,12 @@
    "avail": "no",
    "watt": 485,
    "dim": "1906×1134",
-   "size": "med"
+   "size": "med",
+   "price": {
+    "cash": 73,
+    "cur": "у.е.",
+    "vat": 73
+   }
   },
   {
    "cat": "pan",
@@ -363,7 +495,12 @@
    "avail": "no",
    "watt": 540,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 106,
+    "cur": "у.е.",
+    "vat": 106
+   }
   },
   {
    "cat": "pan",
@@ -372,7 +509,11 @@
    "avail": "no",
    "watt": 550,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "vat": 95,
+    "cur": "у.е."
+   }
   },
   {
    "cat": "pan",
@@ -381,7 +522,12 @@
    "avail": "no",
    "watt": 575,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 120,
+    "cur": "у.е.",
+    "vat": 120
+   }
   },
   {
    "cat": "pan",
@@ -390,7 +536,12 @@
    "avail": "no",
    "watt": 580,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 100,
+    "cur": "у.е.",
+    "vat": 100
+   }
   },
   {
    "cat": "pan",
@@ -399,7 +550,12 @@
    "avail": "no",
    "watt": 585,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 111,
+    "cur": "у.е.",
+    "vat": 111
+   }
   },
   {
    "cat": "pan",
@@ -408,7 +564,12 @@
    "avail": "no",
    "watt": 585,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 101,
+    "cur": "у.е.",
+    "vat": 101
+   }
   },
   {
    "cat": "pan",
@@ -418,6 +579,11 @@
    "watt": 590,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 106,
+    "cur": "у.е.",
+    "vat": 106
+   },
    "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view"
   },
   {
@@ -428,6 +594,11 @@
    "watt": 590,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 106,
+    "cur": "у.е.",
+    "vat": 128
+   },
    "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view?usp=sharing"
   },
   {
@@ -438,6 +609,11 @@
    "watt": 590,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 99,
+    "cur": "у.е.",
+    "vat": 99
+   },
    "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view?usp=sharing"
   },
   {
@@ -467,7 +643,12 @@
    "avail": "no",
    "watt": 430,
    "dim": "1722×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 92,
+    "cur": "у.е.",
+    "vat": 92
+   }
   },
   {
    "cat": "pan",
@@ -476,7 +657,12 @@
    "avail": "no",
    "watt": 430,
    "dim": "1722×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 77,
+    "cur": "у.е.",
+    "vat": 77
+   }
   },
   {
    "cat": "pan",
@@ -485,7 +671,12 @@
    "avail": "no",
    "watt": 435,
    "dim": "1722×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 73,
+    "cur": "у.е.",
+    "vat": 73
+   }
   },
   {
    "cat": "pan",
@@ -494,7 +685,12 @@
    "avail": "no",
    "watt": 440,
    "dim": "1722×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 77,
+    "cur": "у.е.",
+    "vat": 77
+   }
   },
   {
    "cat": "pan",
@@ -503,7 +699,12 @@
    "avail": "no",
    "watt": 440,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 84,
+    "cur": "у.е.",
+    "vat": 84
+   }
   },
   {
    "cat": "pan",
@@ -513,6 +714,11 @@
    "watt": 445,
    "dim": "1762×1134",
    "size": "small",
+   "price": {
+    "cash": 102,
+    "cur": "у.е.",
+    "vat": 102
+   },
    "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
   },
   {
@@ -522,7 +728,12 @@
    "avail": "no",
    "watt": 450,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 87,
+    "cur": "у.е.",
+    "vat": 87
+   }
   },
   {
    "cat": "pan",
@@ -532,6 +743,11 @@
    "watt": 450,
    "dim": "2093×1038",
    "size": "small",
+   "price": {
+    "cash": 72,
+    "cur": "у.е.",
+    "vat": 78
+   },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
@@ -542,6 +758,11 @@
    "watt": 455,
    "dim": "2093×1038",
    "size": "small",
+   "price": {
+    "cash": 75,
+    "cur": "у.е.",
+    "vat": 84
+   },
    "ds": "https://drive.google.com/file/d/1r5FACncUZe5tG2zlRI7j5RS2vjSdzbhd/view?usp=sharing"
   },
   {
@@ -551,7 +772,12 @@
    "avail": "no",
    "watt": 460,
    "dim": "1800×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 89,
+    "cur": "у.е.",
+    "vat": 89
+   }
   },
   {
    "cat": "pan",
@@ -560,7 +786,12 @@
    "avail": "no",
    "watt": 475,
    "dim": "1800×1134",
-   "size": "med"
+   "size": "med",
+   "price": {
+    "cash": 92,
+    "cur": "у.е.",
+    "vat": 92
+   }
   },
   {
    "cat": "pan",
@@ -570,6 +801,11 @@
    "watt": 480,
    "dim": "1800×1134",
    "size": "med",
+   "price": {
+    "cash": 158,
+    "cur": "у.е.",
+    "vat": 158
+   },
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
   },
   {
@@ -580,6 +816,11 @@
    "watt": 485,
    "dim": "1800×1134",
    "size": "med",
+   "price": {
+    "cash": 162,
+    "cur": "у.е.",
+    "vat": 162
+   },
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
   {
@@ -589,7 +830,11 @@
    "avail": "no",
    "watt": 495,
    "dim": "2093×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "vat": 79.2,
+    "cur": "у.е."
+   }
   },
   {
    "cat": "pan",
@@ -598,7 +843,12 @@
    "avail": "no",
    "watt": 500,
    "dim": "2093×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 83,
+    "cur": "у.е.",
+    "vat": 92
+   }
   },
   {
    "cat": "pan",
@@ -607,7 +857,12 @@
    "avail": "no",
    "watt": 530,
    "dim": "2094×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 94,
+    "cur": "у.е.",
+    "vat": 94
+   }
   },
   {
    "cat": "pan",
@@ -616,7 +871,12 @@
    "avail": "no",
    "watt": 535,
    "dim": "2280×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 99,
+    "cur": "у.е.",
+    "vat": 99
+   }
   },
   {
    "cat": "pan",
@@ -625,7 +885,12 @@
    "avail": "no",
    "watt": 555,
    "dim": "2278×1133",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 95,
+    "cur": "у.е.",
+    "vat": 95
+   }
   },
   {
    "cat": "pan",
@@ -634,7 +899,12 @@
    "avail": "no",
    "watt": 565,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 108,
+    "cur": "у.е.",
+    "vat": 108
+   }
   },
   {
    "cat": "pan",
@@ -652,7 +922,12 @@
    "avail": "no",
    "watt": 570,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 136,
+    "cur": "у.е.",
+    "vat": 136
+   }
   },
   {
    "cat": "pan",
@@ -661,7 +936,12 @@
    "avail": "no",
    "watt": 580,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 108,
+    "cur": "у.е.",
+    "vat": 108
+   }
   },
   {
    "cat": "pan",
@@ -670,7 +950,12 @@
    "avail": "no",
    "watt": 585,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 101,
+    "cur": "у.е.",
+    "vat": 101
+   }
   },
   {
    "cat": "pan",
@@ -679,7 +964,12 @@
    "avail": "no",
    "watt": 595,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 105,
+    "cur": "у.е.",
+    "vat": 105
+   }
   },
   {
    "cat": "pan",
@@ -688,7 +978,12 @@
    "avail": "no",
    "watt": 590,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 109,
+    "cur": "у.е.",
+    "vat": 109
+   }
   },
   {
    "cat": "pan",
@@ -715,7 +1010,12 @@
    "avail": "no",
    "watt": 610,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 95.4,
+    "cur": "у.е.",
+    "vat": 95.4
+   }
   },
   {
    "cat": "pan",
@@ -725,6 +1025,11 @@
    "watt": 620,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 96,
+    "cur": "у.е.",
+    "vat": 96
+   },
    "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
@@ -734,7 +1039,12 @@
    "avail": "no",
    "watt": 610,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 112,
+    "cur": "у.е.",
+    "vat": 112
+   }
   },
   {
    "cat": "pan",
@@ -743,7 +1053,12 @@
    "avail": "no",
    "watt": 610,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 109,
+    "cur": "у.е.",
+    "vat": 109
+   }
   },
   {
    "cat": "pan",
@@ -753,6 +1068,11 @@
    "watt": 620,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 118,
+    "cur": "у.е.",
+    "vat": 146
+   },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
@@ -763,6 +1083,11 @@
    "watt": 615,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 94.5,
+    "cur": "у.е.",
+    "vat": 94.5
+   },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
   },
   {
@@ -783,6 +1108,11 @@
    "watt": 615,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 113,
+    "cur": "у.е.",
+    "vat": 113
+   },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
   },
   {
@@ -793,6 +1123,11 @@
    "watt": 615,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 114,
+    "cur": "у.е.",
+    "vat": 114
+   },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
@@ -803,6 +1138,11 @@
    "watt": 615,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 125,
+    "cur": "у.е.",
+    "vat": 140
+   },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
@@ -813,6 +1153,11 @@
    "watt": 645,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 112,
+    "cur": "у.е.",
+    "vat": 112
+   },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
   },
   {
@@ -822,7 +1167,12 @@
    "avail": "yes",
    "watt": 640,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 122,
+    "cur": "у.е.",
+    "vat": 148
+   }
   },
   {
    "cat": "pan",
@@ -832,6 +1182,11 @@
    "watt": 645,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 165,
+    "cur": "у.е.",
+    "vat": 165
+   },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
@@ -841,7 +1196,12 @@
    "avail": "no",
    "watt": 640,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 122,
+    "cur": "у.е.",
+    "vat": 122
+   }
   },
   {
    "cat": "pan",
@@ -851,6 +1211,11 @@
    "watt": 645,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 127,
+    "cur": "у.е.",
+    "vat": 127
+   },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
   },
   {
@@ -871,6 +1236,11 @@
    "watt": 650,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 168,
+    "cur": "у.е.",
+    "vat": 168
+   },
    "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
   {
@@ -881,6 +1251,11 @@
    "watt": 435,
    "dim": "1762×1134",
    "size": "small",
+   "price": {
+    "cash": 78,
+    "cur": "у.е.",
+    "vat": 78
+   },
    "ds": "https://drive.google.com/file/d/1eWYK272pHO0wg-fr8sRCQpLD3sdFfE8z/view?usp=sharing"
   },
   {
@@ -891,6 +1266,11 @@
    "watt": 450,
    "dim": "2102×1040",
    "size": "small",
+   "price": {
+    "cash": 195,
+    "cur": "у.е.",
+    "vat": 195
+   },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
   {
@@ -901,6 +1281,11 @@
    "watt": 460,
    "dim": "1762×1134",
    "size": "small",
+   "price": {
+    "cash": 79,
+    "cur": "у.е.",
+    "vat": 95
+   },
    "ds": "https://drive.google.com/file/d/1JI507HdpAT3inYaS9X4b02U-t0w7uuOi/view?usp=sharing"
   },
   {
@@ -911,6 +1296,11 @@
    "watt": 575,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 91,
+    "cur": "у.е.",
+    "vat": 91
+   },
    "ds": "https://drive.google.com/file/d/1v1uwEvN0jQ1EmXwbPaUMv0sOfuMWsmhu/view?usp=sharing"
   },
   {
@@ -931,6 +1321,11 @@
    "watt": 615,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 101,
+    "cur": "у.е.",
+    "vat": 101
+   },
    "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
@@ -941,6 +1336,11 @@
    "watt": 620,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 105,
+    "cur": "у.е.",
+    "vat": 105
+   },
    "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
@@ -950,7 +1350,12 @@
    "avail": "no",
    "watt": 620,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 103,
+    "cur": "у.е.",
+    "vat": 103
+   }
   },
   {
    "cat": "pan",
@@ -960,6 +1365,11 @@
    "watt": 630,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 114,
+    "cur": "у.е.",
+    "vat": 145
+   },
    "ds": "https://drive.google.com/file/d/1tPI_kaMEPEAubPCdyq8mQP93RZf_U-qg/view?usp=sharing"
   },
   {
@@ -969,7 +1379,12 @@
    "avail": "yes",
    "watt": 635,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 115,
+    "cur": "у.е.",
+    "vat": 145
+   }
   },
   {
    "cat": "pan",
@@ -978,7 +1393,12 @@
    "avail": "no",
    "watt": 435,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 69,
+    "cur": "у.е.",
+    "vat": 69
+   }
   },
   {
    "cat": "pan",
@@ -987,7 +1407,12 @@
    "avail": "no",
    "watt": 445,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 76,
+    "cur": "у.е.",
+    "vat": 76
+   }
   },
   {
    "cat": "pan",
@@ -996,7 +1421,12 @@
    "avail": "no",
    "watt": 455,
    "dim": "1762×1134",
-   "size": "small"
+   "size": "small",
+   "price": {
+    "cash": 95,
+    "cur": "у.е.",
+    "vat": 95
+   }
   },
   {
    "cat": "pan",
@@ -1005,7 +1435,12 @@
    "avail": "no",
    "watt": 500,
    "dim": "2093×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 86,
+    "cur": "у.е.",
+    "vat": 86
+   }
   },
   {
    "cat": "pan",
@@ -1014,7 +1449,12 @@
    "avail": "no",
    "watt": 505,
    "dim": "2093×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 88,
+    "cur": "у.е.",
+    "vat": 88
+   }
   },
   {
    "cat": "pan",
@@ -1023,7 +1463,12 @@
    "avail": "no",
    "watt": 555,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 95,
+    "cur": "у.е.",
+    "vat": 95
+   }
   },
   {
    "cat": "pan",
@@ -1041,7 +1486,12 @@
    "avail": "no",
    "watt": 585,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 115,
+    "cur": "у.е.",
+    "vat": 115
+   }
   },
   {
    "cat": "pan",
@@ -1051,6 +1501,11 @@
    "watt": 590,
    "dim": "2278×1134",
    "size": "large",
+   "price": {
+    "cash": 88.5,
+    "cur": "у.е.",
+    "vat": 88.5
+   },
    "ds": "https://drive.google.com/file/d/1eSkLlyrdzWbX8Qq-mQu1lP_oOokyCQLM/view?usp=sharing"
   },
   {
@@ -1060,7 +1515,12 @@
    "avail": "no",
    "watt": 595,
    "dim": "2278×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 98,
+    "cur": "у.е.",
+    "vat": 98
+   }
   },
   {
    "cat": "pan",
@@ -1070,6 +1530,11 @@
    "watt": 610,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 98,
+    "cur": "у.е.",
+    "vat": 98
+   },
    "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view"
   },
   {
@@ -1080,6 +1545,11 @@
    "watt": 620,
    "dim": "2382×1134",
    "size": "large",
+   "price": {
+    "cash": 106,
+    "cur": "у.е.",
+    "vat": 106
+   },
    "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view?usp=sharing"
   },
   {
@@ -1089,7 +1559,12 @@
    "avail": "no",
    "watt": 615,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 105.6,
+    "cur": "у.е.",
+    "vat": 105.6
+   }
   },
   {
    "cat": "pan",
@@ -1098,7 +1573,12 @@
    "avail": "no",
    "watt": 625,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "price": {
+    "cash": 106,
+    "cur": "у.е.",
+    "vat": 106
+   }
   },
   {
    "cat": "inv",
@@ -1107,7 +1587,12 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 800,
+    "cur": "у.е.",
+    "vat": 860
+   }
   },
   {
    "cat": "inv",
@@ -1116,7 +1601,12 @@
    "avail": "yes",
    "kw": 5,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 850,
+    "cur": "у.е.",
+    "vat": 950
+   }
   },
   {
    "cat": "inv",
@@ -1125,7 +1615,12 @@
    "avail": "soon",
    "kw": 5,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 850,
+    "cur": "у.е.",
+    "vat": 950
+   }
   },
   {
    "cat": "inv",
@@ -1134,7 +1629,12 @@
    "avail": "no",
    "kw": 5,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 950,
+    "cur": "у.е.",
+    "vat": 1000
+   }
   },
   {
    "cat": "inv",
@@ -1143,7 +1643,12 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 950,
+    "cur": "у.е.",
+    "vat": 1090
+   }
   },
   {
    "cat": "inv",
@@ -1152,7 +1657,12 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 890,
+    "cur": "у.е.",
+    "vat": 890
+   }
   },
   {
    "cat": "inv",
@@ -1162,6 +1672,11 @@
    "kw": 6,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 948,
+    "cur": "у.е.",
+    "vat": 1020
+   },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
@@ -1171,7 +1686,11 @@
    "avail": "no",
    "kw": 6,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "vat": 1200,
+    "cur": "у.е."
+   }
   },
   {
    "cat": "inv",
@@ -1180,7 +1699,12 @@
    "avail": "no",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1480,
+    "cur": "у.е.",
+    "vat": 1670
+   }
   },
   {
    "cat": "inv",
@@ -1190,6 +1714,11 @@
    "kw": 8,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 1190,
+    "cur": "у.е.",
+    "vat": 1348
+   },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
@@ -1200,6 +1729,11 @@
    "kw": 10,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 1600,
+    "cur": "у.е.",
+    "vat": 1740
+   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -1210,6 +1744,11 @@
    "kw": 12,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 1650,
+    "cur": "у.е.",
+    "vat": 1850
+   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -1219,7 +1758,12 @@
    "avail": "no",
    "kw": 14,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1900,
+    "cur": "у.е.",
+    "vat": 2200
+   }
   },
   {
    "cat": "inv",
@@ -1228,7 +1772,12 @@
    "avail": "yes",
    "kw": 16,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1950,
+    "cur": "у.е.",
+    "vat": 2300
+   }
   },
   {
    "cat": "inv",
@@ -1237,7 +1786,12 @@
    "avail": "no",
    "kw": 18,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2250,
+    "cur": "у.е.",
+    "vat": 2900
+   }
   },
   {
    "cat": "inv",
@@ -1247,6 +1801,11 @@
    "kw": 10,
    "ph": 3,
    "hv": false,
+   "price": {
+    "cash": 2000,
+    "cur": "у.е.",
+    "vat": 2150
+   },
    "ds": "https://drive.google.com/file/d/1xqaaS458BIQN3EPtkBIAJ7FKDAJQLOtY/view?usp=sharing"
   },
   {
@@ -1256,7 +1815,12 @@
    "avail": "yes",
    "kw": 10,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1600,
+    "cur": "у.е.",
+    "vat": 1800
+   }
   },
   {
    "cat": "inv",
@@ -1265,7 +1829,12 @@
    "avail": "no",
    "kw": 12,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1980,
+    "cur": "у.е.",
+    "vat": 2200
+   }
   },
   {
    "cat": "inv",
@@ -1275,6 +1844,11 @@
    "kw": 12,
    "ph": 3,
    "hv": false,
+   "price": {
+    "cash": 1700,
+    "cur": "у.е.",
+    "vat": 1900
+   },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
@@ -1284,7 +1858,12 @@
    "avail": "no",
    "kw": 14,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2050,
+    "cur": "у.е.",
+    "vat": 2320
+   }
   },
   {
    "cat": "inv",
@@ -1294,6 +1873,11 @@
    "kw": 15,
    "ph": 3,
    "hv": false,
+   "price": {
+    "cash": 2100,
+    "cur": "у.е.",
+    "vat": 2300
+   },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
@@ -1303,7 +1887,12 @@
    "avail": "no",
    "kw": 16,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2550,
+    "cur": "у.е.",
+    "vat": 2950
+   }
   },
   {
    "cat": "inv",
@@ -1312,7 +1901,12 @@
    "avail": "no",
    "kw": 18,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2550,
+    "cur": "у.е.",
+    "vat": 2850
+   }
   },
   {
    "cat": "inv",
@@ -1321,7 +1915,12 @@
    "avail": "yes",
    "kw": 20,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2600,
+    "cur": "у.е.",
+    "vat": 2950
+   }
   },
   {
    "cat": "inv",
@@ -1330,7 +1929,12 @@
    "avail": "no",
    "kw": 10,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1400,
+    "cur": "у.е.",
+    "vat": 1500
+   }
   },
   {
    "cat": "inv",
@@ -1339,7 +1943,12 @@
    "avail": "no",
    "kw": 15,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1720,
+    "cur": "у.е.",
+    "vat": 1930
+   }
   },
   {
    "cat": "inv",
@@ -1348,7 +1957,12 @@
    "avail": "soon",
    "kw": 20,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1750,
+    "cur": "у.е.",
+    "vat": 2000
+   }
   },
   {
    "cat": "inv",
@@ -1357,7 +1971,12 @@
    "avail": "soon",
    "kw": 25,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1850,
+    "cur": "у.е.",
+    "vat": 2050
+   }
   },
   {
    "cat": "inv",
@@ -1366,7 +1985,12 @@
    "avail": "no",
    "kw": 30,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 3690,
+    "cur": "у.е.",
+    "vat": 3950
+   }
   },
   {
    "cat": "inv",
@@ -1375,7 +1999,12 @@
    "avail": "soon",
    "kw": 30,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 2700,
+    "cur": "у.е.",
+    "vat": 3150
+   }
   },
   {
    "cat": "inv",
@@ -1393,7 +2022,12 @@
    "avail": "yes",
    "kw": 50,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 4300,
+    "cur": "у.е.",
+    "vat": 4950
+   }
   },
   {
    "cat": "inv",
@@ -1402,7 +2036,12 @@
    "avail": "no",
    "kw": 60,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 6070,
+    "cur": "у.е.",
+    "vat": 7150
+   }
   },
   {
    "cat": "inv",
@@ -1411,7 +2050,12 @@
    "avail": "yes",
    "kw": 80,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 5900,
+    "cur": "у.е.",
+    "vat": 6700
+   }
   },
   {
    "cat": "inv",
@@ -1420,7 +2064,12 @@
    "avail": "no",
    "kw": 100,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 7980,
+    "cur": "у.е.",
+    "vat": 9200
+   }
   },
   {
    "cat": "inv",
@@ -1429,7 +2078,12 @@
    "avail": "no",
    "kw": 125,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 8290,
+    "cur": "у.е.",
+    "vat": 9500
+   }
   },
   {
    "cat": "inv",
@@ -1438,7 +2092,12 @@
    "avail": "yes",
    "kw": 100,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 4020,
+    "cur": "у.е.",
+    "vat": 4635
+   }
   },
   {
    "cat": "inv",
@@ -1447,7 +2106,12 @@
    "avail": "yes",
    "kw": 125,
    "ph": 3,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 4300,
+    "cur": "у.е.",
+    "vat": 4700
+   }
   },
   {
    "cat": "bat",
@@ -1455,7 +2119,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 5,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 830,
+    "cur": "у.е.",
+    "vat": 900
+   }
   },
   {
    "cat": "bat",
@@ -1463,7 +2132,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": 5,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 730,
+    "cur": "у.е.",
+    "vat": 850
+   }
   },
   {
    "cat": "bat",
@@ -1471,7 +2145,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 5,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 790,
+    "cur": "у.е.",
+    "vat": 870
+   }
   },
   {
    "cat": "bat",
@@ -1479,7 +2158,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 5.12,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 840,
+    "cur": "у.е.",
+    "vat": 900
+   }
   },
   {
    "cat": "bat",
@@ -1487,7 +2171,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": null,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1050,
+    "cur": "у.е.",
+    "vat": 1300
+   }
   },
   {
    "cat": "bat",
@@ -1495,7 +2184,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": 10.64,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1730,
+    "cur": "у.е.",
+    "vat": 1950
+   }
   },
   {
    "cat": "bat",
@@ -1503,15 +2197,25 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": 11.8,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1620,
+    "cur": "у.е.",
+    "vat": 1750
+   }
   },
   {
    "cat": "bat",
    "model": "Аккумуляторная батарея Deye LiFePO4 RW-F16, 51,2V 314Ah 16KW, BMS125A до 32 parallel, CAN&RS485, IP20, 6000Cycles,(480*830*235), 122kg",
    "sup": "YugTorg",
-   "avail": "yes",
+   "avail": "no",
    "kwh": 16,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1980,
+    "cur": "у.е.",
+    "vat": 2200
+   }
   },
   {
    "cat": "bat",
@@ -1519,7 +2223,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 16,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1950,
+    "cur": "у.е.",
+    "vat": 2300
+   }
   },
   {
    "cat": "bat",
@@ -1527,7 +2236,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": 16,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1850,
+    "cur": "у.е.",
+    "vat": 2400
+   }
   },
   {
    "cat": "bat",
@@ -1535,7 +2249,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 800,
+    "cur": "у.е.",
+    "vat": 950
+   }
   },
   {
    "cat": "bat",
@@ -1543,7 +2262,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 750,
+    "cur": "у.е.",
+    "vat": 850
+   }
   },
   {
    "cat": "bat",
@@ -1551,7 +2275,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 800,
+    "cur": "у.е.",
+    "vat": 960
+   }
   },
   {
    "cat": "bat",
@@ -1559,7 +2288,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 750,
+    "cur": "у.е.",
+    "vat": 900
+   }
   },
   {
    "cat": "bat",
@@ -1567,7 +2301,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 5.12,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 830,
+    "cur": "у.е.",
+    "vat": 910
+   }
   },
   {
    "cat": "bat",
@@ -1575,7 +2314,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 770,
+    "cur": "у.е.",
+    "vat": 920
+   }
   },
   {
    "cat": "bat",
@@ -1583,7 +2327,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 800,
+    "cur": "у.е.",
+    "vat": 910
+   }
   },
   {
    "cat": "bat",
@@ -1591,7 +2340,12 @@
    "sup": "YugTorg",
    "avail": "no",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 360,
+    "cur": "у.е.",
+    "vat": 390
+   }
   },
   {
    "cat": "bat",
@@ -1599,7 +2353,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 330,
+    "cur": "у.е.",
+    "vat": 380
+   }
   },
   {
    "cat": "bat",
@@ -1607,7 +2366,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 350,
+    "cur": "у.е.",
+    "vat": 390
+   }
   },
   {
    "cat": "bat",
@@ -1615,7 +2379,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 7.68,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1300,
+    "cur": "у.е.",
+    "vat": 1520
+   }
   },
   {
    "cat": "bat",
@@ -1623,7 +2392,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1070,
+    "cur": "у.е.",
+    "vat": 1250
+   }
   },
   {
    "cat": "bat",
@@ -1631,7 +2405,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 395,
+    "cur": "у.е.",
+    "vat": 410
+   }
   },
   {
    "cat": "bat",
@@ -1639,7 +2418,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 475,
+    "cur": "у.е.",
+    "vat": 510
+   }
   },
   {
    "cat": "bat",
@@ -1647,7 +2431,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": 16.08,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 1820,
+    "cur": "у.е.",
+    "vat": 2100
+   }
   },
   {
    "cat": "bat",
@@ -1655,7 +2444,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 890,
+    "cur": "у.е.",
+    "vat": 1080
+   }
   },
   {
    "cat": "bat",
@@ -1663,7 +2457,12 @@
    "sup": "YugTorg",
    "avail": "yes",
    "kwh": null,
-   "hv": true
+   "hv": true,
+   "price": {
+    "cash": 650,
+    "cur": "у.е.",
+    "vat": 770
+   }
   },
   {
    "cat": "inv",
@@ -1676,20 +2475,6 @@
    "price": {
     "cash": 5400,
     "vat": 6480,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-25K-SG01HP3-EU-AM2 (25 кВт, 3 фази, 2 МРРТ, HV)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kw": 25,
-   "ph": 3,
-   "hv": true,
-   "price": {
-    "cash": 1700,
-    "vat": 2040,
     "cur": "$"
    }
   },
@@ -1750,6 +2535,20 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-25K-SG01HP3-EU-AM2 (25 кВт, 3 фази, 2 МРРТ, HV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 25,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cash": 1700,
+    "vat": 2040,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
@@ -2155,6 +2954,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 99.78,
+    "vat": 120.07,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -2260,21 +3074,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 99.78,
-    "vat": 120.07,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-48HE455 455 Wp N-Type Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -2290,21 +3089,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bifacial N-type (300-400mm cable)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 630,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 101.21,
-    "vat": 121.56,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR8-66HGD-620, 620Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -2317,6 +3101,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bifacial N-type (300-400mm cable)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 630,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 101.21,
+    "vat": 121.56,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2912,13 +3711,10 @@
    "cat": "inv",
    "model": "Deye SUN-20K-SG05LP3-EU-SM2",
    "sup": "Sakoenergy",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 20,
    "ph": 3,
-   "hv": false,
-   "price": {
-    "cash": 2340
-   }
+   "hv": false
   },
   {
    "cat": "inv",
