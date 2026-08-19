@@ -276,6 +276,54 @@ async function sheets() {
   return items;
 }
 
+// ---------- Датащити з довідника katalog_obladnannya (публічний gviz CSV) ----------
+// Anna веде датащити в таблиці; тут матчимо їх до позицій каталогу за КОДОМ моделі + потужністю.
+const DS_SHEET = "1ARtSVPQ9n03UZdtlP3sy9iRUUDQ3dOLvLMQSsHT75Mc";
+const sigLat = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, ""); // лише латиниця+цифри (код моделі)
+function refCode(name) { // найдовший токен з літерами+цифрами (у довіднику назви чисті)
+  let best = "";
+  for (const t of (name || "").split(/[\s,()/]+/)) {
+    if (/[a-z]/i.test(t) && /\d/.test(t)) { const c = sigLat(t); if (c.length > best.length) best = c; }
+  }
+  return best;
+}
+async function datasheets() {
+  const list = [];
+  try {
+    const res = await fetch(`https://docs.google.com/spreadsheets/d/${DS_SHEET}/gviz/tq?tqx=out:csv`, {
+      headers: { "user-agent": "Mozilla/5.0 (catalog-bot ESCORE)" }, redirect: "follow",
+    });
+    if (!res.ok) { console.warn("datasheets: HTTP " + res.status); return list; }
+    const rows = parseCSV(await res.text());
+    const head = rows[0] || []; const col = (re) => head.findIndex((h) => re.test(h || ""));
+    const iName = col(/назва/i), iDs = col(/датащит|datasheet/i), iTyp = col(/^тип$|^type$/i);
+    if (iName < 0 || iDs < 0) { console.warn("datasheets: не знайдено колонок назва/датащит"); return list; }
+    for (const r of rows.slice(1)) {
+      const name = r[iName] || "", ds = (r[iDs] || "").trim();
+      if (!/drive\.google|^https?:/i.test(ds)) continue;
+      const code = refCode(name); if (code.length < 4) continue;
+      const typ = (iTyp >= 0 ? r[iTyp] || "" : "").toLowerCase();
+      const cat = /панел|модул/.test(typ) ? "pan" : /інверт|инверт/.test(typ) ? "inv" : /акум|батар/.test(typ) ? "bat" : null;
+      list.push({ code, cat, ds, watt: parsePanelWatt(name), kw: parseInverter(name).kw, kwh: parseBattery(name).kwh });
+    }
+    console.log(`datasheets: ${list.length} рядків довідника`);
+  } catch (e) { console.warn("datasheets: " + e.message); }
+  return list;
+}
+function attachDatasheet(it, dsList) {
+  const sig = sigLat(it.model), catCode = refCode(it.model);
+  for (const d of dsList) {
+    if (d.cat && d.cat !== it.cat) continue;
+    const hit = sig.includes(d.code) || (catCode.length >= 8 && (d.code.includes(catCode) || catCode.includes(d.code)));
+    if (!hit) continue;
+    if (it.cat === "pan") { if (d.watt != null && it.watt != null && d.watt !== it.watt) continue; }
+    else if (it.cat === "inv") { if (d.kw != null && it.kw != null && d.kw !== it.kw) continue; }
+    else if (it.cat === "bat") { if (d.kwh != null && it.kwh != null && Math.abs(d.kwh - it.kwh) > 0.3) continue; }
+    return d.ds;
+  }
+  return null;
+}
+
 // ---------- main ----------
 async function main() {
   const prev = JSON.parse(readFileSync("catalog.json", "utf8"));
@@ -289,9 +337,15 @@ async function main() {
   const gotSups = new Set(allLive.map((i) => i.sup));
   const seed = (prev.items || []).filter((i) => !gotSups.has(i.sup));
   const items = [...seed, ...allLive];
-  for (const it of items) { if (!it.ds) { const ds = datasheetFor(it); if (ds) it.ds = ds; } delete it.brand; }
+  const dsList = await datasheets(); // довідник датащитів (Anna веде в katalog_obladnannya)
+  let dsCount = 0;
+  for (const it of items) {
+    if (!it.ds) { const ds = attachDatasheet(it, dsList) || datasheetFor(it); if (ds) it.ds = ds; }
+    if (it.ds) dsCount++;
+    delete it.brand;
+  }
   const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise. Altek/Vimmer/Solarity — снимок. Ціни не показуються.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
-  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length})`);
+  console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
 main();
