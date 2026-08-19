@@ -1675,7 +1675,8 @@
    "hv": true,
    "price": {
     "cash": 5400,
-    "vat": 6480
+    "vat": 6480,
+    "cur": "$"
    }
   },
   {
@@ -1688,7 +1689,8 @@
    "hv": true,
    "price": {
     "cash": 3950,
-    "vat": 4740
+    "vat": 4740,
+    "cur": "$"
    }
   },
   {
@@ -1701,7 +1703,8 @@
    "hv": false,
    "price": {
     "cash": 2300,
-    "vat": 2760
+    "vat": 2760,
+    "cur": "$"
    }
   },
   {
@@ -1714,7 +1717,8 @@
    "hv": false,
    "price": {
     "cash": 1500,
-    "vat": 1800
+    "vat": 1800,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
@@ -1728,7 +1732,8 @@
    "hv": false,
    "price": {
     "cash": 1020,
-    "vat": 1224
+    "vat": 1224,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -1742,7 +1747,8 @@
    "hv": true,
    "price": {
     "cash": 1700,
-    "vat": 2040
+    "vat": 2040,
+    "cur": "$"
    }
   },
   {
@@ -1755,7 +1761,8 @@
    "hv": false,
    "price": {
     "cash": 1400,
-    "vat": 1680
+    "vat": 1680,
+    "cur": "$"
    }
   },
   {
@@ -1768,7 +1775,8 @@
    "hv": false,
    "price": {
     "cash": 1475,
-    "vat": 1770
+    "vat": 1770,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1782,7 +1790,8 @@
    "hv": true,
    "price": {
     "cash": 2400,
-    "vat": 2880
+    "vat": 2880,
+    "cur": "$"
    }
   },
   {
@@ -1795,7 +1804,8 @@
    "hv": false,
    "price": {
     "cash": 1750,
-    "vat": 2100
+    "vat": 2100,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -1809,7 +1819,8 @@
    "hv": false,
    "price": {
     "cash": 1475,
-    "vat": 1770
+    "vat": 1770,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1823,7 +1834,8 @@
    "hv": false,
    "price": {
     "cash": 745,
-    "vat": 894
+    "vat": 894,
+    "cur": "$"
    }
   },
   {
@@ -1836,7 +1848,8 @@
    "hv": true,
    "price": {
     "cash": 7000,
-    "vat": 8400
+    "vat": 8400,
+    "cur": "$"
    }
   },
   {
@@ -1849,7 +1862,8 @@
    "hv": false,
    "price": {
     "cash": 1400,
-    "vat": 1680
+    "vat": 1680,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1863,7 +1877,8 @@
    "hv": false,
    "price": {
     "cash": 1700,
-    "vat": 2040
+    "vat": 2040,
+    "cur": "$"
    }
   },
   {
@@ -1876,7 +1891,8 @@
    "hv": true,
    "price": {
     "cash": 1500,
-    "vat": 1800
+    "vat": 1800,
+    "cur": "$"
    }
   },
   {
@@ -1889,7 +1905,8 @@
    "hv": false,
    "price": {
     "cash": 1400,
-    "vat": 1680
+    "vat": 1680,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1902,7 +1919,8 @@
    "hv": true,
    "price": {
     "cash": 18199.97,
-    "vat": 21611.59
+    "vat": 21611.59,
+    "cur": "$"
    }
   },
   {
@@ -1914,7 +1932,8 @@
    "hv": true,
    "price": {
     "cash": 26524.96,
-    "vat": 31601.6
+    "vat": 31601.6,
+    "cur": "$"
    }
   },
   {
@@ -1926,7 +1945,8 @@
    "hv": true,
    "price": {
     "cash": 350,
-    "vat": 368.42
+    "vat": 368.42,
+    "cur": "$"
    }
   },
   {
@@ -1938,7 +1958,8 @@
    "hv": true,
    "price": {
     "cash": 725,
-    "vat": 870
+    "vat": 870,
+    "cur": "$"
    }
   },
   {
@@ -1950,7 +1971,8 @@
    "hv": false,
    "price": {
     "cash": 1750,
-    "vat": 2100
+    "vat": 2100,
+    "cur": "$"
    }
   },
   {
@@ -1962,7 +1984,8 @@
    "hv": false,
    "price": {
     "cash": 730,
-    "vat": 876
+    "vat": 876,
+    "cur": "$"
    }
   },
   {
@@ -1974,7 +1997,8 @@
    "hv": true,
    "price": {
     "cash": 800,
-    "vat": 842.1
+    "vat": 842.1,
+    "cur": "$"
    }
   },
   {
@@ -1986,7 +2010,8 @@
    "hv": false,
    "price": {
     "cash": 1420,
-    "vat": 1704
+    "vat": 1704,
+    "cur": "$"
    }
   },
   {
@@ -1998,7 +2023,8 @@
    "hv": true,
    "price": {
     "cash": 370,
-    "vat": 389.47
+    "vat": 389.47,
+    "cur": "$"
    }
   },
   {
@@ -2010,7 +2036,8 @@
    "hv": true,
    "price": {
     "cash": 1575,
-    "vat": 1890
+    "vat": 1890,
+    "cur": "$"
    }
   },
   {
@@ -2022,7 +2049,8 @@
    "hv": true,
    "price": {
     "cash": 914.6,
-    "vat": 1098.2
+    "vat": 1098.2,
+    "cur": "$"
    }
   },
   {
@@ -2034,7 +2062,8 @@
    "hv": true,
    "price": {
     "cash": 350,
-    "vat": 368.42
+    "vat": 368.42,
+    "cur": "$"
    }
   },
   {
@@ -2046,7 +2075,8 @@
    "hv": true,
    "price": {
     "cash": 1160.25,
-    "vat": 1392.3
+    "vat": 1392.3,
+    "cur": "$"
    }
   },
   {
@@ -2059,7 +2089,8 @@
    "size": "large",
    "price": {
     "cash": 94.25,
-    "vat": 113.53
+    "vat": 113.53,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
   },
@@ -2073,7 +2104,8 @@
    "size": "large",
    "price": {
     "cash": 88.66,
-    "vat": 106.29
+    "vat": 106.29,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
   },
@@ -2087,7 +2119,8 @@
    "size": "large",
    "price": {
     "cash": 79.18,
-    "vat": 95.31
+    "vat": 95.31,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
   },
@@ -2101,7 +2134,8 @@
    "size": "large",
    "price": {
     "cash": 89.48,
-    "vat": 107.48
+    "vat": 107.48,
+    "cur": "$"
    }
   },
   {
@@ -2114,7 +2148,8 @@
    "size": "large",
    "price": {
     "cash": 105.26,
-    "vat": 126.1
+    "vat": 126.1,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
   },
@@ -2128,7 +2163,8 @@
    "size": "large",
    "price": {
     "cash": 92,
-    "vat": 110.82
+    "vat": 110.82,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
@@ -2142,7 +2178,8 @@
    "size": "small",
    "price": {
     "cash": 74.21,
-    "vat": 89.12
+    "vat": 89.12,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
@@ -2156,7 +2193,8 @@
    "size": "large",
    "price": {
     "cash": 88.35,
-    "vat": 106.12
+    "vat": 106.12,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
@@ -2170,7 +2208,8 @@
    "size": "large",
    "price": {
     "cash": 89.25,
-    "vat": 107.31
+    "vat": 107.31,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
@@ -2184,7 +2223,8 @@
    "size": "large",
    "price": {
     "cash": 91.57,
-    "vat": 109.78
+    "vat": 109.78,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
@@ -2198,7 +2238,8 @@
    "size": "large",
    "price": {
     "cash": 100.56,
-    "vat": 121
+    "vat": 121,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
@@ -2212,7 +2253,8 @@
    "size": "large",
    "price": {
     "cash": 97.16,
-    "vat": 116.59
+    "vat": 116.59,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
   },
@@ -2226,7 +2268,8 @@
    "size": "small",
    "price": {
     "cash": 77.35,
-    "vat": 92.82
+    "vat": 92.82,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1gELsu3udRZ0ZQxKyi7ba6_TPlwRH8PoI/view?usp=sharing"
   },
@@ -2240,7 +2283,8 @@
    "size": "large",
    "price": {
     "cash": 101.21,
-    "vat": 121.56
+    "vat": 121.56,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
   },
@@ -2254,7 +2298,8 @@
    "size": "large",
    "price": {
     "cash": 95.91,
-    "vat": 115.41
+    "vat": 115.41,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
@@ -2268,7 +2313,8 @@
    "size": "med",
    "price": {
     "cash": 71.91,
-    "vat": 86.29
+    "vat": 86.29,
+    "cur": "$"
    }
   },
   {
@@ -2281,7 +2327,8 @@
    "size": "large",
    "price": {
     "cash": 92.3,
-    "vat": 110.65
+    "vat": 110.65,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
   },
@@ -2295,7 +2342,8 @@
    "size": "large",
    "price": {
     "cash": 92.75,
-    "vat": 111.72
+    "vat": 111.72,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view?usp=sharing"
   },
@@ -2309,23 +2357,10 @@
    "size": "med",
    "price": {
     "cash": 82.42,
-    "vat": 99.14
+    "vat": 99.14,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 99.78,
-    "vat": 120.07
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2337,7 +2372,8 @@
    "size": "large",
    "price": {
     "cash": 93.5,
-    "vat": 112.63
+    "vat": 112.63,
+    "cur": "$"
    }
   },
   {
@@ -2350,7 +2386,8 @@
    "size": "large",
    "price": {
     "cash": 74.22,
-    "vat": 88.77
+    "vat": 88.77,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1eSkLlyrdzWbX8Qq-mQu1lP_oOokyCQLM/view?usp=sharing"
   },
@@ -2364,7 +2401,8 @@
    "size": "small",
    "price": {
     "cash": 76.79,
-    "vat": 92.29
+    "vat": 92.29,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
   },
@@ -2378,7 +2416,8 @@
    "size": "small",
    "price": {
     "cash": 71.94,
-    "vat": 86.25
+    "vat": 86.25,
+    "cur": "$"
    }
   },
   {
@@ -2391,8 +2430,24 @@
    "size": "small",
    "price": {
     "cash": 55.73,
-    "vat": 66.95
+    "vat": 66.95,
+    "cur": "$"
    }
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
+   "sup": "Atmo",
+   "avail": "soon",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 99.78,
+    "vat": 120.07,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2404,7 +2459,8 @@
    "size": "small",
    "price": {
     "cash": 81.42,
-    "vat": 97.63
+    "vat": 97.63,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
@@ -2418,7 +2474,8 @@
    "size": "med",
    "price": {
     "cash": 83.27,
-    "vat": 100.18
+    "vat": 100.18,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
@@ -2432,7 +2489,8 @@
    "size": "small",
    "price": {
     "cash": 61.71,
-    "vat": 74.05
+    "vat": 74.05,
+    "cur": "$"
    }
   },
   {
@@ -2445,7 +2503,8 @@
    "size": "small",
    "price": {
     "cash": 78.2,
-    "vat": 93.84
+    "vat": 93.84,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
   },
@@ -2459,7 +2518,8 @@
    "size": "small",
    "price": {
     "cash": 71.16,
-    "vat": 85.63
+    "vat": 85.63,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
@@ -2473,7 +2533,8 @@
    "size": "large",
    "price": {
     "cash": 102.77,
-    "vat": 123.21
+    "vat": 123.21,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
   },
@@ -2487,7 +2548,8 @@
    "size": "large",
    "price": {
     "cash": 78.12,
-    "vat": 94.01
+    "vat": 94.01,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1KiUTf4rHfDojKZl9mR1dIvhUaiqGMsQc/view?usp=sharing"
   },
@@ -2501,7 +2563,8 @@
    "size": "small",
    "price": {
     "cash": 60.15,
-    "vat": 71.87
+    "vat": 71.87,
+    "cur": "$"
    }
   },
   {
@@ -2514,7 +2577,8 @@
    "size": "large",
    "price": {
     "cash": 72.33,
-    "vat": 86.99
+    "vat": 86.99,
+    "cur": "$"
    }
   },
   {
@@ -2527,7 +2591,8 @@
    "size": "small",
    "price": {
     "cash": 73.44,
-    "vat": 87.98
+    "vat": 87.98,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
@@ -2541,7 +2606,8 @@
    "size": "small",
    "price": {
     "cash": 73.1,
-    "vat": 87.8
+    "vat": 87.8,
+    "cur": "$"
    }
   },
   {
@@ -2554,7 +2620,8 @@
    "size": "small",
    "price": {
     "cash": 71.15,
-    "vat": 86.29
+    "vat": 86.29,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
@@ -2568,7 +2635,8 @@
    "size": "large",
    "price": {
     "cash": 92.3,
-    "vat": 110.65
+    "vat": 110.65,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
   },
@@ -2582,7 +2650,8 @@
    "size": "large",
    "price": {
     "cash": 100.13,
-    "vat": 120.16
+    "vat": 120.16,
+    "cur": "$"
    }
   },
   {
@@ -2595,7 +2664,8 @@
    "size": "small",
    "price": {
     "cash": 75.5,
-    "vat": 90.52
+    "vat": 90.52,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
   },
@@ -2609,7 +2679,8 @@
    "size": "large",
    "price": {
     "cash": 63.47,
-    "vat": 76.07
+    "vat": 76.07,
+    "cur": "$"
    }
   },
   {
@@ -2622,7 +2693,8 @@
    "size": "small",
    "price": {
     "cash": 72.29,
-    "vat": 86.83
+    "vat": 86.83,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
@@ -2636,7 +2708,8 @@
    "size": "large",
    "price": {
     "cash": 74.76,
-    "vat": 89.91
+    "vat": 89.91,
+    "cur": "$"
    }
   },
   {
@@ -2649,7 +2722,8 @@
    "size": "large",
    "price": {
     "cash": 89.27,
-    "vat": 106.82
+    "vat": 106.82,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1I_AjCtVIM75JJSzLy3haKoXjg2gSYIe5/view?usp=sharing"
   },
@@ -2663,7 +2737,8 @@
    "size": "large",
    "price": {
     "cash": 92.75,
-    "vat": 111.72
+    "vat": 111.72,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/15vPIPgHKePAYoKoh344hBn4l94hj5gX4/view?usp=sharing"
   },
@@ -2677,7 +2752,8 @@
    "size": "large",
    "price": {
     "cash": 93.5,
-    "vat": 112.63
+    "vat": 112.63,
+    "cur": "$"
    }
   },
   {
@@ -2690,7 +2766,8 @@
    "size": "small",
    "price": {
     "cash": 72.73,
-    "vat": 87.19
+    "vat": 87.19,
+    "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
@@ -3379,7 +3456,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 715
+    "cash": 715,
+    "cur": "грн"
    }
   },
   {
@@ -3391,7 +3469,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 975
+    "cash": 975,
+    "cur": "грн"
    }
   },
   {
@@ -3403,7 +3482,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1330
+    "cash": 1330,
+    "cur": "грн"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -3416,7 +3496,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1428
+    "cash": 1428,
+    "cur": "грн"
    }
   },
   {
@@ -3428,7 +3509,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1385
+    "cash": 1385,
+    "cur": "грн"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -3441,7 +3523,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1460
+    "cash": 1460,
+    "cur": "грн"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
@@ -3454,7 +3537,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1775
+    "cash": 1775,
+    "cur": "грн"
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -3467,7 +3551,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1725
+    "cash": 1725,
+    "cur": "грн"
    }
   },
   {
@@ -3479,7 +3564,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1823
+    "cash": 1823,
+    "cur": "грн"
    }
   },
   {
@@ -3491,7 +3577,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2170
+    "cash": 2170,
+    "cur": "грн"
    }
   },
   {
@@ -3503,7 +3590,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 1540
+    "cash": 1540,
+    "cur": "грн"
    }
   },
   {
@@ -3515,7 +3603,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 2400
+    "cash": 2400,
+    "cur": "грн"
    }
   },
   {
@@ -3527,7 +3616,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 3995
+    "cash": 3995,
+    "cur": "грн"
    }
   },
   {
@@ -3539,7 +3629,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 5425
+    "cash": 5425,
+    "cur": "грн"
    }
   },
   {
@@ -3551,7 +3642,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 6630
+    "cash": 6630,
+    "cur": "грн"
    }
   },
   {
@@ -3563,7 +3655,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 6980
+    "cash": 6980,
+    "cur": "грн"
    }
   },
   {
@@ -3575,7 +3668,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 391
+    "cash": 391,
+    "cur": "грн"
    }
   },
   {
@@ -3587,7 +3681,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 510
+    "cash": 510,
+    "cur": "грн"
    }
   },
   {
@@ -3599,7 +3694,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 570
+    "cash": 570,
+    "cur": "грн"
    }
   },
   {
@@ -3611,7 +3707,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 493
+    "cash": 493,
+    "cur": "грн"
    }
   },
   {
@@ -3623,7 +3720,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 621
+    "cash": 621,
+    "cur": "грн"
    }
   },
   {
@@ -3635,7 +3733,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 706
+    "cash": 706,
+    "cur": "грн"
    }
   },
   {
@@ -3647,7 +3746,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 697
+    "cash": 697,
+    "cur": "грн"
    }
   },
   {
@@ -3659,7 +3759,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 757
+    "cash": 757,
+    "cur": "грн"
    }
   },
   {
@@ -3671,7 +3772,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 952
+    "cash": 952,
+    "cur": "грн"
    }
   },
   {
@@ -3683,7 +3785,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1454
+    "cash": 1454,
+    "cur": "грн"
    }
   },
   {
@@ -3695,7 +3798,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2083
+    "cash": 2083,
+    "cur": "грн"
    }
   },
   {
@@ -3707,7 +3811,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2482
+    "cash": 2482,
+    "cur": "грн"
    }
   },
   {
@@ -3719,7 +3824,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 3188
+    "cash": 3188,
+    "cur": "грн"
    }
   },
   {
@@ -3731,7 +3837,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 3570
+    "cash": 3570,
+    "cur": "грн"
    }
   },
   {
@@ -3742,7 +3849,8 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 745
+    "cash": 745,
+    "cur": "грн"
    }
   },
   {
@@ -3753,7 +3861,8 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 735
+    "cash": 735,
+    "cur": "грн"
    }
   },
   {
@@ -3764,7 +3873,8 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 715
+    "cash": 715,
+    "cur": "грн"
    }
   },
   {
@@ -3775,7 +3885,8 @@
    "kwh": 11.8,
    "hv": false,
    "price": {
-    "cash": 1437
+    "cash": 1437,
+    "cur": "грн"
    }
   },
   {
@@ -3786,7 +3897,8 @@
    "kwh": 11.8,
    "hv": false,
    "price": {
-    "cash": 1420
+    "cash": 1420,
+    "cur": "грн"
    }
   },
   {
@@ -3797,7 +3909,8 @@
    "kwh": 16,
    "hv": false,
    "price": {
-    "cash": 1743
+    "cash": 1743,
+    "cur": "грн"
    }
   },
   {
@@ -3816,7 +3929,8 @@
    "kwh": 11.8,
    "hv": false,
    "price": {
-    "cash": 1590
+    "cash": 1590,
+    "cur": "грн"
    }
   },
   {
@@ -3827,7 +3941,8 @@
    "kwh": 5.12,
    "hv": true,
    "price": {
-    "cash": 745
+    "cash": 745,
+    "cur": "грн"
    }
   },
   {
@@ -3838,7 +3953,8 @@
    "kwh": 7.68,
    "hv": true,
    "price": {
-    "cash": 1148
+    "cash": 1148,
+    "cur": "грн"
    }
   },
   {
@@ -3849,7 +3965,8 @@
    "kwh": 14.3,
    "hv": true,
    "price": {
-    "cash": 1696
+    "cash": 1696,
+    "cur": "грн"
    }
   },
   {
@@ -3860,7 +3977,8 @@
    "kwh": 16.08,
    "hv": true,
    "price": {
-    "cash": 1770
+    "cash": 1770,
+    "cur": "грн"
    }
   },
   {
@@ -3871,7 +3989,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 1564
+    "cash": 1564,
+    "cur": "грн"
    }
   },
   {
@@ -3882,7 +4001,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 900
+    "cash": 900,
+    "cur": "грн"
    }
   },
   {
@@ -3893,7 +4013,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 705
+    "cash": 705,
+    "cur": "грн"
    }
   },
   {
@@ -3904,7 +4025,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 914
+    "cash": 914,
+    "cur": "грн"
    }
   },
   {
@@ -3915,7 +4037,8 @@
    "kwh": 100,
    "hv": false,
    "price": {
-    "cash": 44166
+    "cash": 44166,
+    "cur": "грн"
    }
   },
   {
@@ -3926,7 +4049,8 @@
    "kwh": 240,
    "hv": false,
    "price": {
-    "cash": 33790
+    "cash": 33790,
+    "cur": "грн"
    }
   },
   {
@@ -3937,7 +4061,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 370
+    "cash": 370,
+    "cur": "грн"
    }
   },
   {
@@ -3948,7 +4073,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 350
+    "cash": 350,
+    "cur": "грн"
    }
   },
   {
@@ -3959,7 +4085,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 365
+    "cash": 365,
+    "cur": "грн"
    }
   },
   {
@@ -3970,7 +4097,8 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 435
+    "cash": 435,
+    "cur": "грн"
    }
   },
   {
@@ -3982,7 +4110,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 2788
+    "cash": 2788,
+    "cur": "грн"
    }
   },
   {
@@ -4079,7 +4208,8 @@
      0.19,
      0.19,
      null
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
   },
@@ -4096,7 +4226,8 @@
      0.18,
      0.18,
      0.18
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7/view?usp=sharing"
   },
@@ -4128,7 +4259,8 @@
      0.18,
      0.18,
      0.18
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view?usp=sharing"
   },
@@ -4145,7 +4277,8 @@
      0.16,
      0.16,
      null
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view?usp=sharing"
   },
@@ -4162,7 +4295,8 @@
      0.17,
      0.17,
      null
-    ]
+    ],
+    "cur": "$/Вт"
    }
   },
   {
@@ -4188,7 +4322,8 @@
      0.18,
      0.17,
      null
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz/view?usp=sharing"
   },
@@ -4220,7 +4355,8 @@
      0.19,
      0.18,
      0.18
-    ]
+    ],
+    "cur": "$/Вт"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
@@ -4271,7 +4407,8 @@
    "hv": false,
    "price": {
     "cash": 797.05,
-    "vat": 917.7
+    "vat": 917.7,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -4285,7 +4422,8 @@
    "hv": false,
    "price": {
     "cash": 970.9,
-    "vat": 1250.2
+    "vat": 1250.2,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -4298,7 +4436,8 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1461.1
+    "cash": 1461.1,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -4312,7 +4451,8 @@
    "hv": false,
    "price": {
     "cash": 1511.45,
-    "vat": 1792.65
+    "vat": 1792.65,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -4325,7 +4465,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1450.65
+    "cash": 1450.65,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1xqaaS458BIQN3EPtkBIAJ7FKDAJQLOtY/view?usp=sharing"
   },
@@ -4338,7 +4479,8 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1511.45
+    "cash": 1511.45,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
@@ -4352,7 +4494,8 @@
    "hv": false,
    "price": {
     "cash": 1736.6,
-    "vat": 2197.35
+    "vat": 2197.35,
+    "cur": "€"
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -4366,7 +4509,8 @@
    "hv": false,
    "price": {
     "cash": 2247.7,
-    "vat": 2953.55
+    "vat": 2953.55,
+    "cur": "€"
    }
   },
   {
@@ -4397,7 +4541,8 @@
    "hv": true,
    "price": {
     "cash": 2553.6,
-    "vat": 3166.35
+    "vat": 3166.35,
+    "cur": "€"
    }
   },
   {
@@ -4419,7 +4564,8 @@
    "hv": true,
    "price": {
     "cash": 4034.65,
-    "vat": 4801.3
+    "vat": 4801.3,
+    "cur": "€"
    }
   },
   {
@@ -4432,7 +4578,8 @@
    "hv": true,
    "price": {
     "cash": 5592.65,
-    "vat": 6639.55
+    "vat": 6639.55,
+    "cur": "€"
    }
   },
   {
@@ -4444,7 +4591,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 6843.8
+    "cash": 6843.8,
+    "cur": "€"
    }
   },
   {
@@ -4456,7 +4604,8 @@
    "hv": true,
    "price": {
     "cash": 765.7,
-    "vat": 919.6
+    "vat": 919.6,
+    "cur": "$"
    }
   },
   {
@@ -4468,7 +4617,8 @@
    "hv": true,
    "price": {
     "cash": 1175.15,
-    "vat": 1276.8
+    "vat": 1276.8,
+    "cur": "$"
    }
   },
   {
@@ -4480,7 +4630,8 @@
    "hv": true,
    "price": {
     "cash": 1021.25,
-    "vat": 1072.55
+    "vat": 1072.55,
+    "cur": "$"
    }
   },
   {
@@ -4492,7 +4643,8 @@
    "hv": false,
    "price": {
     "cash": 750.5,
-    "vat": 939.55
+    "vat": 939.55,
+    "cur": "$"
    }
   }
  ]
