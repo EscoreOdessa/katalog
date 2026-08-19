@@ -115,8 +115,8 @@ async function yugtorg() {
           if (!nm || !wh) continue;
           const tds = r.match(/<td[\s\S]*?<\/td>/gi) || [];
           const price = {};
-          if (cols.spec >= 0 && tds[cols.spec]) { const v = parsePrice(stripTags(tds[cols.spec])); if (v != null) price.cash = v; }
-          if (cols.ue >= 0 && tds[cols.ue]) { const v = parsePrice(stripTags(tds[cols.ue])); if (v != null) price.vat = v; }
+          if (cols.spec >= 0 && tds[cols.spec]) { const s = stripTags(tds[cols.spec]); const v = parsePrice(s); if (v != null) { price.cash = v; price.cur = price.cur || curOf(s); } }
+          if (cols.ue >= 0 && tds[cols.ue]) { const s = stripTags(tds[cols.ue]); const v = parsePrice(s); if (v != null) { price.vat = v; price.cur = price.cur || curOf(s) || "у.е."; } }
           rows.push({ name: stripTags(nm[1]), avail: normAvail(stripTags(wh[1])), price: Object.keys(price).length ? price : null });
         }
       } catch (e) { console.warn(`YugTorg cat ${cid} p${page}: ${e.message}`); break; }
@@ -163,6 +163,11 @@ function atmoPrice(p) {
   const cash = parsePrice(p && p.cashPrices && p.cashPrices.dealer && p.cashPrices.dealer.price);
   const vat = parsePrice(p && p.cashlessPrices && p.cashlessPrices.dealer && p.cashlessPrices.dealer.price);
   const out = {}; if (cash != null) out.cash = cash; if (vat != null) out.vat = vat;
+  if (Object.keys(out).length) {
+    const sym = (p.cashPrices && p.cashPrices.basic && p.cashPrices.basic.currency && p.cashPrices.basic.currency.symbol) ||
+      (p.cashPrices && p.cashPrices.dealer && p.cashPrices.dealer.currency && p.cashPrices.dealer.currency.symbol);
+    const cur = curOf(sym); if (cur) out.cur = cur;
+  }
   return Object.keys(out).length ? out : null;
 }
 async function atmoLogin() {
@@ -229,6 +234,17 @@ function parsePrice(raw) {
   return isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : null;
 }
 const round2 = (v, f) => (v == null ? null : Math.round(v * (f || 1) * 100) / 100);
+// валюта з тексту ячейки/заголовка (€ / $ / грн / у.е.)
+function curOf(...vals) {
+  for (const raw of vals) {
+    const s = String(raw == null ? "" : raw);
+    if (/€|eur/i.test(s)) return "€";
+    if (/\$|usd|дол/i.test(s)) return "$";
+    if (/₴|грн|uah/i.test(s)) return "грн";
+    if (/у\.?\s?[ео]\.?/i.test(s)) return "у.е.";
+  }
+  return null;
+}
 // індекс колонки за заголовком (шукаємо у перших 20 рядках)
 function findCol(rows, re) {
   for (let i = 0; i < Math.min(rows.length, 20); i++) { const r = rows[i] || []; for (let j = 0; j < r.length; j++) if (re.test(r[j] || "")) return j; }
@@ -243,6 +259,7 @@ function pickSheetPrice(cells, cfg) {
   if (cfg.vat != null) { const v = round2(parsePrice(cells[cfg.vat]), f); if (v != null) out.vat = v; }
   if (cfg.cashCols) { const t = cfg.cashCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.cashTiers = t; }
   if (cfg.vatCols) { const t = cfg.vatCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.vatTiers = t; }
+  if (Object.keys(out).length) { const cur = cfg.cur || curOf(cells[cfg.cash], cells[cfg.vat], ...(cfg.cashCols || []).map((c) => cells[c]), ...(cfg.vatCols || []).map((c) => cells[c])); if (cur) out.cur = cur; }
   return Object.keys(out).length ? out : null;
 }
 
@@ -309,9 +326,16 @@ async function sheets() {
       // конфіг ціни під постачальника (Solarity завжди −5%)
       let cfg = null;
       if (sup === "Solarity") {
-        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95 }; // J/K/L, G/H/I
+        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт" }; // J/K/L, G/H/I; ціна за ВАТ
         else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ
       } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
+      // валюта постачальника: якщо не задана — шукаємо символ у заголовках/ячейках цінових колонок
+      if (cfg && !cfg.cur) {
+        const cols = [cfg.cash, cfg.vat, ...(cfg.cashCols || []), ...(cfg.vatCols || [])].filter((c) => c != null);
+        let cur = null;
+        for (let i = 0; i < Math.min(rows.length, 20) && !cur; i++) for (const c of cols) { cur = curOf((rows[i] || [])[c]); if (cur) break; }
+        if (cur) cfg.cur = cur;
+      }
       let section = "", n = 0, np = 0;
       for (const cells of rows) {
         const sec = sectionOf(cells); if (sec) { section = sec; continue; }

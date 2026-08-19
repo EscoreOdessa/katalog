@@ -30,6 +30,7 @@
   .pricebar label{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}
   .pricebar select{border:1px solid #cfd8db;border-radius:8px;padding:7px 10px;font:inherit}
   td.price{font-weight:600;white-space:nowrap}
+  .cur{color:#c0392b;font-weight:700}
   table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
   th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
   th{background:#f1f5f6;color:var(--brand);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
@@ -162,7 +163,7 @@ function priceOf(it){
 function fmtPrice(it){
   const v=priceOf(it); if(v==null)return '<td class="price spec">—</td>';
   const n=Number(v); const s=isFinite(n)?n.toLocaleString('uk-UA'):String(v);
-  const cur=it.price&&it.price.cur?(' '+it.price.cur):'';
+  const cur=it.price&&it.price.cur?(' <span class="cur">'+it.price.cur+'</span>'):'';
   return '<td class="price">'+s+cur+'</td>';
 }
 function charOf(it){
