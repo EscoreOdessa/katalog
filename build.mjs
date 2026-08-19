@@ -1,6 +1,6 @@
 // build.mjs — самодостатній збірник каталогу (для GitHub Action).
 // Читає наявний public catalog.json як СИД (7 таблиць), оновлює живі джерела
-// (YugTorg + Atmo) і перезаписує catalog.json. Ціни не показуємо.
+// (YugTorg + Atmo) і перезаписує catalog.json. Ціни: під кожного постачальника — див. pickSheetPrice/atmoPrice/yugtorg.
 import { readFileSync, writeFileSync } from "fs";
 
 // ---------- helpers ----------
@@ -92,30 +92,46 @@ function datasheetFor(it) {
 // ---------- YugTorg (OpenCart, HTML, класи name_good/warehouse) ----------
 const YUG_BASE = "https://b2b.yugtorg.com/index.php?route=product/category&category_id=";
 const YUG_CATS = [38429, 36851, 32360, 44908, 37262, 30211, 38559, 38558, 31271, 38584];
+// Індекси цінових колонок за шапкою таблиці: СПЕЦ = готівка, «цена у.е.» = ПДВ.
+function yugHeaderCols(html) {
+  const hr = html.split(/<tr[\s>]/i).find((r) => /<th[\s>]/i.test(r)) || "";
+  const ths = (hr.match(/<th[\s\S]*?<\/th>/gi) || []).map(stripTags);
+  const find = (re) => ths.findIndex((t) => re.test(t));
+  return { spec: find(/спец/i), ue: find(/у\.?\s*[ео]\.?|цена\s*у/i) };
+}
 async function yugtorg() {
   const cookie = process.env.YUGTORG_COOKIE;
   if (!cookie) { console.warn("YugTorg: немає YUGTORG_COOKIE — пропускаю"); return []; }
   const items = [];
+  let npY = 0;
   for (const cid of YUG_CATS) {
     for (let page = 1; page <= 8; page++) {
       let rows = [];
       try {
         const html = await fetchHtml(`${YUG_BASE}${cid}&limit=100&page=${page}`, cookie);
+        const cols = yugHeaderCols(html);
         for (const r of html.split(/<tr[\s>]/i).slice(1)) {
           const nm = r.match(/name_good[^>]*>([\s\S]*?)<\/td>/i), wh = r.match(/warehouse[^>]*>([\s\S]*?)<\/td>/i);
-          if (nm && wh) rows.push({ name: stripTags(nm[1]), avail: normAvail(stripTags(wh[1])) });
+          if (!nm || !wh) continue;
+          const tds = r.match(/<td[\s\S]*?<\/td>/gi) || [];
+          const price = {};
+          if (cols.spec >= 0 && tds[cols.spec]) { const v = parsePrice(stripTags(tds[cols.spec])); if (v != null) price.cash = v; }
+          if (cols.ue >= 0 && tds[cols.ue]) { const v = parsePrice(stripTags(tds[cols.ue])); if (v != null) price.vat = v; }
+          rows.push({ name: stripTags(nm[1]), avail: normAvail(stripTags(wh[1])), price: Object.keys(price).length ? price : null });
         }
       } catch (e) { console.warn(`YugTorg cat ${cid} p${page}: ${e.message}`); break; }
       if (!rows.length) break;
-      for (const { name, avail } of rows) {
+      for (const { name, avail, price } of rows) {
         const cat = classify(name); if (!cat) continue;
-        if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "YugTorg", avail, ...s }); }
-        else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "YugTorg", avail, ...s }); }
-        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "YugTorg", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size }); }
+        if (price) npY++;
+        const P = price ? { price } : {};
+        if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "YugTorg", avail, ...s, ...P }); }
+        else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "YugTorg", avail, ...s, ...P }); }
+        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "YugTorg", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size, ...P }); }
       }
     }
   }
-  console.log(`YugTorg: ${items.length} позицій`);
+  console.log(`YugTorg: ${items.length} позицій (${npY} з ціною)`);
   return items;
 }
 
@@ -140,6 +156,25 @@ function atmoAvail(q) {
   if ((q.expected || 0) > 0) return "soon"; // вільного немає, але очікується поставка
   return "no";                              // все в резерві / немає
 }
+// Ціна Atmo: Готівка = «ціна ФОП дилерська», ПДВ = «ціна ТОВ дилерська».
+// Структура JSON точно невідома — глибокий пошук об'єктів «назва+значення» за міткою.
+function atmoPrice(p) {
+  let cash = null, vat = null;
+  const visit = (o) => {
+    if (!o || typeof o !== "object") return;
+    if (Array.isArray(o)) { o.forEach(visit); return; }
+    const label = [o.name, o.title, o.label, o.type, o.priceType, o.caption, o.description].find((x) => typeof x === "string") || "";
+    const val = [o.value, o.price, o.amount, o.sum, o.cost, o.val].find((x) => x != null);
+    if (label && val != null) {
+      if (/фоп/i.test(label) && /дилер/i.test(label)) { const v = parsePrice(val); if (v != null) cash = v; }
+      else if (/тов/i.test(label) && /дилер/i.test(label)) { const v = parsePrice(val); if (v != null) vat = v; }
+    }
+    for (const k of Object.keys(o)) visit(o[k]);
+  };
+  visit(p);
+  const out = {}; if (cash != null) out.cash = cash; if (vat != null) out.vat = vat;
+  return Object.keys(out).length ? out : null;
+}
 async function atmoLogin() {
   const email = process.env.ATMO_EMAIL, password = process.env.ATMO_PASSWORD;
   if (!email || !password) { console.warn("Atmo: немає ATMO_EMAIL/ATMO_PASSWORD — пропускаю"); return null; }
@@ -158,6 +193,7 @@ async function atmo() {
   if (!tok) return [];
   const H = { headers: { authorization: "Bearer " + tok, accept: "application/json" } };
   const items = [];
+  let npA = 0;
   for (const cid of ATMO_CATS) {
     for (let page = 1; page <= 40; page++) {
       let j;
@@ -173,16 +209,51 @@ async function atmo() {
         const name = p.name || "";
         const cat = classify(name); if (!cat) continue;
         const avail = atmoAvail(p.quantity);
-        if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
-        else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "Atmo", avail, ...s }); }
-        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "Atmo", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size }); }
+        const price = atmoPrice(p); if (price) npA++;
+        const P = price ? { price } : {};
+        if (cat === "inv") { const s = parseInverter(name); if (s.kw) items.push({ cat, model: name, sup: "Atmo", avail, ...s, ...P }); }
+        else if (cat === "bat") { const s = parseBattery(name); items.push({ cat, model: name, sup: "Atmo", avail, ...s, ...P }); }
+        else { const pi = panelInfo(name); if (pi.watt != null || pi.len != null) items.push({ cat, model: name, sup: "Atmo", avail, watt: pi.watt, brand: panelBrand(name), dim: pi.dim, size: pi.size, ...P }); }
       }
       const pi = j.data && j.data.paginatorInfo;
       if (pi && (pi.hasMorePages === false || (pi.currentPage && pi.lastPage && pi.currentPage >= pi.lastPage))) break;
     }
   }
-  console.log(`Atmo: ${items.length} позицій`);
+  console.log(`Atmo: ${items.length} позицій (${npA} з ціною)`);
   return items;
+}
+
+// ---------- Ціни ----------
+// Число з ячейки/поля: "1 234,56" / "1234.56" / "12 345" → число (2 знаки). Порожнє/0/сміття → null.
+function parsePrice(raw) {
+  if (raw == null) return null;
+  const s = String(raw).replace(/ /g, " ");
+  const m = s.match(/\d[\d\s.,]*/);
+  if (!m) return null;
+  let t = m[0].replace(/\s+/g, "");
+  const dot = t.lastIndexOf("."), com = t.lastIndexOf(",");
+  if (dot >= 0 && com >= 0) { if (com > dot) { t = t.replace(/\./g, "").replace(",", "."); } else { t = t.replace(/,/g, ""); } }
+  else if (com >= 0) { const after = t.length - com - 1; t = (after === 1 || after === 2) ? t.replace(",", ".") : t.replace(/,/g, ""); }
+  t = t.replace(/,/g, "");
+  const n = Number(t);
+  return isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : null;
+}
+const round2 = (v, f) => (v == null ? null : Math.round(v * (f || 1) * 100) / 100);
+// індекс колонки за заголовком (шукаємо у перших 20 рядках)
+function findCol(rows, re) {
+  for (let i = 0; i < Math.min(rows.length, 20); i++) { const r = rows[i] || []; for (let j = 0; j < r.length; j++) if (re.test(r[j] || "")) return j; }
+  return -1;
+}
+// Постачальники з фіксованими колонками ціни (лише готівка). Букви → індекси: C=2, F=5, J=9.
+const SHEET_PRICE = { Sakoenergy: { cash: 2 }, Intersolar: { cash: 9 }, Helius: { cash: 5 }, SunRise: { cash: 5 } };
+function pickSheetPrice(cells, cfg) {
+  if (!cfg) return null;
+  const f = cfg.factor || 1, out = {};
+  if (cfg.cash != null) { const v = round2(parsePrice(cells[cfg.cash]), f); if (v != null) out.cash = v; }
+  if (cfg.vat != null) { const v = round2(parsePrice(cells[cfg.vat]), f); if (v != null) out.vat = v; }
+  if (cfg.cashCols) { const t = cfg.cashCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.cashTiers = t; }
+  if (cfg.vatCols) { const t = cfg.vatCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.vatTiers = t; }
+  return Object.keys(out).length ? out : null;
 }
 
 // ---------- Google Sheets постачальників (публічні, gviz CSV, без логіну) ----------
@@ -245,7 +316,13 @@ async function sheets() {
       let availCol = -1;
       for (let i = 0; i < Math.min(rows.length, 25) && availCol < 0; i++)
         for (let j = 0; j < rows[i].length; j++) if (/наявн|статус|status/i.test(rows[i][j] || "")) { availCol = j; break; }
-      let section = "", n = 0;
+      // конфіг ціни під постачальника (Solarity завжди −5%)
+      let cfg = null;
+      if (sup === "Solarity") {
+        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95 }; // J/K/L, G/H/I
+        else { const c = findCol(rows, /ціна\s*шт\s*без\s*пдв/i), v = findCol(rows, /ціна\s*шт\s*з\s*пдв/i); cfg = { cash: c >= 0 ? c : null, vat: v >= 0 ? v : null, factor: 0.95 }; }
+      } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
+      let section = "", n = 0, np = 0;
       for (const cells of rows) {
         const sec = sectionOf(cells); if (sec) { section = sec; continue; }
         // 1) пряме розпізнавання: перша ячейка, що класифікується за назвою
@@ -266,11 +343,13 @@ async function sheets() {
         let raw = availCol >= 0 ? (cells[availCol] || "") : "";
         if (!raw) raw = cells.find((c) => /наявн|немає|стоп|дороз|очіку|замов/i.test(c || "")) || "";
         const avail = sheetAvail(raw);
-        if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup, avail, ...s }); n++; } }
-        else if (cat === "bat") { const s = parseBattery(model); items.push({ cat, model, sup, avail, ...s }); n++; }
-        else { const pi = panelInfo(model, cells); if (pi.watt != null || pi.len != null) { items.push({ cat, model, sup, avail, watt: pi.watt, brand: panelBrand(model), dim: pi.dim, size: pi.size }); n++; } }
+        const price = pickSheetPrice(cells, cfg); if (price) np++;
+        const P = price ? { price } : {};
+        if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup, avail, ...s, ...P }); n++; } }
+        else if (cat === "bat") { const s = parseBattery(model); items.push({ cat, model, sup, avail, ...s, ...P }); n++; }
+        else { const pi = panelInfo(model, cells); if (pi.watt != null || pi.len != null) { items.push({ cat, model, sup, avail, watt: pi.watt, brand: panelBrand(model), dim: pi.dim, size: pi.size, ...P }); n++; } }
       }
-      console.log(`${label}: ${n} позицій`);
+      console.log(`${label}: ${n} позицій${cfg ? ` (${np} з ціною)` : ""}`);
     } catch (e) { console.warn(`${label}: ${e.message}`); }
   }
   return items;
@@ -344,7 +423,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise. Altek/Vimmer/Solarity — снимок. Ціни не показуються.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
