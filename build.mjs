@@ -259,7 +259,8 @@ function pickSheetPrice(cells, cfg) {
   if (cfg.vat != null) { const v = round2(parsePrice(cells[cfg.vat]), f); if (v != null) out.vat = v; }
   if (cfg.cashCols) { const t = cfg.cashCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.cashTiers = t; }
   if (cfg.vatCols) { const t = cfg.vatCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.vatTiers = t; }
-  if (Object.keys(out).length) { const cur = cfg.cur || curOf(cells[cfg.cash], cells[cfg.vat], ...(cfg.cashCols || []).map((c) => cells[c]), ...(cfg.vatCols || []).map((c) => cells[c])); if (cur) out.cur = cur; }
+  // валюта — СПОЧАТКУ з ячейки самої позиції (лист може мішати $/€ у різних секціях!), потім фолбек cfg.cur
+  if (Object.keys(out).length) { const cur = curOf(cells[cfg.cash], cells[cfg.vat], ...(cfg.cashCols || []).map((c) => cells[c]), ...(cfg.vatCols || []).map((c) => cells[c])) || cfg.cur; if (cur) out.cur = cur; }
   return Object.keys(out).length ? out : null;
 }
 
@@ -329,8 +330,9 @@ async function sheets() {
         if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт" }; // J/K/L, G/H/I; ціна за ВАТ
         else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ
       } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
-      // валюта постачальника: якщо не задана — шукаємо символ у заголовках/ячейках цінових колонок
-      if (cfg && !cfg.cur) {
+      // валюта постачальника (фолбек на весь лист): для Solarity НЕ вгадуємо — там $/€ мішані по секціях,
+      // валюта береться поштучно з ячейки позиції (див. pickSheetPrice).
+      if (cfg && !cfg.cur && sup !== "Solarity") {
         const cols = [cfg.cash, cfg.vat, ...(cfg.cashCols || []), ...(cfg.vatCols || [])].filter((c) => c != null);
         let cur = null;
         for (let i = 0; i < Math.min(rows.length, 20) && !cur; i++) for (const c of cols) { cur = curOf((rows[i] || [])[c]); if (cur) break; }
