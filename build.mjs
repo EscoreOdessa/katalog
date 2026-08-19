@@ -274,7 +274,6 @@ const SOLARITY_MIRROR = process.env.SOLARITY_MIRROR || "1i3u_awTfs-TMYt1YvHqXmfz
 const SHEETS_LIVE = [
   { sup: "Sakoenergy", id: "1fL5fwlGeWSeiogJFD6NeXQrmtdD3-SeDZljh0XYMBRc" },
   { sup: "Intersolar", id: "1urSlWzmui3nszA03kA9XFUoXgFhUHwUFRfraaiC5hE8" },
-  { sup: "Helius", id: "1ddbl4d574RN5Q4WDMg4WW13heV_hOyYy" },
   { sup: "SunRise", id: "1Wog9MpKlV90ItO3GfagvxUHqGbWPLiZJ9fJnL_KbAFc" },
   ...(SOLARITY_MIRROR ? [
     { sup: "Solarity", id: SOLARITY_MIRROR, tab: "panels" },
@@ -431,8 +430,9 @@ async function main() {
   const allLive = [...live, ...liveAtmo, ...liveSheets];
   // будь-який постачальник, що дав живі дані, замінює свій сид; хто не відповів — лишається зі снимка
   const gotSups = new Set(allLive.map((i) => i.sup));
-  const seed = (prev.items || []).filter((i) => !gotSups.has(i.sup));
-  const items = [...seed, ...allLive];
+  const DROP = new Set(["Helius"]); // постачальники, повністю виключені з каталогу (і з живого збору, і зі снимка)
+  const seed = (prev.items || []).filter((i) => !gotSups.has(i.sup) && !DROP.has(i.sup));
+  const items = [...seed, ...allLive].filter((i) => !DROP.has(i.sup));
   const dsList = await datasheets(); // довідник датащитів (Anna веде в katalog_obladnannya)
   let dsCount = 0;
   for (const it of items) {
@@ -440,7 +440,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, Helius, SunRise, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
