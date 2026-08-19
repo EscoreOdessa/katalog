@@ -115,8 +115,8 @@ async function yugtorg() {
           if (!nm || !wh) continue;
           const tds = r.match(/<td[\s\S]*?<\/td>/gi) || [];
           const price = {};
-          if (cols.spec >= 0 && tds[cols.spec]) { const s = stripTags(tds[cols.spec]); const v = parsePrice(s); if (v != null) { price.cash = v; price.cur = price.cur || curOf(s); } }
-          if (cols.ue >= 0 && tds[cols.ue]) { const s = stripTags(tds[cols.ue]); const v = parsePrice(s); if (v != null) { price.vat = v; price.cur = price.cur || curOf(s) || "у.е."; } }
+          if (cols.spec >= 0 && tds[cols.spec]) { const s = stripTags(tds[cols.spec]); const v = roundP(parsePrice(s), 1, 2); if (v != null) { price.cash = v; price.cur = price.cur || curOf(s); } }
+          if (cols.ue >= 0 && tds[cols.ue]) { const s = stripTags(tds[cols.ue]); const v = roundP(parsePrice(s), 1, 2); if (v != null) { price.vat = v; price.cur = price.cur || curOf(s) || "у.е."; } }
           rows.push({ name: stripTags(nm[1]), avail: normAvail(stripTags(wh[1])), price: Object.keys(price).length ? price : null });
         }
       } catch (e) { console.warn(`YugTorg cat ${cid} p${page}: ${e.message}`); break; }
@@ -160,8 +160,8 @@ function atmoAvail(q) {
 //   Готівка «ціна ФОП дилерська» = cashPrices.dealer.price
 //   ПДВ    «ціна ТОВ дилерська»  = cashlessPrices.dealer.price
 function atmoPrice(p) {
-  const cash = parsePrice(p && p.cashPrices && p.cashPrices.dealer && p.cashPrices.dealer.price);
-  const vat = parsePrice(p && p.cashlessPrices && p.cashlessPrices.dealer && p.cashlessPrices.dealer.price);
+  const cash = roundP(parsePrice(p && p.cashPrices && p.cashPrices.dealer && p.cashPrices.dealer.price), 1, 2);
+  const vat = roundP(parsePrice(p && p.cashlessPrices && p.cashlessPrices.dealer && p.cashlessPrices.dealer.price), 1, 2);
   const out = {}; if (cash != null) out.cash = cash; if (vat != null) out.vat = vat;
   if (Object.keys(out).length) {
     const sym = (p.cashPrices && p.cashPrices.basic && p.cashPrices.basic.currency && p.cashPrices.basic.currency.symbol) ||
@@ -231,9 +231,10 @@ function parsePrice(raw) {
   else if (com >= 0) { const after = t.length - com - 1; t = (after === 1 || after === 2) ? t.replace(",", ".") : t.replace(/,/g, ""); }
   t = t.replace(/,/g, "");
   const n = Number(t);
-  return isFinite(n) && n > 0 ? Math.round(n * 100) / 100 : null;
+  return isFinite(n) && n > 0 ? Math.round(n * 10000) / 10000 : null; // тримаємо до 4 знаків, фінальне округлення — у roundP
 }
-const round2 = (v, f) => (v == null ? null : Math.round(v * (f || 1) * 100) / 100);
+// округлення з коефіцієнтом і точністю p (знаків після коми); Solarity — 3 (до тисячних), решта — 2.
+const roundP = (v, f, p) => { if (v == null) return null; const m = Math.pow(10, p == null ? 2 : p); return Math.round(v * (f || 1) * m) / m; };
 // валюта з тексту ячейки/заголовка (€ / $ / грн / у.е.)
 function curOf(...vals) {
   for (const raw of vals) {
@@ -254,11 +255,11 @@ function findCol(rows, re) {
 const SHEET_PRICE = { Sakoenergy: { cash: 2 }, Intersolar: { cash: 9 }, Helius: { cash: 5 }, SunRise: { cash: 5 } };
 function pickSheetPrice(cells, cfg) {
   if (!cfg) return null;
-  const f = cfg.factor || 1, out = {};
-  if (cfg.cash != null) { const v = round2(parsePrice(cells[cfg.cash]), f); if (v != null) out.cash = v; }
-  if (cfg.vat != null) { const v = round2(parsePrice(cells[cfg.vat]), f); if (v != null) out.vat = v; }
-  if (cfg.cashCols) { const t = cfg.cashCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.cashTiers = t; }
-  if (cfg.vatCols) { const t = cfg.vatCols.map((c) => round2(parsePrice(cells[c]), f)); if (t.some((x) => x != null)) out.vatTiers = t; }
+  const f = cfg.factor || 1, p = cfg.round, out = {};
+  if (cfg.cash != null) { const v = roundP(parsePrice(cells[cfg.cash]), f, p); if (v != null) out.cash = v; }
+  if (cfg.vat != null) { const v = roundP(parsePrice(cells[cfg.vat]), f, p); if (v != null) out.vat = v; }
+  if (cfg.cashCols) { const t = cfg.cashCols.map((c) => roundP(parsePrice(cells[c]), f, p)); if (t.some((x) => x != null)) out.cashTiers = t; }
+  if (cfg.vatCols) { const t = cfg.vatCols.map((c) => roundP(parsePrice(cells[c]), f, p)); if (t.some((x) => x != null)) out.vatTiers = t; }
   // валюта — СПОЧАТКУ з ячейки самої позиції (лист може мішати $/€ у різних секціях!), потім фолбек cfg.cur
   if (Object.keys(out).length) { const cur = curOf(cells[cfg.cash], cells[cfg.vat], ...(cfg.cashCols || []).map((c) => cells[c]), ...(cfg.vatCols || []).map((c) => cells[c])) || cfg.cur; if (cur) out.cur = cur; }
   return Object.keys(out).length ? out : null;
@@ -327,8 +328,8 @@ async function sheets() {
       // конфіг ціни під постачальника (Solarity завжди −5%)
       let cfg = null;
       if (sup === "Solarity") {
-        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт" }; // J/K/L, G/H/I; ціна за ВАТ
-        else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ
+        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт", round: 3 }; // J/K/L, G/H/I; ціна за ВАТ, до тисячних
+        else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95, round: 3 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ; до тисячних
       } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
       // валюта постачальника (фолбек на весь лист): для Solarity НЕ вгадуємо — там $/€ мішані по секціях,
       // валюта береться поштучно з ячейки позиції (див. pickSheetPrice).
