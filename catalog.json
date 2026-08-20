@@ -4462,18 +4462,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна батарея SE-F12Max Deye (LiFePO4 51,2V 230Ah 11.8 kWh)",
-   "sup": "Price H",
-   "avail": "yes",
-   "kwh": 11.8,
-   "hv": false,
-   "price": {
-    "cur": "$",
-    "cash": 1590
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторна батарея SE-F16 С Deye (LiFePO4 51,2V 314Ah 16.0 kWh)",
    "sup": "Price H",
    "avail": "soon",
@@ -5280,8 +5268,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 800,
-    "vat": 930
+    "cash": 850,
+    "vat": 988
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -5310,8 +5298,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1450,
-    "vat": 1686
+    "cash": 1500,
+    "vat": 1744
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -5325,8 +5313,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1550,
-    "vat": 1802
+    "cash": 1600,
+    "vat": 1860
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -5340,8 +5328,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1900,
-    "vat": 2209
+    "cash": 1950,
+    "vat": 2267
    }
   },
   {
@@ -5354,8 +5342,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1525,
-    "vat": 1773
+    "cash": 1550,
+    "vat": 1802
    }
   },
   {
@@ -5397,8 +5385,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1870,
-    "vat": 2174
+    "cash": 1900,
+    "vat": 2209
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -5440,8 +5428,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 2370,
-    "vat": 2756
+    "cash": 2380,
+    "vat": 2767
    }
   },
   {
@@ -5607,8 +5595,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 790,
-    "vat": 919
+    "cash": 800,
+    "vat": 930
    }
   },
   {
@@ -5633,7 +5621,7 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1500,
+    "cash": 1550,
     "vat": 1744
    }
   },
@@ -5646,7 +5634,7 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1800,
+    "cash": 1850,
     "vat": 2093
    }
   },
@@ -5791,14 +5779,14 @@
    "price": {
     "cur": "$/Вт",
     "cashTiers": [
-     185,
+     0.185,
      0.18,
      0.18
     ],
     "vatTiers": [
      null,
-     209,
-     209
+     0.209,
+     0.209
     ]
    }
   },
@@ -5814,13 +5802,13 @@
     "cur": "$/Вт",
     "cashTiers": [
      0.17,
-     165,
-     165
+     0.165,
+     0.165
     ],
     "vatTiers": [
      null,
-     192,
-     192
+     0.192,
+     0.192
     ]
    }
   },
@@ -5835,14 +5823,14 @@
    "price": {
     "cur": "$/Вт",
     "cashTiers": [
-     185,
+     0.185,
      0.18,
      0.18
     ],
     "vatTiers": [
      null,
-     209,
-     209
+     0.209,
+     0.209
     ]
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
@@ -5858,9 +5846,9 @@
    "price": {
     "cur": "$/Вт",
     "cashTiers": [
-     165,
-     163,
-     163
+     0.165,
+     0.163,
+     0.163
     ],
     "vatTiers": [
      null,
@@ -5881,13 +5869,13 @@
     "cur": "$/Вт",
     "cashTiers": [
      0.17,
-     165,
-     165
+     0.165,
+     0.165
     ],
     "vatTiers": [
      null,
-     192,
-     192
+     0.192,
+     0.192
     ]
    },
    "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
@@ -5903,14 +5891,14 @@
    "price": {
     "cur": "$/Вт",
     "cashTiers": [
-     172,
-     167,
-     167
+     0.172,
+     0.167,
+     0.167
     ],
     "vatTiers": [
      null,
-     194,
-     194
+     0.194,
+     0.194
     ]
    }
   },
@@ -5926,8 +5914,8 @@
     "cur": "$/Вт",
     "cashTiers": [
      0.17,
-     163,
-     163
+     0.163,
+     0.163
     ],
     "vatTiers": [
      null,
@@ -5947,14 +5935,14 @@
    "price": {
     "cur": "$/Вт",
     "cashTiers": [
-     172,
-     165,
-     165
+     0.172,
+     0.165,
+     0.165
     ],
     "vatTiers": [
      null,
-     192,
-     192
+     0.192,
+     0.192
     ]
    }
   },
