@@ -2763,6 +2763,19 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": true,
+   "price": {
+    "cash": 725,
+    "vat": 870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
    "model": "Система керування Deye BOS-G-PDU-2 (BMS) для Deye BOS-G-Pack5.1",
    "sup": "Atmo",
    "avail": "yes",
@@ -2771,19 +2784,6 @@
    "price": {
     "cash": 800,
     "vat": 842.1,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kwh": 5.12,
-   "hv": true,
-   "price": {
-    "cash": 725,
-    "vat": 870,
     "cur": "$"
    }
   },
