@@ -228,7 +228,7 @@ function parsePrice(raw) {
   let t = m[0].replace(/\s+/g, "");
   const dot = t.lastIndexOf("."), com = t.lastIndexOf(",");
   if (dot >= 0 && com >= 0) { if (com > dot) { t = t.replace(/\./g, "").replace(",", "."); } else { t = t.replace(/,/g, ""); } }
-  else if (com >= 0) { const after = t.length - com - 1; t = (after === 1 || after === 2) ? t.replace(",", ".") : t.replace(/,/g, ""); }
+  else if (com >= 0) { const after = t.length - com - 1, before = t.slice(0, com); t = (after === 1 || after === 2 || before === "0" || before === "") ? t.replace(",", ".") : t.replace(/,/g, ""); } // «0,185»=десяткова; «29,032»=тисячі
   t = t.replace(/,/g, "");
   const n = Number(t);
   return isFinite(n) && n > 0 ? Math.round(n * 10000) / 10000 : null; // тримаємо до 4 знаків, фінальне округлення — у roundP
