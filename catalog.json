@@ -52,7 +52,8 @@
    "model": "JA Solar JAM72D42 BL 640W (bifacial)",
    "sup": "Vimmer",
    "avail": "yes",
-   "watt": 640
+   "watt": 640,
+   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -83,7 +84,8 @@
    "model": "Longi Hi-MO LR8-66HGD 610W",
    "sup": "Vimmer",
    "avail": "no",
-   "watt": 610
+   "watt": 610,
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -969,7 +971,8 @@
     "cash": 105,
     "cur": "у.е.",
     "vat": 105
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -992,7 +995,8 @@
    "avail": "no",
    "watt": 600,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1001,7 +1005,8 @@
    "avail": "no",
    "watt": 605,
    "dim": "2382×1134",
-   "size": "large"
+   "size": "large",
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1015,7 +1020,8 @@
     "cash": 95.4,
     "cur": "у.е.",
     "vat": 95.4
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1412,7 +1418,8 @@
     "cash": 76,
     "cur": "у.е.",
     "vat": 76
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1426,7 +1433,8 @@
     "cash": 95,
     "cur": "у.е.",
     "vat": 95
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3129,7 +3137,7 @@
     "vat": 93.84,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3203,7 +3211,8 @@
     "cash": 71.91,
     "vat": 86.29,
     "cur": "$"
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3481,7 +3490,7 @@
     "vat": 86.83,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3553,7 +3562,8 @@
     "cash": 61.71,
     "vat": 74.05,
     "cur": "$"
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3610,7 +3620,7 @@
     "cash": 114,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4859,7 +4869,7 @@
     ],
     "cur": "$/Вт"
    },
-   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4877,7 +4887,7 @@
     ],
     "cur": "$/Вт"
    },
-   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4894,7 +4904,8 @@
      0.162
     ],
     "cur": "$/Вт"
-   }
+   },
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view?usp=sharing"
   },
   {
    "cat": "pan",
