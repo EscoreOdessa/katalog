@@ -275,6 +275,7 @@ const SHEETS_LIVE = [
   { sup: "Sakoenergy", id: "1fL5fwlGeWSeiogJFD6NeXQrmtdD3-SeDZljh0XYMBRc" },
   { sup: "Intersolar", id: "1urSlWzmui3nszA03kA9XFUoXgFhUHwUFRfraaiC5hE8" },
   { sup: "SunRise", id: "1Wog9MpKlV90ItO3GfagvxUHqGbWPLiZJ9fJnL_KbAFc" },
+  { sup: "Price H", id: "1OpG0sPkM8oFXYCNgVCUp-EZx5AIhj0aS_WGVQahWrt8", twoBlock: true }, // два блоки цін: C/D=в наявності, E/F=передзамовлення; валюта $
   ...(SOLARITY_MIRROR ? [
     { sup: "Solarity", id: SOLARITY_MIRROR, tab: "panels" },
     { sup: "Solarity", id: SOLARITY_MIRROR, tab: "inv" },
@@ -314,7 +315,7 @@ function sheetAvail(t) {
 }
 async function sheets() {
   const items = [];
-  for (const { sup, id, tab } of SHEETS_LIVE) {
+  for (const { sup, id, tab, twoBlock } of SHEETS_LIVE) {
     const label = sup + (tab ? "/" + tab : "");
     try {
       const url = `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:csv` + (tab ? `&sheet=${encodeURIComponent(tab)}` : "");
@@ -356,16 +357,26 @@ async function sheets() {
         if (!cat) continue;
         model = normCell(model);
         if (/бренд|модель|наявність|прайс|найменування/i.test(model)) continue; // рядок-шапка, не товар
-        let raw = availCol >= 0 ? (cells[availCol] || "") : "";
-        if (!raw) raw = cells.find((c) => /наявн|немає|стоп|дороз|очіку|замов/i.test(c || "")) || "";
-        const avail = sheetAvail(raw);
-        const price = pickSheetPrice(cells, cfg); if (price) np++;
+        let avail, price;
+        if (twoBlock) {
+          // Price H: C/D = «в наявності» (yes), E/F = «передзамовлення» (soon), H(РПЦ) ігнор. Валюта $, без −5%.
+          const C = roundP(parsePrice(cells[2]), 1, 2), D = roundP(parsePrice(cells[3]), 1, 2), E = roundP(parsePrice(cells[4]), 1, 2), F = roundP(parsePrice(cells[5]), 1, 2);
+          if (C != null || D != null) { avail = "yes"; price = { cur: "$" }; if (C != null) price.cash = C; if (D != null) price.vat = D; }
+          else if (E != null || F != null) { avail = "soon"; price = { cur: "$" }; if (E != null) price.cash = E; if (F != null) price.vat = F; }
+          else continue; // ні наявності, ні передзамовлення (тільки РПЦ або порожньо) — пропускаємо
+        } else {
+          let raw = availCol >= 0 ? (cells[availCol] || "") : "";
+          if (!raw) raw = cells.find((c) => /наявн|немає|стоп|дороз|очіку|замов/i.test(c || "")) || "";
+          avail = sheetAvail(raw);
+          price = pickSheetPrice(cells, cfg);
+        }
+        if (price) np++;
         const P = price ? { price } : {};
         if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup, avail, ...s, ...P }); n++; } }
         else if (cat === "bat") { const s = parseBattery(model); items.push({ cat, model, sup, avail, ...s, ...P }); n++; }
         else { const pi = panelInfo(model, cells); if (pi.watt != null || pi.len != null) { items.push({ cat, model, sup, avail, watt: pi.watt, brand: panelBrand(model), dim: pi.dim, size: pi.size, ...P }); n++; } }
       }
-      console.log(`${label}: ${n} позицій${cfg ? ` (${np} з ціною)` : ""}`);
+      console.log(`${label}: ${n} позицій${(cfg || twoBlock) ? ` (${np} з ціною)` : ""}`);
     } catch (e) { console.warn(`${label}: ${e.message}`); }
   }
   return items;
@@ -440,7 +451,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
