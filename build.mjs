@@ -382,6 +382,62 @@ async function sheets() {
   return items;
 }
 
+// ---------- RaTech (публічний gviz CSV, кілька вкладок з різною версткою) ----------
+// Бренд у стовпці A, модель у B → склеюємо для classify. Валюта $.
+//  Вкладка «Гібридні інвертори/АКБ» (Deye): Готівка=J(9), ПДВ=K(10), наявність=L(11).
+//  Вкладка «Сонячні панелі» (будь-який бренд, $/Вт): наявність=E(4);
+//    «до палети»=H(7) → тариф <36 (тільки готівка); «від палети» без ПДВ=I(8) / з ПДВ=J(9) → тарифи 36–108 і >108.
+const RATECH_ID = "1w9YuFd4pqGR1bkW1FeVD1kGjMHOuKHWTSU1EaroHkoc";
+async function ratechTab(tab) {
+  const url = `https://docs.google.com/spreadsheets/d/${RATECH_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tab)}`;
+  const res = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (catalog-bot ESCORE)" }, redirect: "follow" });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  return parseCSV(await res.text());
+}
+async function ratech() {
+  const items = [];
+  // 1) Deye інвертори + АКБ
+  try {
+    const rows = await ratechTab("Гібридні інвертори/АКБ");
+    let n = 0;
+    for (const cells of rows) {
+      const brand = normCell(cells[0]), mr = normCell(cells[1]);
+      if (mr.length < 4 || /модель|бренд/i.test(mr)) continue;
+      const model = KNOWN_BRAND.test(mr) ? mr : (brand ? brand + " " + mr : mr);
+      const cat = classify(model); if (cat !== "inv" && cat !== "bat") continue;
+      const cash = roundP(parsePrice(cells[9]), 1, 2), vat = roundP(parsePrice(cells[10]), 1, 2);
+      if (cash == null && vat == null) continue;
+      const price = { cur: "$" }; if (cash != null) price.cash = cash; if (vat != null) price.vat = vat;
+      const avail = sheetAvail(normCell(cells[11]));
+      if (cat === "inv") { const s = parseInverter(model); if (s.kw) { items.push({ cat, model, sup: "RaTech", avail, ...s, price }); n++; } }
+      else { const s = parseBattery(model); items.push({ cat, model, sup: "RaTech", avail, ...s, price }); n++; }
+    }
+    console.log(`RaTech/інв+АКБ: ${n} позицій`);
+  } catch (e) { console.warn("RaTech/інв+АКБ: " + e.message); }
+  // 2) Панелі (будь-який бренд, $/Вт, тарифи за кількістю: <36=H, 36–108/>108=від палети I/J)
+  try {
+    const rows = await ratechTab("Сонячні панелі");
+    let n = 0;
+    for (const cells of rows) {
+      const brand = normCell(cells[0]), mr = normCell(cells[1]);
+      if (mr.length < 3 || /модель|бренд/i.test(mr) || !/\d/.test(mr)) continue;
+      const H = roundP(parsePrice(cells[7]), 1, 3), I = roundP(parsePrice(cells[8]), 1, 3), J = roundP(parsePrice(cells[9]), 1, 3);
+      if (H == null && I == null && J == null) continue;
+      const cashTiers = [H, I, I], vatTiers = [null, J, J];
+      const price = { cur: "$/Вт" };
+      if (cashTiers.some((x) => x != null)) price.cashTiers = cashTiers;
+      if (vatTiers.some((x) => x != null)) price.vatTiers = vatTiers;
+      const model = brand && !KNOWN_BRAND.test(mr) ? brand + " " + mr : mr;
+      const avail = sheetAvail(normCell(cells[4]));
+      const pi = panelInfo(model, cells);
+      items.push({ cat: "pan", model, sup: "RaTech", avail, watt: pi.watt, brand: panelBrand(model), dim: pi.dim, size: pi.size, price }); n++;
+    }
+    console.log(`RaTech/панелі: ${n} позицій`);
+  } catch (e) { console.warn("RaTech/панелі: " + e.message); }
+  console.log(`RaTech: ${items.length} позицій`);
+  return items;
+}
+
 // ---------- Датащити з довідника katalog_obladnannya (публічний gviz CSV) ----------
 // Anna веде датащити в таблиці; тут матчимо їх до позицій каталогу за КОДОМ моделі + потужністю.
 const DS_SHEET = "1ARtSVPQ9n03UZdtlP3sy9iRUUDQ3dOLvLMQSsHT75Mc";
@@ -438,7 +494,9 @@ async function main() {
   try { liveAtmo = await atmo(); } catch (e) { console.warn("Atmo failed: " + e.message); }
   let liveSheets = [];
   try { liveSheets = await sheets(); } catch (e) { console.warn("sheets failed: " + e.message); }
-  const allLive = [...live, ...liveAtmo, ...liveSheets];
+  let liveRatech = [];
+  try { liveRatech = await ratech(); } catch (e) { console.warn("RaTech failed: " + e.message); }
+  const allLive = [...live, ...liveAtmo, ...liveSheets, ...liveRatech];
   // будь-який постачальник, що дав живі дані, замінює свій сид; хто не відповів — лишається зі снимка
   const gotSups = new Set(allLive.map((i) => i.sup));
   const DROP = new Set(["Helius"]); // постачальники, повністю виключені з каталогу (і з живого збору, і зі снимка)
@@ -451,7 +509,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
