@@ -1,6 +1,6 @@
 {
  "generated": "2026-08-20",
- "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
+ "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
  "items": [
   {
    "cat": "pan",
@@ -4332,6 +4332,438 @@
    "watt": 200,
    "dim": null,
    "size": "small"
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея BOS-GPack5.1 Deye (High-Voltage LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 745,
+    "vat": 880
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Блок керування кластером високовольтної батареї BOS-G-PDU2 Deye",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 725,
+    "vat": 840
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея BOS-B-Pack16-А3 Deye (High-Voltage LiFePO4 51,2V 314Ah 16.08kWh)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": 16.08,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1770
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Блок керування кластером високовольтної батареї BOS-B-PDU2-А Deye",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 905,
+    "vat": 1080
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F5 Pro-L Deye (LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "vat": 830
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F5 Pro-С Deye (LiFePO4 51,2V 100Ah 5,12kWh)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 735,
+    "vat": 840
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F12 С Deye (LiFePO4 51,2V 230Ah 11.8 kWh)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 11.8,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1420
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F12Max Deye (LiFePO4 51,2V 230Ah 11.8 kWh)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": 11.8,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1590
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F16 С Deye (LiFePO4 51,2V 314Ah 16.0 kWh)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1710
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-06K-SG05LP1-EU Deye WiFi (6 kW, 1 фаза, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 715,
+    "vat": 840
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-08K-SG05LP1-EU-AM2-P Deye WiFi (8 kW, 1 фаза, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 975,
+    "vat": 1150
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-10K-SG02LP1-EU-AM3 Deye WiFi (10 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1330,
+    "vat": 1570
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-12K-SG02LP1-EU-AM3 Deye WiFi (12 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1385,
+    "vat": 1630
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-12K-SG05LP3-EU-SM2 Deye WiFi (12 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1460,
+    "vat": 1720
+   },
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-15K-SG05LP3-EU-SM2 Deye WiFi (15 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1775,
+    "vat": 2100
+   },
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-16K-SG01LP1-EU Deye WiFi (16 kW, 1 фаза, 3 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 16,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1725
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-16K-SG05LP3-EU-SM2 Deye WiFi (16 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1775,
+    "vat": 2100
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-20K-SG01HP3-EU-AM2 Deye WiFi (20 kW, 3 фази, 2 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1540,
+    "vat": 1820
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-20K-SG05LP3-EU-SM2 Deye WiFi (20 kW, 3 фази, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 20,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 2170,
+    "vat": 2565
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-30K-SG02HP3-EU-AM3 Deye WiFi (30 kW, 3 фази, 3 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 2400,
+    "vat": 2820
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-50K-SG01HP3-EU-BM4 Deye WiFi (50 kW, 3 фази, 4 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 3995,
+    "vat": 4720
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-80K-SG02HP3-EU-EM6 Deye WiFi (80 kW, 3 фази, 6 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 80,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 5425,
+    "vat": 6400
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-100K-SG02HP3-EU-GM10 Deye WiFi (100 kW, 3 фази, 10 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 100,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 6710,
+    "vat": 7580
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-125K-SG02HP3-EU-GM10 Deye WiFi (125 kW, 3 фази, 10 MPPT, HV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 125,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 6980,
+    "vat": 8230
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-100K-PCSL01HP3 Deye WiFi (100 kW, 3 фази, HV)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 100,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 3590,
+    "vat": 4090
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Гібридний інвертор SUN-125K-PCSL01HP3 Deye WiFi (125 kW, 3 фази, HV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 125,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 3780,
+    "vat": 4310
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-25K-G05 Deye WiFi (25 kW, 3 фази, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 25,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "vat": 890
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-30K-G04 Deye WiFi (30 kW, 3 фази, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "vat": 1120
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-50K-G04 Deye WiFi (50 kW, 3 фази, 4 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 50,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1454,
+    "vat": 1710
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-100K-G03 Deye WiFi (100 kW, 3 фази, 6 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 100,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 2482
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Система зберігання енергії GE-F240-BC-2-A3 Deye (High-Voltage 240 kWh LiFePO4 51,2V )",
+   "sup": "Price H",
+   "avail": "yes",
+   "kwh": 240,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 33790,
+    "vat": 39880
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Система зберігання енергії GE-F256-BC-2-A3 Deye (High-Voltage 256 kWh LiFePO4 51,2V )",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 256,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 35710,
+    "vat": 42140
+   }
   },
   {
    "cat": "pan",
