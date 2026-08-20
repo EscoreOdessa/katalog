@@ -478,7 +478,7 @@ function attachDatasheet(it, dsList) {
     if (d.cat && d.cat !== it.cat) continue;
     const hit = sig.includes(d.code) || (catCode.length >= 8 && (d.code.includes(catCode) || catCode.includes(d.code)));
     if (!hit) continue;
-    if (it.cat === "pan") { if (d.watt != null && it.watt != null && d.watt !== it.watt) continue; }
+    if (it.cat === "pan") { if (d.watt != null && it.watt != null && Math.abs(d.watt - it.watt) > 25) continue; } // серія (JAM54D40 465/470/475…) — один datasheet, тому допуск ±25 Вт, а не точний збіг
     else if (it.cat === "inv") { if (d.kw != null && it.kw != null && d.kw !== it.kw) continue; }
     else if (it.cat === "bat") { if (d.kwh != null && it.kwh != null && Math.abs(d.kwh - it.kwh) > 0.3) continue; }
     return d.ds;
