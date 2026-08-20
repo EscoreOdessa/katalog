@@ -1,6 +1,6 @@
 {
  "generated": "2026-08-20",
- "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
+ "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
  "items": [
   {
    "cat": "pan",
@@ -636,7 +636,7 @@
    "watt": 625,
    "dim": "2382×1134",
    "size": "large",
-   "ds": "https://drive.google.com/file/d/1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1094,7 +1094,7 @@
     "cur": "у.е.",
     "vat": 94.5
    },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
+   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -1689,6 +1689,15 @@
   },
   {
    "cat": "inv",
+   "model": "Гибридный инвертор (hybrid) Deye SUN-6K-SG06LP1-EU-BM2 WI-FI, 6кВт, однофазный, (МРРТ 125-425/ 120А/ DC48В )Parallel",
+   "sup": "YugTorg",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false
+  },
+  {
+   "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-6K-OG01LP1-EU WI-FI, 6кВт, однофазный, (МРРТ 125-425/ 120А/ DC48В )Parallel",
    "sup": "YugTorg",
    "avail": "no",
@@ -1920,7 +1929,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-20K-SG05LP3-EU-SM2, WI-FI,20кВт,трехфазный, (MPPT 160-650/350A/АКБ 48V)Parallel",
    "sup": "YugTorg",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 20,
    "ph": 3,
    "hv": false,
@@ -2123,6 +2132,14 @@
   },
   {
    "cat": "bat",
+   "model": "Аккумуляторная батарея Deye LiFePO4 WD-G24200 26,6V 200Ah 5.12KWh, BMS100@16S до 16 parallel(1stack), CAN&RS485 ,wi-fi,6000Cycles, (390*540*160), 41kg",
+   "sup": "YugTorg",
+   "avail": "no",
+   "kwh": 5.12,
+   "hv": false
+  },
+  {
+   "cat": "bat",
    "model": "Аккумуляторная батарея Deye LiFePO4 SE-F5 Pro-С 51,2V 100Ah 5KWh, BMS100@16S до 32 parallel(1stack), CAN&RS485 ,wi-fi,6000Cycles, (404*547*141), 44kg",
    "sup": "YugTorg",
    "avail": "yes",
@@ -2155,7 +2172,7 @@
    "kwh": 5,
    "hv": false,
    "price": {
-    "cash": 790,
+    "cash": 820,
     "cur": "у.е.",
     "vat": 870
    }
@@ -2168,7 +2185,7 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 840,
+    "cash": 850,
     "cur": "у.е.",
     "vat": 900
    }
@@ -2178,7 +2195,7 @@
    "model": "Аккумуляторная батарея Deye LiFePO4 RW-M6.1-B 51,2V 120Ah, BMS60@16S до 32 parallel, CAN&RS485, IP21, 6000Cycles, (510*740*145), 58kg",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kwh": 6.14,
    "hv": false,
    "price": {
     "cash": 1050,
@@ -2233,7 +2250,7 @@
    "kwh": 16,
    "hv": false,
    "price": {
-    "cash": 1950,
+    "cash": 1988,
     "cur": "у.е.",
     "vat": 2300
    }
@@ -2256,7 +2273,7 @@
    "model": "Аккумуляторная батарея Deye BOS-GM5.1, 51,2 В 100 Ач, 5,12 кВтч на аккумуляторный блок(100/100A)(440*570*133), 44kg",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kwh": 5.12,
    "hv": true,
    "price": {
     "cash": 800,
@@ -2282,7 +2299,7 @@
    "model": "Аккумуляторная батарея Deye BOS-GM5.1-D, 51,2 В 100 Ач, 5,12 кВтч на аккумуляторный блок(100/100A)(440*570*133), 44kg",
    "sup": "YugTorg",
    "avail": "no",
-   "kwh": null,
+   "kwh": 5.12,
    "hv": true,
    "price": {
     "cash": 800,
@@ -2978,21 +2995,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 99.78,
-    "vat": 120.07,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM72D40-605/LB 605 Wp, Bifacial N-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3052,21 +3054,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 635,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 97.16,
-    "vat": 116.59,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-66HD630 630Wp N-type Bifacial",
    "sup": "Atmo",
    "avail": "yes",
@@ -3094,6 +3081,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 635,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 97.16,
+    "vat": 116.59,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3141,18 +3143,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 465,
+   "watt": 645,
    "dim": null,
-   "size": "small",
+   "size": "large",
    "price": {
-    "cash": 81.42,
-    "vat": 97.63,
+    "cash": 99.78,
+    "vat": 120.07,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3288,6 +3290,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 81.42,
+    "vat": 97.63,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3872,7 +3889,7 @@
    "model": "Акумуляторна батарея Deye SE-G5.1Pro-B (LiFePO4 51,2V 100Ah)",
    "sup": "Sakoenergy",
    "avail": "soon",
-   "kwh": null,
+   "kwh": 5.12,
    "hv": false
   },
   {
@@ -3902,6 +3919,14 @@
     "cash": 850,
     "cur": "$"
    }
+  },
+  {
+   "cat": "bat",
+   "model": "Аккумуляторная батарея FelicityESS FLA48314-EU 48v 314Ah 16kwt",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false
   },
   {
    "cat": "pan",
@@ -3992,10 +4017,6 @@
    "kw": 6,
    "ph": 1,
    "hv": false,
-   "price": {
-    "cash": 800,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
@@ -4333,14 +4354,10 @@
    "cat": "pan",
    "model": "Сонячна панель Sunerise JC600-144M - 600 Вт (Двостороння) Розміри: 2279*1134*30мм Вага: 26кг",
    "sup": "SunRise",
-   "avail": "yes",
+   "avail": "soon",
    "watt": 600,
    "dim": "2279×1134",
-   "size": "large",
-   "price": {
-    "cash": 85,
-    "cur": "$"
-   }
+   "size": "large"
   },
   {
    "cat": "pan",
@@ -4381,6 +4398,22 @@
    "watt": 200,
    "dim": null,
    "size": "small"
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Felicity FLA48280-EU, 14кВтч - 51.2 В, 280 Ач",
+   "sup": "SunRise",
+   "avail": "no",
+   "kwh": 14.34,
+   "hv": false
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Felicity FLA48300-EU, 15кВтч - 51.2 В, 300 Ач",
+   "sup": "SunRise",
+   "avail": "no",
+   "kwh": 15.36,
+   "hv": false
   },
   {
    "cat": "bat",
@@ -5977,6 +6010,293 @@
      0.7,
      0.7
     ]
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-6K-SG05LP1-EU-AM2-P 6 кВт 48 В 1 фаза",
+   "sup": "Avtonomka",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 930,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-8K-SG05LP1-EU-AM2-P 8 кВт 48 В 1 фаза",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1190,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-12K-SG02LP1-EU-AM3-P 12 кВт 1 фаза",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kw": 12,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1600,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Deye SUN-16K-SG01LP1-EU 16 кВт 1 фаза LV",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kw": 16,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1965,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Felicity IVEM4024-II 24В 4 кВт",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kw": 4,
+   "ph": null,
+   "hv": false,
+   "price": {
+    "cash": 370,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Felicity IVEM6048-II 48В 6 кВт",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kw": 6,
+   "ph": null,
+   "hv": false,
+   "price": {
+    "cash": 570,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Felicity IVEM8048-II 48 В 8 кВт",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kw": 8,
+   "ph": null,
+   "hv": false,
+   "price": {
+    "cash": 730,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Felicity IVEM12048-II 48 В 12 кВт",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kw": 12,
+   "ph": null,
+   "hv": false,
+   "price": {
+    "cash": 840,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE SE-F5 Pro-C 51.2V 100 Ah 45 кг, LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Deye SE-F16-С 51.2V 314 Аh, 109 кг, LiFePO4, 16 kWh",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cash": 1870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA24100 25.6V 100Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 2.56,
+   "hv": false,
+   "price": {
+    "cash": 550,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA24200 25.6V 200Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 720,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA24230 25.6V 230Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 5.89,
+   "hv": false,
+   "price": {
+    "cash": 900,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA24280 25.6V 280Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 7.17,
+   "hv": false,
+   "price": {
+    "cash": 880,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48100 51.2V 100Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 720,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLB48100WG1-H 51.2V 100Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 800,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity LPBA48100-OL 51.2V 100Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 810,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48171 51.2V 171Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 8.76,
+   "hv": false,
+   "price": {
+    "cash": 1210,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48200 51.2V 200Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "soon",
+   "kwh": 10.24,
+   "hv": false,
+   "price": {
+    "cash": 1340,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48230 51.2V 230Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 11.78,
+   "hv": false,
+   "price": {
+    "cash": 1460,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48280 51.2V 280Ah LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 14.34,
+   "hv": false,
+   "price": {
+    "cash": 1680,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLA48314-EU 51.2V 314Ah 16kWh LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cash": 1760,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLB48314TG1-H 51.2V 314Ah 16kWh LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cash": 1800,
+    "cur": "$"
    }
   }
  ]
