@@ -252,7 +252,7 @@ function findCol(rows, re) {
   return -1;
 }
 // Постачальники з фіксованими колонками ціни (лише готівка). Букви → індекси: C=2, F=5, J=9.
-const SHEET_PRICE = { Sakoenergy: { cash: 2 }, Intersolar: { cash: 9 }, Helius: { cash: 5 }, SunRise: { cash: 5 } };
+const SHEET_PRICE = { Sakoenergy: { cash: 2, cur: "$" }, Intersolar: { cash: 9, cur: "$" }, SunRise: { cash: 5, cur: "$" } };
 function pickSheetPrice(cells, cfg) {
   if (!cfg) return null;
   const f = cfg.factor || 1, p = cfg.round, out = {};
