@@ -1,6 +1,6 @@
 {
  "generated": "2026-08-20",
- "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
+ "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Solarity (дзеркало). Altek/Vimmer — снимок. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
  "items": [
   {
    "cat": "pan",
@@ -2482,7 +2482,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-PLUS (6 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "soon",
+   "avail": "no",
    "kw": 6,
    "ph": 1,
    "hv": false,
@@ -2750,19 +2750,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 5.12,
-   "hv": true,
-   "price": {
-    "cash": 725,
-    "vat": 870,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-G-Pack5.1 (BOS-G pro)",
    "sup": "Atmo",
    "avail": "yes",
@@ -2789,9 +2776,22 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kwh": 5.12,
+   "hv": true,
+   "price": {
+    "cash": 725,
+    "vat": 870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F16-C (16 кВт·год/51,2 В LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kwh": 16,
    "hv": false,
    "price": {
@@ -2880,6 +2880,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 610,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 88.66,
+    "vat": 106.29,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -2895,18 +2910,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
+   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 610,
+   "watt": 650,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 88.66,
-    "vat": 106.29,
+    "cash": 102.77,
+    "vat": 123.21,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
   },
   {
    "cat": "pan",
@@ -2925,21 +2940,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 100.56,
-    "vat": 121,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM72D42-645/LB 645 Wp, Bificial, n-type (200-400mm cable)",
    "sup": "Atmo",
    "avail": "yes",
@@ -2955,18 +2955,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
+   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 615,
+   "watt": 650,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 92,
-    "vat": 110.82,
+    "cash": 100.56,
+    "vat": 121,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2996,6 +2996,21 @@
     "vat": 107.48,
     "cur": "$"
    }
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 615,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 92,
+    "vat": 110.82,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3074,21 +3089,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 465,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 81.42,
-    "vat": 97.63,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-625/LB 625 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3133,6 +3133,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 81.42,
+    "vat": 97.63,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Longi LR7-54HVH-480, 480Wp, Mono (Black Frame)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3145,21 +3160,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 102.77,
-    "vat": 123.21,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
   },
   {
    "cat": "pan",
@@ -3340,6 +3340,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 71.15,
+    "vat": 86.29,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-54HD505 505Wp N-Type Bifacial (Black Frame)",
    "sup": "Atmo",
    "avail": "soon",
@@ -3409,21 +3424,6 @@
     "vat": 87.8,
     "cur": "$"
    }
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "watt": 465,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 71.15,
-    "vat": 86.29,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4056,11 +4056,7 @@
    "avail": "soon",
    "kw": 20,
    "ph": 3,
-   "hv": false,
-   "price": {
-    "cash": 2300,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "inv",
@@ -4181,7 +4177,7 @@
    "cat": "bat",
    "model": "Акумуляторна батарея Deye LiFePo4 Deye SE-G5.1 PRO B (5,1 кВт*год 48В)",
    "sup": "Intersolar",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": 5.1,
    "hv": false,
    "price": {
@@ -4820,7 +4816,7 @@
     "cashTiers": [
      0.19,
      0.185,
-     null
+     0.181
     ],
     "cur": "$/Вт"
    },
@@ -4866,7 +4862,7 @@
     "cashTiers": [
      0.163,
      0.162,
-     null
+     0.16
     ],
     "vatTiers": [
      0.182,
@@ -4889,7 +4885,7 @@
     "cashTiers": [
      0.165,
      0.163,
-     null
+     0.162
     ],
     "cur": "$/Вт"
    },
@@ -4907,7 +4903,7 @@
     "cashTiers": [
      0.169,
      0.166,
-     null
+     0.162
     ],
     "cur": "$/Вт"
    }
@@ -4934,7 +4930,7 @@
     "cashTiers": [
      0.18,
      0.175,
-     null
+     0.173
     ],
     "cur": "$/Вт"
    },
@@ -4962,7 +4958,7 @@
     "cashTiers": [
      0.175,
      0.172,
-     null
+     0.17
     ],
     "vatTiers": [
      0.186,
@@ -5258,6 +5254,730 @@
     "cash": 750.5,
     "vat": 939.55,
     "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-5K-SG05LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 5,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 850,
+    "vat": 988
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-6K-SG05LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 800,
+    "vat": 930
+   },
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-8K-SG05LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1080,
+    "vat": 1256
+   },
+   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-10K-SG02LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1450,
+    "vat": 1686
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-12K-SG02LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1550,
+    "vat": 1802
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-16K-SG01LP1",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1900,
+    "vat": 2209
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-10K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 10,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1525,
+    "vat": 1773
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-12K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1600,
+    "vat": 1860
+   },
+   "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-14K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 14,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1840,
+    "vat": 2140
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-15K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1870,
+    "vat": 2174
+   },
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-16K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1920,
+    "vat": 2233
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-18K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 18,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 2100,
+    "vat": 2442
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-20K-SG05LP3",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kw": 20,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 2370,
+    "vat": 2756
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-15K-SG01HP3-EU-AM2",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 15,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1420,
+    "vat": 1651
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-20K-SG01HP3-EU-AM2",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kw": 20,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1700,
+    "vat": 1977
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-25K-SG01HP3-EU-BM3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 25,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1800,
+    "vat": 2093
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-30K-SG01HP3-EU-BM3",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 30,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 3300,
+    "vat": 3837
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-30K-SG02HP3-EU-",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kw": 30,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 2450,
+    "vat": 2849
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-50K-SG01HP3-EU-BM4",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 50,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 4050,
+    "vat": 4709
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-60K-SG02HP3-EU-EM6",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 60,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 5100,
+    "vat": 5930
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-75K-SG02HP3-EU-EM6",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 75,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 5250,
+    "vat": 6105
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-80K-SG02HP3-EU-EM6",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 80,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 5370,
+    "vat": 6244
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-100K-SG02HP3-EU-GM10",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 100,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 6800,
+    "vat": 7907
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "DEYE SUN-125K-SG02HP3-EU-GM10",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kw": 125,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 7100,
+    "vat": 8256
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE SE-G5.1 PRO-B",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 790,
+    "vat": 919
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE SE-F5-PRO-C",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 770,
+    "vat": 895
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE SE-F12-C",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kwh": null,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1500,
+    "vat": 1744
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE SE-F16-C",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kwh": null,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1800,
+    "vat": 2093
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-G PRO",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 740,
+    "vat": 860
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BMS BOS-G PRO PDU-2",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 740,
+    "vat": 860
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-A",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1150,
+    "vat": 1338
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-A-PDU-2",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 950,
+    "vat": 1105
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Комплект Deye BOS-B Pro-A3 Стійка + БМС + АКБ LiFePO4 HV 51.2V 314Ah 16 kWh - 15 шт = 240 kWh",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": 16,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 26450,
+    "vat": 32000
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-B Pro-A3",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1790,
+    "vat": 2150
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-B-PDU-2-A",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 980,
+    "vat": 1700
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Accessory для батарей DEYE BOS-B PRO (кабелі, перемички)",
+   "sup": "RaTech",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 650,
+    "vat": 800
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BOS-A",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 1130,
+    "vat": 1314
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "DEYE BMS BOS-A-PDU-2 1000V/160A",
+   "sup": "RaTech",
+   "avail": "soon",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cur": "$",
+    "cash": 930,
+    "vat": 1081
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Risen 450M-96",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 450,
+   "dim": "1762×1134",
+   "size": "small",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     185,
+     0.18,
+     0.18
+    ],
+    "vatTiers": [
+     null,
+     209,
+     209
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Suntech 450M-108",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 450,
+   "dim": "1762×1134",
+   "size": "small",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     0.17,
+     165,
+     165
+    ],
+    "vatTiers": [
+     null,
+     192,
+     192
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "JA 460M-108",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 460,
+   "dim": "1762×1134",
+   "size": "small",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     185,
+     0.18,
+     0.18
+    ],
+    "vatTiers": [
+     null,
+     209,
+     209
+    ]
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Risen 595M-144",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 595,
+   "dim": "2278×1134",
+   "size": "large",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     165,
+     163,
+     163
+    ],
+    "vatTiers": [
+     null,
+     0.19,
+     0.19
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 630M-132",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 630,
+   "dim": "2382×1134",
+   "size": "large",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     0.17,
+     165,
+     165
+    ],
+    "vatTiers": [
+     null,
+     192,
+     192
+    ]
+   },
+   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
+  },
+  {
+   "cat": "pan",
+   "model": "Jinko 635M-132",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 635,
+   "dim": "2382×1134",
+   "size": "large",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     172,
+     167,
+     167
+    ],
+    "vatTiers": [
+     null,
+     194,
+     194
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Risen 725M-132",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 725,
+   "dim": "2384×1303",
+   "size": "large",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     0.17,
+     163,
+     163
+    ],
+    "vatTiers": [
+     null,
+     0.19,
+     0.19
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Risen 730M-132",
+   "sup": "RaTech",
+   "avail": "yes",
+   "watt": 730,
+   "dim": "2384×1303",
+   "size": "large",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     172,
+     165,
+     165
+    ],
+    "vatTiers": [
+     null,
+     192,
+     192
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Worldsunlight MC4 2,5-6",
+   "sup": "RaTech",
+   "avail": "soon",
+   "watt": null,
+   "dim": null,
+   "size": null,
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     0.9,
+     null,
+     null
+    ],
+    "vatTiers": [
+     null,
+     0.7,
+     0.7
+    ]
    }
   }
  ]
