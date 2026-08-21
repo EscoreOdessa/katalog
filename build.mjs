@@ -489,7 +489,7 @@ async function avtonomka() {
 
 // ---------- Slavik (публічний gviz; 2 колонки: A=модель, B=ціна $; секції «Гібридні інвертори»/«Акумулятори») ----------
 // Тільки Готівка ($). Беремо ТІЛЬКИ Deye + Felicity (Must/DAH Solar не додаємо). Колонки наявності немає → "soon" (уточнюйте).
-const SLAVIK_ID = "1OfQ96BpWRTXPiCYBwbkYGAsrQ7zbiJkb8tonCxRNWrw";
+const SLAVIK_ID = "1RzpyWCbIYrxz9zX58FU1iOUpED0rysGNhfYdcA4dnY0";
 async function slavik() {
   const items = [];
   try {
