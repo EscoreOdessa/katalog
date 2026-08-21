@@ -30,17 +30,25 @@ function classify(name) {
   if (/deye/i.test(s) && /(BOS|SE-F|SE-G|LiFePO|LFP|акумул|аккумул|батаре|АКБ)/i.test(s)) return "bat";
   // Felicity (інвертори серії IVEM/IVGM/IVPM; АКБ серії FLA/FLB, LiFePO4)
   if (/felicity/i.test(s) && /(інверт|инверт|IVEM|IVGM|IVPM|IVSM)/i.test(s)) return "inv";
-  if (/felicity/i.test(s) && /(LiFePO|LFP|акумул|аккумул|батаре|АКБ|FLA\d|FLB\d|\d+\s*ah)/i.test(s)) return "bat";
+  if (/felicity/i.test(s) && /(LiFePO|LFP|акумул|аккумул|батаре|АКБ|FL[AB]\d|LPBA|\d+\s*ah)/i.test(s)) return "bat";
   if (/(сонячн(а|у) панел|солнечн(ая|ую) панел|фотомодул)/i.test(s) ||
       /\b(Longi|Jinko|JA Solar|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i.test(s)) return "pan";
   return null;
 }
 function parseInverter(name) {
   const s = name.toUpperCase();
+  let kw = null;
   const kwM = s.match(/(\d{1,3})\s*К?ВТ/) || s.match(/SUN-?(\d{1,3})K/);
+  if (kwM) kw = Number(kwM[1]);
+  // Felicity IVEM (низьковольтні): IVEM<потужність><напруга 3 цифри>, напр. IVEM6048=6кВт/48В, IVEM12048=12кВт/48В
+  if (kw == null) { const f = s.match(/IVEM\s*-?\s*(\d{4,6})/); if (f) { const p = Number(f[1].slice(0, -3)); if (p >= 1 && p <= 60) kw = p; } }
+  // дробові позначення потужності: "4K6"=4.6кВт
+  if (kw == null) { const fr = s.match(/(\d{1,3})K(\d)(?![\dK])/); if (fr) kw = Number(fr[1]) + Number(fr[2]) / 10; }
+  // Felicity IVGM (три фази, високовольтні): "IVGM125K…"=125кВт
+  if (kw == null) { const hk = s.match(/IV[A-Z]M\D{0,6}(\d{2,3})K(?!\d)/); if (hk) kw = Number(hk[1]); }
   let ph = null;
-  if (/ТРЕХФАЗ|ТРИФАЗ|3\s*ФАЗ|LP3|HP3/.test(s)) ph = 3; else if (/ОДНОФАЗ|1\s*ФАЗ|LP1|HP1/.test(s)) ph = 1;
-  return { kw: kwM ? Number(kwM[1]) : null, ph, hv: /\bHV\b|HP3|HP1/.test(s) };
+  if (/ТРЕХФАЗ|ТРИФАЗ|3\s*ФАЗ|LP3|HP3|P3G/.test(s)) ph = 3; else if (/ОДНОФАЗ|1\s*ФАЗ|LP1|HP1|P1G|P2G/.test(s)) ph = 1;
+  return { kw, ph, hv: /\bHV\b|HP3|HP1|IVGM/.test(s) };
 }
 function parseBattery(name) {
   // ємність акумулятора: «5,12 кВт·год», «16 kWh», а також «16KW»/«16 кВт» (постачальники часто пишуть kW замість kWh).
@@ -479,6 +487,37 @@ async function avtonomka() {
   return items;
 }
 
+// ---------- Slavik (публічний gviz; 2 колонки: A=модель, B=ціна $; секції «Гібридні інвертори»/«Акумулятори») ----------
+// Тільки Готівка ($). Беремо ТІЛЬКИ Deye + Felicity (Must/DAH Solar не додаємо). Колонки наявності немає → "soon" (уточнюйте).
+const SLAVIK_ID = "1OfQ96BpWRTXPiCYBwbkYGAsrQ7zbiJkb8tonCxRNWrw";
+async function slavik() {
+  const items = [];
+  try {
+    const res = await fetch(`https://docs.google.com/spreadsheets/d/${SLAVIK_ID}/gviz/tq?tqx=out:csv`, { headers: { "user-agent": "Mozilla/5.0 (catalog-bot ESCORE)" }, redirect: "follow" });
+    if (!res.ok) { console.warn("Slavik: HTTP " + res.status); return items; }
+    const rows = parseCSV(await res.text());
+    let category = null, n = 0;
+    for (const cells of rows) {
+      const a = normCell(cells[0]), al = a.toLowerCase();
+      // рядок-секція: A=назва категорії, B не число («Ціна, $»)
+      if (parsePrice(cells[1]) == null) {
+        if (/інвертор/.test(al)) category = "inv";
+        else if (/акумул/.test(al)) category = "bat";
+        continue;
+      }
+      if (!category || a.length < 5) continue;
+      if (!/deye|felicity/i.test(a)) continue; // тільки Deye + Felicity
+      const price = roundP(parsePrice(cells[1]), 1, 2); if (price == null) continue;
+      const P = { price: { cash: price, cur: "$" } };
+      const avail = "soon"; // прайс без колонки наявності
+      if (category === "inv") { const s = parseInverter(a); if (s.kw) { items.push({ cat: "inv", model: a, sup: "Slavik", avail, ...s, ...P }); n++; } }
+      else { const s = parseBattery(a); items.push({ cat: "bat", model: a, sup: "Slavik", avail, ...s, ...P }); n++; }
+    }
+    console.log(`Slavik: ${n} позицій`);
+  } catch (e) { console.warn("Slavik: " + e.message); }
+  return items;
+}
+
 // ---------- Датащити з довідника katalog_obladnannya (публічний gviz CSV) ----------
 // Anna веде датащити в таблиці; тут матчимо їх до позицій каталогу за КОДОМ моделі + потужністю.
 const DS_SHEET = "1ARtSVPQ9n03UZdtlP3sy9iRUUDQ3dOLvLMQSsHT75Mc";
@@ -539,7 +578,9 @@ async function main() {
   try { liveRatech = await ratech(); } catch (e) { console.warn("RaTech failed: " + e.message); }
   let liveAvto = [];
   try { liveAvto = await avtonomka(); } catch (e) { console.warn("Avtonomka failed: " + e.message); }
-  const allLive = [...live, ...liveAtmo, ...liveSheets, ...liveRatech, ...liveAvto];
+  let liveSlavik = [];
+  try { liveSlavik = await slavik(); } catch (e) { console.warn("Slavik failed: " + e.message); }
+  const allLive = [...live, ...liveAtmo, ...liveSheets, ...liveRatech, ...liveAvto, ...liveSlavik];
   // будь-який постачальник, що дав живі дані, замінює свій сид; хто не відповів — лишається зі снимка
   const gotSups = new Set(allLive.map((i) => i.sup));
   const DROP = new Set(["Helius"]); // постачальники, повністю виключені з каталогу (і з живого збору, і зі снимка)
@@ -552,7 +593,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
