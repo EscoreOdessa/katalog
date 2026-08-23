@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-22",
+ "generated": "2026-08-23",
  "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
  "items": [
   {
@@ -2542,7 +2542,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG05LP3-EU-SM2 (12 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "soon",
+   "avail": "no",
    "kw": 12,
    "ph": 3,
    "hv": false,
@@ -2586,7 +2586,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "no",
+   "avail": "soon",
    "kw": 12,
    "ph": 1,
    "hv": false,
@@ -3373,6 +3373,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40-440/LB 440 Wp, Mono",
+   "sup": "Atmo",
+   "avail": "no",
+   "watt": 440,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 61.71,
+    "vat": 74.05,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-54HD505 505Wp N-Type Bifacial (Black Frame)",
    "sup": "Atmo",
    "avail": "soon",
@@ -3559,21 +3574,6 @@
     "vat": 112.63,
     "cur": "$"
    }
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40-440/LB 440 Wp, Mono",
-   "sup": "Atmo",
-   "avail": "no",
-   "watt": 440,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 61.71,
-    "vat": 74.05,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -6005,7 +6005,7 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 900,
+    "cash": 850,
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
