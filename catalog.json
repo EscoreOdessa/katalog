@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-23",
+ "generated": "2026-08-24",
  "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.",
  "items": [
   {
@@ -3648,12 +3648,29 @@
   },
   {
    "cat": "inv",
+   "model": "Deye SUN-5K-SG05LP1-EU",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "kw": 5,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 760,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
    "model": "Deye SUN-6K-SG05LP1-EU",
    "sup": "Sakoenergy",
    "avail": "soon",
    "kw": 6,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 800,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
@@ -3678,6 +3695,10 @@
    "kw": 10,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 1440,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -3688,6 +3709,10 @@
    "kw": 12,
    "ph": 1,
    "hv": false,
+   "price": {
+    "cash": 1580,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -3697,11 +3722,7 @@
    "avail": "soon",
    "kw": 16,
    "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1850,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "inv",
@@ -3711,6 +3732,10 @@
    "kw": 12,
    "ph": 3,
    "hv": false,
+   "price": {
+    "cash": 1580,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
@@ -3721,6 +3746,10 @@
    "kw": 15,
    "ph": 3,
    "hv": false,
+   "price": {
+    "cash": 1790,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
@@ -3730,7 +3759,11 @@
    "avail": "soon",
    "kw": 20,
    "ph": 3,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 2340,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
@@ -3881,7 +3914,11 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 12,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1500,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -3897,7 +3934,11 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 5,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 750,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -3917,7 +3958,11 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 16,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1740,
+    "cur": "$"
+   }
   },
   {
    "cat": "pan",
@@ -4545,13 +4590,12 @@
    "cat": "inv",
    "model": "Гібридний інвертор SUN-12K-SG02LP1-EU-AM3 Deye WiFi (12 kW, 1 фаза, 3 MPPT, LV)",
    "sup": "Price H",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 12,
    "ph": 1,
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1385,
     "vat": 1630
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
@@ -4575,14 +4619,13 @@
    "cat": "inv",
    "model": "Гібридний інвертор SUN-15K-SG05LP3-EU-SM2 Deye WiFi (15 kW, 3 фази, 2 MPPT, LV)",
    "sup": "Price H",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 15,
    "ph": 3,
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 1775,
-    "vat": 2100
+    "cash": 1775
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -5030,7 +5073,7 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 797.05,
+    "cash": 817,
     "vat": 917.7,
     "cur": "$"
    },
@@ -5045,7 +5088,7 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 970.9,
+    "cash": 1225.5,
     "vat": 1250.2,
     "cur": "$"
    },
@@ -5103,7 +5146,7 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1511.45,
+    "cash": 1532.35,
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
@@ -5132,7 +5175,7 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2247.7,
+    "cash": 2349.35,
     "vat": 2953.55,
     "cur": "$"
    }
@@ -5266,7 +5309,7 @@
    "kwh": null,
    "hv": false,
    "price": {
-    "cash": 750.5,
+    "cash": 817,
     "vat": 939.55,
     "cur": "$"
    }
@@ -5289,7 +5332,7 @@
    "cat": "inv",
    "model": "DEYE SUN-6K-SG05LP1",
    "sup": "RaTech",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 6,
    "ph": 1,
    "hv": false,
@@ -5363,7 +5406,7 @@
    "cat": "inv",
    "model": "DEYE SUN-10K-SG05LP3",
    "sup": "RaTech",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 10,
    "ph": 3,
    "hv": false,
@@ -5636,8 +5679,8 @@
    "hv": false,
    "price": {
     "cur": "$",
-    "cash": 770,
-    "vat": 895
+    "cash": 780,
+    "vat": 907
    }
   },
   {
@@ -5844,7 +5887,7 @@
    "cat": "pan",
    "model": "JA 460M-108",
    "sup": "RaTech",
-   "avail": "soon",
+   "avail": "yes",
    "watt": 460,
    "dim": "1762×1134",
    "size": "small",
