@@ -116,9 +116,44 @@ function yugHeaderCols(html) {
   const find = (re) => ths.findIndex((t) => re.test(t));
   return { spec: find(/спец/i), ue: find(/у\.?\s*[ео]\.?|цена\s*у/i) };
 }
+// Автологін YugTorg: POST email+password на index.php?route=login/login (без CSRF/капчі).
+// Логін/пароль з секретів YUGTORG_EMAIL/YUGTORG_PASSWORD. Повертає рядок cookie «PHPSESSID=...» або null.
+// Перевага перед ручним YUGTORG_COOKIE: сесія створюється й використовується з одного IP (GitHub), не протухає.
+async function yugtorgLogin() {
+  const email = process.env.YUGTORG_EMAIL, password = process.env.YUGTORG_PASSWORD;
+  if (!email || !password) return null;
+  const BASE = "https://b2b.yugtorg.com/index.php";
+  const UA = "Mozilla/5.0 (catalog-bot ESCORE)";
+  const sidOf = (res) => {
+    const arr = (res.headers.getSetCookie && res.headers.getSetCookie()) || [res.headers.get("set-cookie")].filter(Boolean);
+    for (const c of arr) { const m = /PHPSESSID=([^;]+)/.exec(c || ""); if (m) return m[1]; }
+    return null;
+  };
+  // 1) GET — отримати початковий PHPSESSID
+  const g = await fetch(`${BASE}?route=login/login`, { headers: { "user-agent": UA }, redirect: "manual" });
+  let sid = sidOf(g);
+  const ck = () => (sid ? `PHPSESSID=${sid}` : "");
+  // 2) POST — облікові дані
+  const body = new URLSearchParams({ email, password, redirect: "" }).toString();
+  const p = await fetch(`${BASE}?route=login/login`, {
+    method: "POST",
+    headers: { "user-agent": UA, "content-type": "application/x-www-form-urlencoded", "x-requested-with": "XMLHttpRequest", cookie: ck() },
+    body, redirect: "manual",
+  });
+  sid = sidOf(p) || sid;
+  if (!sid) return null;
+  // 3) перевірка авторизації на реальній сторінці категорії
+  const v = await fetch(`${BASE}?route=product/category&category_id=${YUG_CATS[0]}&limit=5`, { headers: { "user-agent": UA, cookie: ck() }, redirect: "follow" });
+  const html = await v.text();
+  if (/name="password"|Авторизація|LogIn/i.test(html) && !/warehouse|Склад|Артикул|кВт/i.test(html)) return null; // не авторизовано (невірний логін/пароль?)
+  return ck();
+}
 async function yugtorg() {
-  const cookie = process.env.YUGTORG_COOKIE;
-  if (!cookie) { console.warn("YugTorg: немає YUGTORG_COOKIE — пропускаю"); return []; }
+  let cookie = null;
+  try { cookie = await yugtorgLogin(); } catch (e) { console.warn("YugTorg автологін: " + e.message); }
+  if (cookie) console.log("YugTorg: автологін успішний");
+  else { cookie = process.env.YUGTORG_COOKIE; if (cookie) console.log("YugTorg: автологін не вдався → fallback на YUGTORG_COOKIE"); }
+  if (!cookie) { console.warn("YugTorg: немає ні автологіну (YUGTORG_EMAIL/PASSWORD), ні YUGTORG_COOKIE — пропускаю"); return []; }
   const items = [];
   let npY = 0;
   for (const cid of YUG_CATS) {
