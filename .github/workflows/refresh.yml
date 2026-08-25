@@ -16,6 +16,8 @@ jobs:
       - name: Build catalog
         env:
           YUGTORG_COOKIE: ${{ secrets.YUGTORG_COOKIE }}
+          YUGTORG_EMAIL: ${{ secrets.YUGTORG_EMAIL }}
+          YUGTORG_PASSWORD: ${{ secrets.YUGTORG_PASSWORD }}
           ATMO_EMAIL: ${{ secrets.ATMO_EMAIL }}
           ATMO_PASSWORD: ${{ secrets.ATMO_PASSWORD }}
         run: node build.mjs
