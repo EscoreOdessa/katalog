@@ -1683,7 +1683,7 @@
    "price": {
     "cash": 948,
     "cur": "у.е.",
-    "vat": 1020
+    "vat": 1100
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -4523,6 +4523,18 @@
    "price": {
     "cur": "$",
     "cash": 1710
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея SE-F16Max Deye (LiFePO4 51,2V 314Ah 16 kWh heated)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 1880
    }
   },
   {
