@@ -74,6 +74,9 @@ let DATA = [];
 const AV = {yes:['b-yes','В наявності'], soon:['b-soon','Очікується'], no:['b-no','Немає']};
 const SIZE_L = {small:'малий', med:'середній', large:'великий'};
 const TYPE_L = {inv:'Інвертор', bat:'Батарея', pan:'Панель'};
+// Ярлик постачальника для показу (місто поруч із назвою). Ключ у даних лишається без змін.
+const SUP_LABEL = {Intersolar:'Intersolar (Одеса)', Sakoenergy:'Sakoenergy (Одеса)', YugTorg:'YugTorg (Одеса)'};
+const supL = s => SUP_LABEL[s] || s || '';
 let cat='inv';
 const state={onlyAvail:true, ph:'', hv:'', kwMin:'', kwMax:'', kwhMin:'', kwhMax:'', wattMin:'', wattMax:'', size:'', q:'', priceMode:'cash', qty:'0'};
 const tabs=document.getElementById('tabs'), filtersEl=document.getElementById('filters'),
@@ -146,7 +149,7 @@ function match(it){
 function matchSearch(it){ // пошук за назвою по ВСІХ групах (модель + постачальник + тип)
   if(state.onlyAvail&&it.avail!=='yes')return false;
   const q=state.q.trim().toLowerCase(); if(!q)return true;
-  const hay=((it.model||'')+' '+(it.sup||'')+' '+TYPE_L[it.cat]).toLowerCase();
+  const hay=((it.model||'')+' '+supL(it.sup)+' '+TYPE_L[it.cat]).toLowerCase();
   return q.split(/\s+/).every(tok=>hay.includes(tok));
 }
 // Ціна під обрану плашку. Solarity-панелі мають тарифи за кількістю (cashTiers/vatTiers), решта — одне значення.
@@ -187,7 +190,7 @@ function renderTable(){
     if(!rows.length){tbody.innerHTML='<tr><td class="empty" colspan="7">Нічого не знайшлося за назвою.</td></tr>';return;}
     tbody.innerHTML=rows.map(it=>{const [bc,bt]=AV[it.avail];
       const ds=it.ds?'<td><a href="'+it.ds+'" target="_blank" rel="noopener">📄 Відкрити</a></td>':'<td class="spec">—</td>';
-      return '<tr><td><b>'+it.model+'</b></td><td><span class="tag">'+TYPE_L[it.cat]+'</span></td><td>'+it.sup+'</td><td><span class="badge '+bc+'">'+bt+'</span></td>'+fmtPrice(it)+'<td class="spec">'+charOf(it)+'</td>'+ds+'</tr>';
+      return '<tr><td><b>'+it.model+'</b></td><td><span class="tag">'+TYPE_L[it.cat]+'</span></td><td>'+supL(it.sup)+'</td><td><span class="badge '+bc+'">'+bt+'</span></td>'+fmtPrice(it)+'<td class="spec">'+charOf(it)+'</td>'+ds+'</tr>';
     }).join('');
     return;
   }
@@ -199,7 +202,7 @@ function renderTable(){
   tbody.innerHTML=rows.map(it=>{const [bc,bt]=AV[it.avail];
     const sv=specVals(it).map(v=>'<td class="spec">'+v+'</td>').join('');
     const ds=it.ds?'<td><a href="'+it.ds+'" target="_blank" rel="noopener">📄 Відкрити</a></td>':'<td class="spec">—</td>';
-    return '<tr><td><b>'+it.model+'</b></td><td>'+it.sup+'</td><td><span class="badge '+bc+'">'+bt+'</span></td>'+fmtPrice(it)+sv+ds+'</tr>';
+    return '<tr><td><b>'+it.model+'</b></td><td>'+supL(it.sup)+'</td><td><span class="badge '+bc+'">'+bt+'</span></td>'+fmtPrice(it)+sv+ds+'</tr>';
   }).join('');
 }
 </script>
