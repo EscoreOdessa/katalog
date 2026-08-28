@@ -2134,7 +2134,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-125K-PCS01HP3 HV, 125кВт, трехфазный, WiFi. RS-485, 630–1000V, IP65, 175А, 775х543х310mm, 70kg",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 125,
    "ph": 3,
    "hv": true,
@@ -3029,6 +3029,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 615,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 92,
+    "vat": 110.82,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -3044,18 +3059,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
+   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 615,
+   "watt": 460,
    "dim": null,
-   "size": "large",
+   "size": "small",
    "price": {
-    "cash": 92,
-    "vat": 110.82,
+    "cash": 71.16,
+    "vat": 85.63,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3088,21 +3103,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 460,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 71.16,
-    "vat": 85.63,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-48HE455 455 Wp N-Type Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -3115,21 +3115,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1gELsu3udRZ0ZQxKyi7ba6_TPlwRH8PoI/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 465,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 81.42,
-    "vat": 97.63,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3310,6 +3295,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40-465/LB 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 81.42,
+    "vat": 97.63,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3666,11 +3666,7 @@
    "avail": "soon",
    "kw": 5,
    "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 820,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "inv",
@@ -3694,10 +3690,6 @@
    "kw": 8,
    "ph": 1,
    "hv": false,
-   "price": {
-    "cash": 1200,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
   {
@@ -3708,10 +3700,6 @@
    "kw": 10,
    "ph": 1,
    "hv": false,
-   "price": {
-    "cash": 1450,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -3722,10 +3710,6 @@
    "kw": 12,
    "ph": 1,
    "hv": false,
-   "price": {
-    "cash": 1590,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
@@ -3735,11 +3719,7 @@
    "avail": "soon",
    "kw": 16,
    "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1850,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "inv",
@@ -3749,10 +3729,6 @@
    "kw": 12,
    "ph": 3,
    "hv": false,
-   "price": {
-    "cash": 1580,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
   },
   {
@@ -3763,10 +3739,6 @@
    "kw": 15,
    "ph": 3,
    "hv": false,
-   "price": {
-    "cash": 1800,
-    "cur": "$"
-   },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
@@ -3895,14 +3867,10 @@
    "cat": "inv",
    "model": "Deye SUN-30-G04 (30 кВт)",
    "sup": "Sakoenergy",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 30,
    "ph": null,
-   "hv": false,
-   "price": {
-    "cash": 1000,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "inv",
@@ -3911,11 +3879,7 @@
    "avail": "soon",
    "kw": 50,
    "ph": null,
-   "hv": false,
-   "price": {
-    "cash": 1450,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "bat",
@@ -3931,11 +3895,7 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 12,
-   "hv": false,
-   "price": {
-    "cash": 1500,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "bat",
@@ -3951,11 +3911,7 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 5,
-   "hv": false,
-   "price": {
-    "cash": 770,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "bat",
@@ -3975,11 +3931,7 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 16,
-   "hv": false,
-   "price": {
-    "cash": 1740,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "pan",
@@ -6128,7 +6080,7 @@
    "kwh": 16,
    "hv": false,
    "price": {
-    "cash": 1850,
+    "cash": 1800,
     "cur": "$"
    }
   },
