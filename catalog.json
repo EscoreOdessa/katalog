@@ -1647,7 +1647,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-5K-SG05LP1-EU WI-FI, 5кВт, однофазный, (МРРТ 125-425/ 120А/ DC48В )Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 5,
    "ph": 1,
    "hv": false,
@@ -1740,7 +1740,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-8K-SG05LP1-EU-AM2-P WI-FI, 8кВт, однофазный(МРРТ 150-425/190А)Parallel, 330×580×232мм, 24,9 кг",
    "sup": "YugTorg",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 8,
    "ph": 1,
    "hv": false,
@@ -1871,7 +1871,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-12K-SG05LP3-EU-SM2, WI-FI,12кВт,трехфазный, (MPPT 160-650/240A/DC48В)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 12,
    "ph": 3,
    "hv": false,
@@ -1900,7 +1900,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-15K-SG05LP3-EU-SM2, WI-FI,15кВ,трехфазный, (MPPT 160-650/280A/АКБ 48V)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 15,
    "ph": 3,
    "hv": false,
@@ -1943,7 +1943,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-20K-SG05LP3-EU-SM2, WI-FI,20кВт,трехфазный, (MPPT 160-650/350A/АКБ 48V)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 20,
    "ph": 3,
    "hv": false,
@@ -1985,7 +1985,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-20K-SG01HP3-EU-AM2 20KW, EU HV, 20кВт, трехфазный, (MPPT 150-850/37A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 20,
    "ph": 3,
    "hv": true,
@@ -2027,7 +2027,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-30K-SG02HP3-EU-AM3 30KW, EU,30кВт, трехфазный, (MPPT 150-850/75A/АКБ 160-700V)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 30,
    "ph": 3,
    "hv": true,
@@ -2165,7 +2165,7 @@
    "kwh": 5,
    "hv": false,
    "price": {
-    "cash": 840,
+    "cash": 850,
     "cur": "у.е.",
     "vat": 950
    }
@@ -3620,7 +3620,7 @@
    "cat": "pan",
    "model": "Longi Hi-MO X10 LR7-54HVH 485W (односторонние)",
    "sup": "Sakoenergy",
-   "avail": "soon",
+   "avail": "no",
    "watt": 485,
    "dim": null,
    "size": "med",
@@ -3637,7 +3637,11 @@
    "avail": "soon",
    "kw": 5,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 820,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
@@ -3862,7 +3866,11 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 12,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1600,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -3876,9 +3884,13 @@
    "cat": "bat",
    "model": "Аккумуляторная батарея Deye SE-F5 pro-С (LiFePO4 51,2V 100Ah 5kWh)",
    "sup": "Sakoenergy",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": 5,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 820,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -3898,7 +3910,11 @@
    "sup": "Sakoenergy",
    "avail": "soon",
    "kwh": 16,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1780,
+    "cur": "$"
+   }
   },
   {
    "cat": "pan",
