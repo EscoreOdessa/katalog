@@ -2269,7 +2269,7 @@
    "kwh": 16,
    "hv": false,
    "price": {
-    "cash": 1988,
+    "cash": 2000,
     "cur": "у.е.",
     "vat": 2300
    }
@@ -5427,20 +5427,6 @@
   },
   {
    "cat": "inv",
-   "model": "DEYE SUN-30K-SG01HP3-EU-BM3",
-   "sup": "RaTech",
-   "avail": "soon",
-   "kw": 30,
-   "ph": 3,
-   "hv": true,
-   "price": {
-    "cur": "$",
-    "cash": 3300,
-    "vat": 3837
-   }
-  },
-  {
-   "cat": "inv",
    "model": "DEYE SUN-30K-SG02HP3-EU-",
    "sup": "RaTech",
    "avail": "yes",
@@ -5477,8 +5463,8 @@
    "hv": true,
    "price": {
     "cur": "$",
-    "cash": 5100,
-    "vat": 5930
+    "cash": 5060,
+    "vat": 5884
    }
   },
   {
@@ -5491,8 +5477,8 @@
    "hv": true,
    "price": {
     "cur": "$",
-    "cash": 5250,
-    "vat": 6105
+    "cash": 5300,
+    "vat": 6163
    }
   },
   {
@@ -5519,7 +5505,7 @@
    "hv": true,
    "price": {
     "cur": "$",
-    "cash": 6800,
+    "cash": 6950,
     "vat": 7907
    }
   },
@@ -5650,7 +5636,7 @@
    "hv": true,
    "price": {
     "cur": "$",
-    "cash": 26450,
+    "cash": 26350,
     "vat": 32000
    }
   },
@@ -5663,7 +5649,7 @@
    "hv": true,
    "price": {
     "cur": "$",
-    "cash": 1790,
+    "cash": 1670,
     "vat": 2150
    }
   },
