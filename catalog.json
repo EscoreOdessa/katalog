@@ -4969,7 +4969,7 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1225.5,
+    "cash": 1175.15,
     "vat": 1250.2,
     "cur": "$"
    },
@@ -5027,7 +5027,7 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1532.35,
+    "cash": 1583.65,
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
@@ -5041,7 +5041,7 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1736.6,
+    "cash": 1756.55,
     "vat": 2197.35,
     "cur": "$"
    },
@@ -5083,7 +5083,7 @@
    "cat": "inv",
    "model": "Deye SUN-30K-SG02HP3-EU-AM3 New",
    "sup": "Solarity",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 30,
    "ph": 3,
    "hv": true,
@@ -5106,7 +5106,7 @@
    "cat": "inv",
    "model": "Deye SUN-50K-SG01HP3-EU-BM4",
    "sup": "Solarity",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 50,
    "ph": 3,
    "hv": true,
