@@ -1689,7 +1689,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-6K-SG05LP1-EU-AM2-P WI-FI, 6кВт, однофазный, (МРРТ 125-425/ 120А/ DC48В )Parallel",
    "sup": "YugTorg",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 6,
    "ph": 1,
    "hv": false,
@@ -2570,7 +2570,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "no",
+   "avail": "soon",
    "kw": 12,
    "ph": 1,
    "hv": false,
@@ -2585,7 +2585,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-10K-SG02LP1-EU-AM3-PLUS (10 кВт, 1 фаза, 3 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "no",
+   "avail": "soon",
    "kw": 10,
    "ph": 1,
    "hv": false,
@@ -2808,6 +2808,19 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": true,
+   "price": {
+    "cash": 725,
+    "vat": 870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
    "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
    "sup": "Atmo",
    "avail": "yes",
@@ -2834,22 +2847,9 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kwh": 5.12,
-   "hv": true,
-   "price": {
-    "cash": 725,
-    "vat": 870,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F16-C (16 кВт·год/51,2 В LV)",
    "sup": "Atmo",
-   "avail": "no",
+   "avail": "soon",
    "kwh": 16,
    "hv": false,
    "price": {
@@ -2969,21 +2969,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 102.77,
-    "vat": 123.21,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3041,6 +3026,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 102.77,
+    "vat": 123.21,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
   },
   {
    "cat": "pan",
