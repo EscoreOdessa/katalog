@@ -2517,8 +2517,8 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 5650,
-    "vat": 6780,
+    "cash": 5300,
+    "vat": 6360,
     "cur": "$"
    }
   },
@@ -2612,20 +2612,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-50K-SG01HP3-EU-BM4 (50 кВт, 3 фази, 4 МРРТ, HV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 50,
-   "ph": 3,
-   "hv": true,
-   "price": {
-    "cash": 4200,
-    "vat": 5040,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-10K-SG05LP3-EU-SM2 (10 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "no",
@@ -2638,6 +2624,20 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ykGv9Sg3N6BPZ7KqYPYolM8dIwDQSzG8/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-50K-SG01HP3-EU-BM4 (50 кВт, 3 фази, 4 МРРТ, HV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 50,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cash": 4200,
+    "vat": 5040,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
@@ -2821,19 +2821,6 @@
   },
   {
    "cat": "bat",
-   "model": "Система керування Deye BOS-G-PDU-2 (BMS) для Deye BOS-G-Pack5.1",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": null,
-   "hv": true,
-   "price": {
-    "cash": 800,
-    "vat": 842.1,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторна стійка Deye BOS-A-Rack14 для Deye BOS-A-Pack7.68",
    "sup": "Atmo",
    "avail": "yes",
@@ -2862,7 +2849,7 @@
    "cat": "bat",
    "model": "Акумуляторний блок Deye SE-F16-C (16 кВт·год/51,2 В LV)",
    "sup": "Atmo",
-   "avail": "soon",
+   "avail": "no",
    "kwh": 16,
    "hv": false,
    "price": {
@@ -2873,14 +2860,14 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
+   "model": "Система керування Deye BOS-G-PDU-2 (BMS) для Deye BOS-G-Pack5.1",
    "sup": "Atmo",
    "avail": "no",
-   "kwh": 11.8,
-   "hv": false,
+   "kwh": null,
+   "hv": true,
    "price": {
-    "cash": 1500,
-    "vat": 1800,
+    "cash": 800,
+    "vat": 842.1,
     "cur": "$"
    }
   },
@@ -2894,6 +2881,19 @@
    "price": {
     "cash": 1150,
     "vat": 1380,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kwh": 11.8,
+   "hv": false,
+   "price": {
+    "cash": 1500,
+    "vat": 1800,
     "cur": "$"
    }
   },
@@ -2954,18 +2954,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bificial, n-type",
+   "model": "PV модуль Tongwei Solar TWMNH-54HD505 505Wp N-Type Bifacial (Black Frame)",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 630,
+   "watt": 505,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 94.25,
-    "vat": 113.53,
+    "cash": 78.12,
+    "vat": 94.01,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1KiUTf4rHfDojKZl9mR1dIvhUaiqGMsQc/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -2984,18 +2984,33 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
+   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 610,
+   "watt": 630,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 88.66,
-    "vat": 106.29,
+    "cash": 94.25,
+    "vat": 113.53,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMND-72HD575 575 Wp N-Type, Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 575,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 79.18,
+    "vat": 95.31,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3044,18 +3059,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMND-72HD575 575 Wp N-Type, Bifacial",
+   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 575,
+   "watt": 610,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 79.18,
-    "vat": 95.31,
+    "cash": 88.66,
+    "vat": 106.29,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3100,21 +3115,6 @@
     "vat": 112.63,
     "cur": "$"
    }
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 460,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 71.16,
-    "vat": 85.63,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3238,21 +3238,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 100.56,
-    "vat": 121,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-66HD635 635Wp N-type Bifacial",
    "sup": "Atmo",
    "avail": "yes",
@@ -3283,6 +3268,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 100.56,
+    "vat": 121,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-620/LB 620 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3310,21 +3310,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-54HD505 505Wp N-Type Bifacial (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 505,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 78.12,
-    "vat": 94.01,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1KiUTf4rHfDojKZl9mR1dIvhUaiqGMsQc/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3384,6 +3369,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
+   "sup": "Atmo",
+   "avail": "soon",
+   "watt": 460,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 71.16,
+    "vat": 85.63,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3916,7 +3916,7 @@
    "cat": "bat",
    "model": "Аккумуляторная батарея FelicityESS FLA48314-EU 48v 314Ah 16kwt",
    "sup": "Sakoenergy",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": 16,
    "hv": false,
    "price": {
@@ -4018,7 +4018,7 @@
    "cat": "inv",
    "model": "Трифазний інвертор Deye SUN-12K-SG-05-LP3-EU-SM2 (12кВт/48В)",
    "sup": "Intersolar",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 12,
    "ph": 3,
    "hv": false,
@@ -4141,9 +4141,13 @@
    "cat": "bat",
    "model": "Акумуляторна батарея Deye LiFePo4 Deye SE-G5.1 PRO B (5,1 кВт*год 48В)",
    "sup": "Intersolar",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": 5.1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 870,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -4352,18 +4356,6 @@
     "cur": "$",
     "cash": 725,
     "vat": 840
-   }
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторна батарея BOS-A-Pack7.68 Deye (High-Voltage LiFePO4 38,4V 200Ah 7,68kWh)",
-   "sup": "Price H",
-   "avail": "yes",
-   "kwh": 7.68,
-   "hv": true,
-   "price": {
-    "cur": "$",
-    "cash": 1148
    }
   },
   {
@@ -5278,7 +5270,7 @@
    "cat": "inv",
    "model": "DEYE SUN-10K-SG02LP1",
    "sup": "RaTech",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 10,
    "ph": 1,
    "hv": false,
@@ -5987,20 +5979,6 @@
   },
   {
    "cat": "inv",
-   "model": "Deye SUN-6K-SG05LP1-EU-AM2-P 6 кВт 48 В 1 фаза",
-   "sup": "Avtonomka",
-   "avail": "yes",
-   "kw": 6,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 950,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
    "model": "Deye SUN-16K-SG01LP1-EU 16 кВт 1 фаза LV",
    "sup": "Avtonomka",
    "avail": "yes",
@@ -6020,7 +5998,7 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 840,
+    "cash": 900,
     "cur": "$"
    }
   },
@@ -6038,30 +6016,6 @@
   },
   {
    "cat": "bat",
-   "model": "Felicity FLA24100 25.6V 100Ah LiFePO4",
-   "sup": "Avtonomka",
-   "avail": "yes",
-   "kwh": 2.56,
-   "hv": false,
-   "price": {
-    "cash": 550,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
-   "model": "Felicity LPBA48100-OL 51.2V 100Ah LiFePO4",
-   "sup": "Avtonomka",
-   "avail": "yes",
-   "kwh": 5.12,
-   "hv": false,
-   "price": {
-    "cash": 800,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Felicity FLA48280 51.2V 280Ah LiFePO4",
    "sup": "Avtonomka",
    "avail": "yes",
@@ -6074,13 +6028,25 @@
   },
   {
    "cat": "bat",
-   "model": "Felicity FLB48314TG1-H 51.2V 314Ah 16kWh LiFePO4",
+   "model": "Felicity FLA48314-EU 51.2V 314Ah 16kWh LiFePO4",
    "sup": "Avtonomka",
    "avail": "yes",
    "kwh": 16,
    "hv": false,
    "price": {
     "cash": 1850,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Felicity FLB48314TG1-H 51.2V 314Ah 16kWh LiFePO4",
+   "sup": "Avtonomka",
+   "avail": "yes",
+   "kwh": 16,
+   "hv": false,
+   "price": {
+    "cash": 1900,
     "cur": "$"
    }
   },
