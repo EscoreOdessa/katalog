@@ -1689,7 +1689,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-6K-SG05LP1-EU-AM2-P WI-FI, 6кВт, однофазный, (МРРТ 125-425/ 120А/ DC48В )Parallel",
    "sup": "YugTorg",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 6,
    "ph": 1,
    "hv": false,
@@ -1745,9 +1745,9 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1220,
+    "cash": 1350,
     "cur": "у.е.",
-    "vat": 1348
+    "vat": 1450
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
   },
@@ -2629,7 +2629,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-50K-SG01HP3-EU-BM4 (50 кВт, 3 фази, 4 МРРТ, HV)",
    "sup": "Atmo",
-   "avail": "soon",
+   "avail": "no",
    "kw": 50,
    "ph": 3,
    "hv": true,
@@ -2795,19 +2795,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-G-Pack5.1 (BOS-G pro)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": null,
-   "hv": true,
-   "price": {
-    "cash": 350,
-    "vat": 368.42,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
    "sup": "Atmo",
    "avail": "yes",
@@ -2816,6 +2803,19 @@
    "price": {
     "cash": 725,
     "vat": 870,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-G-Pack5.1 (BOS-G pro)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "kwh": null,
+   "hv": true,
+   "price": {
+    "cash": 350,
+    "vat": 368.42,
     "cur": "$"
    }
   },
@@ -3086,6 +3086,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1gELsu3udRZ0ZQxKyi7ba6_TPlwRH8PoI/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 460,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 71.16,
+    "vat": 85.63,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3369,21 +3384,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D41-460/LR 460Wp, Mono",
-   "sup": "Atmo",
-   "avail": "soon",
-   "watt": 460,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 71.16,
-    "vat": 85.63,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4141,13 +4141,9 @@
    "cat": "bat",
    "model": "Акумуляторна батарея Deye LiFePo4 Deye SE-G5.1 PRO B (5,1 кВт*год 48В)",
    "sup": "Intersolar",
-   "avail": "yes",
+   "avail": "soon",
    "kwh": 5.1,
-   "hv": false,
-   "price": {
-    "cash": 870,
-    "cur": "$"
-   }
+   "hv": false
   },
   {
    "cat": "bat",
@@ -5843,29 +5839,6 @@
      0.19
     ]
    }
-  },
-  {
-   "cat": "pan",
-   "model": "Jinko 630M-132",
-   "sup": "RaTech",
-   "avail": "yes",
-   "watt": 630,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cur": "$/Вт",
-    "cashTiers": [
-     0.17,
-     0.165,
-     0.165
-    ],
-    "vatTiers": [
-     null,
-     0.192,
-     0.192
-    ]
-   },
-   "ds": "https://drive.google.com/file/d/1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol/view"
   },
   {
    "cat": "pan",
