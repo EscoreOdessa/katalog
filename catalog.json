@@ -4512,6 +4512,19 @@
   },
   {
    "cat": "inv",
+   "model": "Гібридний інвертор SUN-08K-SG06LP1-EU-BM3 Deye WiFi (8 kW, 1 фаза, 2 MPPT, LV)",
+   "sup": "Price H",
+   "avail": "soon",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 975
+   }
+  },
+  {
+   "cat": "inv",
    "model": "Гібридний інвертор SUN-10K-SG02LP1-EU-AM3 Deye WiFi (10 kW, 1 фаза, 3 MPPT, LV)",
    "sup": "Price H",
    "avail": "soon",
