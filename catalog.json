@@ -1742,7 +1742,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-8K-SG05LP1-EU-AM2-P WI-FI, 8кВт, однофазный(МРРТ 150-425/190А)Parallel, 330×580×232мм, 24,9 кг",
    "sup": "YugTorg",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 8,
    "ph": 1,
    "hv": false,
@@ -2642,21 +2642,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-15K-SG05LP3-EU-SM2 (15 кВт, 3 фази, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kw": 15,
-   "ph": 3,
-   "hv": false,
-   "price": {
-    "cash": 2115,
-    "vat": 2538,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-10K-SG05LP3-EU-SM2 (10 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "no",
@@ -2672,18 +2657,18 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
+   "model": "Інвертор гібридний Deye SUN-15K-SG05LP3-EU-SM2 (15 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "soon",
-   "kw": 12,
-   "ph": 1,
+   "kw": 15,
+   "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1700,
-    "vat": 2040,
+    "cash": 2115,
+    "vat": 2538,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2698,6 +2683,21 @@
     "vat": 5040,
     "cur": "$"
    }
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 12,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1700,
+    "vat": 2040,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -3161,21 +3161,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D42-645/LB 645 Wp, Bificial, n-type (200-400mm cable)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 99.78,
-    "vat": 120.07,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bifacial N-type (300-400mm cable)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3218,6 +3203,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM72D42-645/LB 645 Wp, Bificial, n-type (200-400mm cable)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 99.78,
+    "vat": 120.07,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3957,7 +3957,7 @@
   },
   {
    "cat": "pan",
-   "model": "Сонячна панель longi LR5-54HTH 435М (435 Вт)",
+   "model": "Сонячна панель longi EXPLORER LR5-54HTH 435М (435 Вт)",
    "sup": "Intersolar",
    "avail": "yes",
    "watt": 435,
@@ -4143,7 +4143,7 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна батарея Deye SE-F12 Max 51.2V 230Ah IP65 без підігріву (12 кВт*год",
+   "model": "Акумуляторна батарея Deye SE-F12 Max 51.2V 230Ah IP65 без підігріву (12 кВт*год)",
    "sup": "Intersolar",
    "avail": "yes",
    "kwh": 12,
