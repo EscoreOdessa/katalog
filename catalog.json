@@ -1764,7 +1764,7 @@
    "price": {
     "cash": 1600,
     "cur": "у.е.",
-    "vat": 1740
+    "vat": 1700
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1779,7 +1779,7 @@
    "price": {
     "cash": 1700,
     "cur": "у.е.",
-    "vat": 1850
+    "vat": 1800
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1808,7 +1808,7 @@
    "price": {
     "cash": 2050,
     "cur": "у.е.",
-    "vat": 2300
+    "vat": 2150
    }
   },
   {
@@ -1953,7 +1953,7 @@
    "price": {
     "cash": 2480,
     "cur": "у.е.",
-    "vat": 2900
+    "vat": 2700
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
