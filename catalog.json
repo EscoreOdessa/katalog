@@ -469,6 +469,20 @@
   },
   {
    "cat": "pan",
+   "model": "Солнечная панель Jinko Solar Tiger NEO III JKM475N-48QL6-DV-F2-EU 475Вт (31,11V 15,27A)(1762*1134*30) ,24.4кг, Q36",
+   "sup": "YugTorg",
+   "avail": "yes",
+   "watt": 475,
+   "dim": "1762×1134",
+   "size": "med",
+   "price": {
+    "cash": 88.9,
+    "cur": "у.е.",
+    "vat": 107
+   }
+  },
+  {
+   "cat": "pan",
    "model": "Солнечная панель Jinko Solar Tiger NEO JKM455N-54HL4R-V EVO2 455Wp (32,59V 13,35A)(1762*1134*30) Q36",
    "sup": "YugTorg",
    "avail": "no",
@@ -3127,21 +3141,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMND-72HD575 575 Wp N-Type, Bifacial",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 575,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 79.18,
-    "vat": 95.31,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -3154,6 +3153,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMND-72HD575 575 Wp N-Type, Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 575,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 79.18,
+    "vat": 95.31,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1ZbTNcUAx8VO6XcVBiZPIVMWqSWlwRW7b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4013,7 +4027,7 @@
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 88,
+    "cash": 85,
     "cur": "$"
    }
   },
