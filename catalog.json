@@ -2931,19 +2931,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 5.12,
-   "hv": false,
-   "price": {
-    "cash": 770,
-    "vat": 924,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
    "sup": "Atmo",
    "avail": "yes",
@@ -2965,6 +2952,19 @@
    "price": {
     "cash": 914.6,
     "vat": 1098.2,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 770,
+    "vat": 924,
     "cur": "$"
    }
   },
@@ -4025,7 +4025,7 @@
    "kwh": 5,
    "hv": false,
    "price": {
-    "cash": 820,
+    "cash": 840,
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1iGNu9uSlCbYGsNkx8iJpPi7k88gkLYjr/view?usp=sharing"
