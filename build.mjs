@@ -377,11 +377,11 @@ async function sheets() {
       let availCol = -1;
       for (let i = 0; i < Math.min(rows.length, 25) && availCol < 0; i++)
         for (let j = 0; j < rows[i].length; j++) if (/наявн|статус|status/i.test(rows[i][j] || "")) { availCol = j; break; }
-      // конфіг ціни під постачальника (Solarity завжди −5%)
+      // конфіг ціни під постачальника (Solarity −5% ТІЛЬКИ на панелі; інвертори/АКБ — без знижки)
       let cfg = null;
       if (sup === "Solarity") {
-        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт", round: 3 }; // J/K/L, G/H/I; ціна за ВАТ, до тисячних
-        else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 0.95, round: 3 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ; до тисячних
+        if (tab === "panels") cfg = { cashCols: [9, 10, 11], vatCols: [6, 7, 8], factor: 0.95, cur: "$/Вт", round: 3 }; // J/K/L, G/H/I; ціна за ВАТ, до тисячних; −5%
+        else { const c = findCol(rows, /ціна.{0,4}шт.{0,4}без.{0,4}пдв/i), v = findCol(rows, /ціна.{0,4}шт.{0,4}з\s*пдв/i); cfg = { cash: c >= 0 ? c : 6, vat: v >= 0 ? v : 5, factor: 1, round: 3 }; } // «Ціна, шт без ПДВ»=G(6) готівка, «з ПДВ»=F(5) ПДВ; до тисячних; БЕЗ знижки
       } else if (SHEET_PRICE[sup]) cfg = { ...SHEET_PRICE[sup] };
       // валюта постачальника (фолбек на весь лист): для Solarity НЕ вгадуємо — там $/€ мішані по секціях,
       // валюта береться поштучно з ячейки позиції (див. pickSheetPrice).
@@ -628,7 +628,7 @@ async function main() {
     if (it.ds) dsCount++;
     delete it.brand;
   }
-  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5%.", items };
+  const out = { generated: new Date().toISOString().slice(0, 10), note: "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5% лише на панелі.", items };
   writeFileSync("catalog.json", JSON.stringify(out, null, 1));
   console.log(`catalog.json: ${items.length} позицій (сид ${seed.length} + YugTorg ${live.length} + Atmo ${liveAtmo.length} + таблиці ${liveSheets.length}); датащитів ${dsCount}`);
 }
