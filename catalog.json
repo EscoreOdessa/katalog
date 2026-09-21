@@ -4890,6 +4890,34 @@
   },
   {
    "cat": "pan",
+   "model": "Фотоелектричний модуль LR8-66HGD-620M (620W) LONGі (продажа палетами- 36 шт., ціна за 1 шт.)",
+   "sup": "Price H",
+   "avail": "soon",
+   "watt": 620,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cur": "$",
+    "cash": 102.5
+   },
+   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "Фотоелектричний модуль LR7-72HVH-650M (650W) LONGі Hi-MO X10 (продажа палетами- 36 шт., ціна за 1 шт.)",
+   "sup": "Price H",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cur": "$",
+    "cash": 110.5
+   },
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+  },
+  {
+   "cat": "pan",
    "model": "Canadian Solar 450w CS6.2-48TD-450 full black",
    "sup": "Solarity",
    "avail": "soon",
