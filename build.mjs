@@ -25,14 +25,19 @@ function normAvail(t) {
 }
 function classify(name) {
   const s = name || "";
+  // sB — копія з нормалізованими кириличними гомогліфами і/ї→i, ЛИШЕ для латинських брендів
+  // (постачальники пишуть «LONGі» з кириличною «і», через що бренд не розпізнавався). Кириличні
+  // ключові слова нижче лишаємо на оригіналі s, бо «інверт» теж починається з кириличної «і».
+  const sB = s.replace(/[іІ]/g, "i").replace(/[їЇ]/g, "i");
   // ІНВЕРТОР перевіряємо ПЕРШИМ: у гібридного інвертора в описі може бути «АКБ/батарея», але це інвертор.
   if (/deye/i.test(s) && /(інверт|инверт|SUN-?\d)/i.test(s)) return "inv";
   if (/deye/i.test(s) && /(BOS|SE-F|SE-G|LiFePO|LFP|акумул|аккумул|батаре|АКБ)/i.test(s)) return "bat";
   // Felicity (інвертори серії IVEM/IVGM/IVPM; АКБ серії FLA/FLB, LiFePO4)
   if (/felicity/i.test(s) && /(інверт|инверт|IVEM|IVGM|IVPM|IVSM)/i.test(s)) return "inv";
   if (/felicity/i.test(s) && /(LiFePO|LFP|акумул|аккумул|батаре|АКБ|FL[AB]\d|LPBA|\d+\s*ah)/i.test(s)) return "bat";
-  if (/(сонячн(а|у) панел|солнечн(ая|ую) панел|фотомодул)/i.test(s) ||
-      /\b(Longi|Jinko|JA Solar|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i.test(s)) return "pan";
+  // Панелі: за ключовим словом (у т.ч. «фотоелектричний модуль») АБО за латинським брендом (на нормалізованому sB).
+  if (/(сонячн(а|у) панел|солнечн(ая|ую) панел|фотомодул|фотоелектричн|фотоэлектрич)/i.test(s) ||
+      /\b(Longi|Jinko|JA Solar|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i.test(sB)) return "pan";
   return null;
 }
 function parseInverter(name) {
@@ -96,7 +101,7 @@ function panelInfo(name, cells) { // watt (виправлено) + розмір 
   if (!d && cells) for (const c of cells) { d = parseDim(c); if (d) break; } // напр. колонка «Розмір» у таблиці
   return { watt, dim: d ? d.dim : null, len: d ? d.len : null, size: panelSize(d ? d.len : null, watt) };
 }
-function panelBrand(name) { const b = name.match(/\b(Longi|Jinko|JA Solar|JA|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i); return b ? b[1] : null; }
+function panelBrand(name) { const b = (name || "").replace(/[іІ]/g, "i").replace(/[їЇ]/g, "i").match(/\b(Longi|Jinko|JA Solar|JA|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i); return b ? b[1] : null; }
 const D = (id) => "https://drive.google.com/file/d/" + id + "/view";
 function datasheetFor(it) {
   if (it.cat !== "pan") return null; const m = (it.model || "").toUpperCase(); const b = (it.brand || "").toLowerCase(); const w = it.watt;
