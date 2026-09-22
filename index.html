@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сервис приостановлен</title>
+<title>Сервіс призупинено</title>
 
 <!-- ============================================================= -->
-<!--  ▼▼▼  ЗАПОЛНИ ТОЛЬКО ЭТИ ДВЕ СТРОЧКИ  ▼▼▼                      -->
-<!--  Это единственное место, которое нужно править.               -->
+<!--  ▼▼▼  ПРИ НЕОБХОДИМОСТИ ПРАВИТЬ ТОЛЬКО ЭТИ ДВЕ СТРОЧКИ  ▼▼▼    -->
 <script>
   window.NOTICE = {
-    date:    "1 октября 2026 г.",                        // ← дата приостановки
-    contact: "Анна, anna.escore@gmail.com, +380 00 000 00 00" // ← как с тобой связаться
+    date:    "",                    // ← дату впишешь сюда в кавычки, когда будет (пусто = без даты)
+    contact: "anna.ts.f@gmail.com"  // ← контакт для связи
   };
 </script>
 <!--  ▲▲▲  больше НИЧЕГО менять не нужно  ▲▲▲                       -->
@@ -45,7 +44,6 @@
   }
   h1{font-size:23px; margin:0 0 14px; letter-spacing:.2px}
   p{margin:0 0 14px; color:var(--muted); font-size:16px}
-  .date{color:var(--ink); font-weight:600}
   .contact{
     margin-top:26px; padding-top:22px; border-top:1px solid var(--line);
     font-size:16px; color:var(--ink);
@@ -58,22 +56,24 @@
 <body>
   <main class="card" role="main">
     <div class="mark" aria-hidden="true">⏸</div>
-    <h1>Сервис приостановлен</h1>
-    <p>Этот инструмент разработан и поддерживается автором на личных ресурсах.
-       Обслуживание приостановлено с <span class="date" id="d">указанной даты</span>.</p>
-    <p>Чтобы возобновить работу, свяжитесь с автором для согласования условий
-       дальнейшего использования.</p>
+    <h1>Сервіс призупинено</h1>
+    <p id="susp">Обслуговування призупинено.</p>
+    <p>Щоб відновити роботу, зв’яжіться з автором для узгодження умов
+       подальшого використання.</p>
     <div class="contact">
-      <span class="label">Контакт для связи</span>
+      <span class="label">Контакт для зв’язку</span>
       <span class="value" id="c">—</span>
     </div>
-    <div class="foot">Данные и код инструмента сохранены. Это временная страница-уведомление.</div>
+    <div class="foot">Дані та код інструмента збережено. Це тимчасова сторінка-повідомлення.</div>
   </main>
 
   <script>
     (function(){
       var n = window.NOTICE || {};
-      if (n.date)    document.getElementById('d').textContent = n.date;
+      var base = "Цей інструмент розроблено та підтримується автором на особистих ресурсах. ";
+      var d = (n.date || "").trim();
+      document.getElementById('susp').textContent =
+        base + (d ? ("Обслуговування призупинено з " + d + ".") : "Обслуговування призупинено.");
       if (n.contact) document.getElementById('c').textContent = n.contact;
     })();
   </script>
