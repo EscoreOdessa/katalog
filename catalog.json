@@ -2584,6 +2584,20 @@
   },
   {
    "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-P (6 кВт, 1 фаза, 2 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 765,
+    "vat": 918,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-20K-SG05LP3-EU-SM2 (20 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "soon",
@@ -2596,20 +2610,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-P (6 кВт, 1 фаза, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kw": 6,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 765,
-    "vat": 918,
-    "cur": "$"
-   }
   },
   {
    "cat": "inv",
@@ -2715,20 +2715,6 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-16K-SG01LP1-EU (16 кВт, 1 фаза, 3 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kw": 16,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1750,
-    "vat": 2100,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-8K-SG05LP1-EU-AM2-PLUS (8 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "no",
@@ -2741,6 +2727,20 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1Vf-VVprqHHqfJrGOZPIex6Wf6y4ccfRu/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-16K-SG01LP1-EU (16 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 16,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1750,
+    "vat": 2100,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
@@ -3250,21 +3250,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-54HVH-485, 485Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 485,
-   "dim": null,
-   "size": "med",
-   "price": {
-    "cash": 83.27,
-    "vat": 100.18,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR7-54HVH-480, 480Wp, Mono (Black Frame)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3336,21 +3321,6 @@
     "vat": 109.48,
     "cur": "$"
    }
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-66HD615 615 Wp N-type Bifacial",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 615,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 88.35,
-    "vat": 106.12,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3473,6 +3443,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMNH-66HD615 615 Wp N-type Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 615,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 88.35,
+    "vat": 106.12,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-48HE450 450 Wp N-Type Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -3544,6 +3529,21 @@
     "vat": 66.95,
     "cur": "$"
    }
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-54HVH-485, 485Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "watt": 485,
+   "dim": null,
+   "size": "med",
+   "price": {
+    "cash": 83.27,
+    "vat": 100.18,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -5321,7 +5321,7 @@
    "ph": 3,
    "hv": true,
    "price": {
-    "cash": 6989,
+    "cash": 7043,
     "cur": "$"
    }
   },
