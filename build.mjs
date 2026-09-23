@@ -104,7 +104,7 @@ function panelInfo(name, cells) { // watt (виправлено) + розмір 
 function panelBrand(name) { const b = (name || "").replace(/[іІ]/g, "i").replace(/[їЇ]/g, "i").match(/\b(Longi|Jinko|JA Solar|JA|Canadian|Risen|Trina|Tongwei|ReneSola|Luxen|Sunerise|Solitek)\b/i); return b ? b[1] : null; }
 const D = (id) => "https://drive.google.com/file/d/" + id + "/view";
 function datasheetFor(it) {
-  if (it.cat !== "pan") return null; const m = (it.model || "").toUpperCase(); const b = (it.brand || "").toLowerCase(); const w = it.watt;
+  if (it.cat !== "pan") return null; const m = (it.model || "").toUpperCase(); const b = (it.brand || panelBrand(it.model) || "").toLowerCase(); const w = it.watt; // brand немає у позицій зі снимка
   if (b.includes("longi")) { if (w===445) return D("1ZePdEDRupd_OoEUU6qsmearNHtEv3pra"); if (w===480||w===485) return D("1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_"); if (w===615) return D("1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF"); if (w===620) return /72HGD/.test(m)?D("1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv"):D("1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF"); if (w===645) return D("1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R"); if (w===650) return D("18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC"); if (w===655) return D("1XX1WB0Pvjqllv5qle992UKZGPpRZawKt"); }
   if (b.includes("jinko")) { if (w===450||w===460) return D("1rQq46SwyXfR6EoaZnFjxJMhFJthhOmhS"); if (w===465) return D("1sx19xz6qhNZ6PZvKS36BnzrPMBAXpYPz"); if (w===590) return D("1q61Dx6h1XHQHT3IdEXo7S_rGO2uNfxx7"); if (w===620) return D("1-nWc28iHCpss_BOgYc1qyYEH0ekZPHJ5"); if (w===625) return D("1zfwuKd82B4Cy2PT-TBkzEbeS2vll8Mui"); if (w===630) return D("1H1wfgeHAryi7Qff5ohPSk6sL0H4X2pol"); }
   if (b==="ja"||b.includes("ja solar")) { if (w===460||w===465) return D("1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8"); if (w===590) return D("1eSkLlyrdzWbX8Qq-mQu1lP_oOokyCQLM"); if (w===610) return D("1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz"); if (w===620) return D("15vPIPgHKePAYoKoh344hBn4l94hj5gX4"); if (w===630) return D("19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM"); if (w===635) return D("1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4"); if (w===645) return D("1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_"); }
@@ -561,13 +561,20 @@ async function slavik() {
 // ---------- Датащити з довідника katalog_obladnannya (публічний gviz CSV) ----------
 // Anna веде датащити в таблиці; тут матчимо їх до позицій каталогу за КОДОМ моделі + потужністю.
 const DS_SHEET = "1ARtSVPQ9n03UZdtlP3sy9iRUUDQ3dOLvLMQSsHT75Mc";
-const sigLat = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, ""); // лише латиниця+цифри (код моделі)
-function refCode(name) { // найдовший токен з літерами+цифрами (у довіднику назви чисті)
-  let best = "";
+// кирилиця-двійники в латинських кодах («Pro-С», «Pack16-А3», «SE-F12 С»): постачальники змішують розкладки
+const CYR2LAT = { "а":"a","в":"b","е":"e","к":"k","м":"m","н":"h","о":"o","р":"p","с":"c","т":"t","у":"y","х":"x","і":"i" };
+const sigLat = (s) => (s || "").toLowerCase().replace(/[авекмнорстухі]/g, (c) => CYR2LAT[c]).replace(/[^a-z0-9]/g, ""); // лише латиниця+цифри (код моделі)
+// загальні токени, що НЕ є кодом моделі: хімія (LiFePO4) і величини з одиницями (51,2V, 100Ah, 5KWh, 460Wp, 16kW…)
+const GENERIC_TOK = /^(lifepo4|lifepo|lfp|lipo|\d+(?:[.,]\d+)?(?:v|ah|kwh|kw|wh|w|wp|mm|kg|a)(?:\/h)?)$/i;
+function refCode(name) { // код моделі: найдовший токен з літерами+цифрами (SE-F5, JAM54D40…), без загальних (LiFePO4, 5KWh)
+  let best = "", alpha = "";
   for (const t of (name || "").split(/[\s,()/]+/)) {
-    if (/[a-z]/i.test(t) && /\d/.test(t)) { const c = sigLat(t); if (c.length > best.length) best = c; }
+    if (!/[a-z]/i.test(t) || GENERIC_TOK.test(t)) continue;
+    const c = sigLat(t);
+    if (/\d/.test(t)) { if (c.length > best.length) best = c; }
+    else if (/^[a-z]{2,4}-[a-z]{1,2}$/i.test(t) && !/^hi-mo$/i.test(t) && c.length > alpha.length) alpha = c; // коди без цифр: BOS-G, BOS-A
   }
-  return best;
+  return best || (alpha.length >= 4 ? alpha : "");
 }
 async function datasheets() {
   const list = [];
@@ -586,21 +593,29 @@ async function datasheets() {
       const code = refCode(name); if (code.length < 4) continue;
       const typ = (iTyp >= 0 ? r[iTyp] || "" : "").toLowerCase();
       const cat = /панел|модул/.test(typ) ? "pan" : /інверт|инверт/.test(typ) ? "inv" : /акум|батар/.test(typ) ? "bat" : null;
-      list.push({ code, cat, ds, watt: parsePanelWatt(name), kw: parseInverter(name).kw, kwh: parseBattery(name).kwh });
+      const b = parseBattery(name);
+      list.push({ code, cat, ds, watt: parsePanelWatt(name), kw: parseInverter(name).kw, kwh: b.kwh, hv: b.hv });
     }
     console.log(`datasheets: ${list.length} рядків довідника`);
   } catch (e) { console.warn("datasheets: " + e.message); }
   return list;
 }
+// аксесуари до АКБ (стійки, PDU/блоки керування) — не беремо датащит самого модуля
+const BAT_ACCESSORY = /стійк|стойк|rack|pdu|блок управ|блок керув|control box|система керув/i;
 function attachDatasheet(it, dsList) {
   const sig = sigLat(it.model), catCode = refCode(it.model);
+  const toks = (it.model || "").split(/[\s,()/]+/).map(sigLat).filter(Boolean);
+  if (it.cat === "bat" && BAT_ACCESSORY.test(it.model || "")) return null;
   for (const d of dsList) {
     if (d.cat && d.cat !== it.cat) continue;
-    const hit = sig.includes(d.code) || (catCode.length >= 8 && (d.code.includes(catCode) || catCode.includes(d.code)));
+    // код без цифр (BOS-G) — лише цілим токеном або з «Pack/Pro» (BOS-G-Pack5.1), щоб BOS-GM5.1 не зачепив BOS-G
+    const hit = !/\d/.test(d.code)
+      ? toks.some((t) => t.startsWith(d.code) && (t.length === d.code.length || /^(pack|pro)/.test(t.slice(d.code.length))))
+      : sig.includes(d.code) || (catCode.length >= 8 && (d.code.includes(catCode) || catCode.includes(d.code)));
     if (!hit) continue;
     if (it.cat === "pan") { if (d.watt != null && it.watt != null && Math.abs(d.watt - it.watt) > 25) continue; } // серія (JAM54D40 465/470/475…) — один datasheet, тому допуск ±25 Вт, а не точний збіг
     else if (it.cat === "inv") { if (d.kw != null && it.kw != null && d.kw !== it.kw) continue; }
-    else if (it.cat === "bat") { if (d.kwh != null && it.kwh != null && Math.abs(d.kwh - it.kwh) > 0.3) continue; }
+    else if (it.cat === "bat") { if (d.kwh != null && it.kwh != null && Math.abs(d.kwh - it.kwh) > 0.3) continue; if (it.hv != null && d.hv !== it.hv) continue; } // HV ≠ LV
     return d.ds;
   }
   return null;
@@ -629,7 +644,9 @@ async function main() {
   const dsList = await datasheets(); // довідник датащитів (Anna веде в katalog_obladnannya)
   let dsCount = 0;
   for (const it of items) {
-    if (!it.ds) { const ds = attachDatasheet(it, dsList) || datasheetFor(it); if (ds) it.ds = ds; }
+    // перераховуємо щоразу: інакше позиції зі снимка тягнуть старе (можливо хибне) посилання назавжди
+    if (dsList.length) { const ds = attachDatasheet(it, dsList) || datasheetFor(it); if (ds) it.ds = ds; else delete it.ds; }
+    else if (!it.ds) { const ds = datasheetFor(it); if (ds) it.ds = ds; } // довідник недоступний — лишаємо попередні
     if (it.ds) dsCount++;
     delete it.brand;
   }
