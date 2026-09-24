@@ -3116,21 +3116,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 465,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 72.98,
-    "vat": 87.58,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3143,6 +3128,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 72.98,
+    "vat": 87.58,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3694,7 +3694,7 @@
    "cat": "pan",
    "model": "Товар СОНЯЧНІ ПАНЕЛІ Longi Hi-Mo LR7-72HGD 620w (двухсторонние)",
    "sup": "Sakoenergy",
-   "avail": "yes",
+   "avail": "no",
    "watt": 620,
    "dim": null,
    "size": "large",
@@ -3730,17 +3730,34 @@
   },
   {
    "cat": "pan",
-   "model": "Longi Hi-MO X10 LR7-72HVD 650W",
+   "model": "Longi Hi-MO X10 LR7-72HVD 650W (односторонние)",
    "sup": "Sakoenergy",
    "avail": "soon",
    "watt": 650,
    "dim": null,
    "size": "large",
+   "price": {
+    "cash": 116,
+    "cur": "$"
+   },
    "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
-   "model": "JA Solar JAM72D42-640/LB 640W двухсторонняя",
+   "model": "Jinko Tiger Neo III JKM470N-48QL6-DV 470w (односторонние)",
+   "sup": "Sakoenergy",
+   "avail": "soon",
+   "watt": 470,
+   "dim": null,
+   "size": "med",
+   "price": {
+    "cash": 82,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "JA Solar JAM72D42-640/LB 640W (двухсторонние)",
    "sup": "Sakoenergy",
    "avail": "soon",
    "watt": 640,
@@ -3753,7 +3770,7 @@
   },
   {
    "cat": "pan",
-   "model": "JA Solar 465 Вт JAM54D41-465/LR",
+   "model": "JA Solar 465 Вт JAM54D41-465/LR (двухсторонние)",
    "sup": "Sakoenergy",
    "avail": "soon",
    "watt": 465,
@@ -6246,7 +6263,7 @@
    "kwh": 1.28,
    "hv": false,
    "price": {
-    "cash": 270,
+    "cash": 250,
     "cur": "$"
    }
   },
@@ -6258,7 +6275,7 @@
    "kwh": 5.89,
    "hv": false,
    "price": {
-    "cash": 850,
+    "cash": 810,
     "cur": "$"
    }
   },
@@ -6270,7 +6287,7 @@
    "kwh": 7.17,
    "hv": false,
    "price": {
-    "cash": 1220,
+    "cash": 1200,
     "cur": "$"
    }
   },
@@ -6282,7 +6299,7 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 810,
+    "cash": 800,
     "cur": "$"
    }
   },
@@ -6318,7 +6335,7 @@
    "kwh": 11.78,
    "hv": false,
    "price": {
-    "cash": 1500,
+    "cash": 1480,
     "cur": "$"
    }
   },
@@ -6342,7 +6359,7 @@
    "kwh": 16,
    "hv": false,
    "price": {
-    "cash": 1850,
+    "cash": 1830,
     "cur": "$"
    }
   },
