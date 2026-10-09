@@ -667,616 +667,6 @@
   },
   {
    "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-54HTB-430M-430 Wp (BFR)(33.04V 13.24A)(1722х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 430,
-   "dim": "1722×1134",
-   "size": "small",
-   "price": {
-    "cash": 92,
-    "cur": "у.е.",
-    "vat": 92
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-54HTD-430M-430 Wp (BFR) (BiFacial) (32.90V 13.07A)(1722х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 430,
-   "dim": "1722×1134",
-   "size": "small",
-   "price": {
-    "cash": 77,
-    "cur": "у.е.",
-    "vat": 77
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-54HTB-435M-435 Wp (FB)(33.36V 13.05A)(1722х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 435,
-   "dim": "1722×1134",
-   "size": "small",
-   "price": {
-    "cash": 73,
-    "cur": "у.е.",
-    "vat": 73
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-54HTH-440M-440 Wp (BFR)(33.04V 13.24A)(1722х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 440,
-   "dim": "1722×1134",
-   "size": "small",
-   "price": {
-    "cash": 77,
-    "cur": "у.е.",
-    "vat": 77
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-48HGD-440M-440 Wp (BFR)(28.75V 15.31A)(1762х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 440,
-   "dim": "1762×1134",
-   "size": "small",
-   "price": {
-    "cash": 84,
-    "cur": "у.е.",
-    "vat": 84
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-48HGD-445M-445 Wp (BFR)(28.89V 15.41A)(1762х1134х30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 445,
-   "dim": "1762×1134",
-   "size": "small",
-   "price": {
-    "cash": 102,
-    "cur": "у.е.",
-    "vat": 102
-   },
-   "ds": "https://drive.google.com/file/d/1ZePdEDRupd_OoEUU6qsmearNHtEv3pra/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-48HGD-450M (BFR) (29.03V 15.51A)(1762х1134х30), 23кг, Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 450,
-   "dim": "1762×1134",
-   "size": "small",
-   "price": {
-    "cash": 87,
-    "cur": "у.е.",
-    "vat": 87
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR4-72HPH-450M Hi-MO Silver Frame, 450W, (41.5V 10.78A)IP68, 2093x1038x35mm, 23.5kg, Q30",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 450,
-   "dim": "2093×1038",
-   "size": "small",
-   "price": {
-    "cash": 72,
-    "cur": "у.е.",
-    "vat": 78
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR4-72HPH-455M Hi-MO Silver Frame, 455W, MC4 EVO2 DC1500V 20A, Voc-41.7V, Isc-10.92A, IP68, 2093x1038x35mm, 23.5kg. Q30/C660",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 455,
-   "dim": "2093×1038",
-   "size": "small",
-   "price": {
-    "cash": 75,
-    "cur": "у.е.",
-    "vat": 84
-   },
-   "ds": "https://drive.google.com/file/d/1r5FACncUZe5tG2zlRI7j5RS2vjSdzbhd/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-54HTH-460M-460 Wp (BFR) (BFR)(33.19V 13.864A)(1800x1134x30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 460,
-   "dim": "1800×1134",
-   "size": "small",
-   "price": {
-    "cash": 89,
-    "cur": "у.е.",
-    "vat": 89
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-54HVH-475M, 475Вт, (33,16В 14.33А), (1800Х1134Х30мм), 21,6 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 475,
-   "dim": "1800×1134",
-   "size": "med",
-   "price": {
-    "cash": 92,
-    "cur": "у.е.",
-    "vat": 92
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI (Hi-MO X10) LR7-54HVB-480-480Wp (FB)(33.28V 14.534A)(1800x1134x30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 480,
-   "dim": "1800×1134",
-   "size": "med",
-   "price": {
-    "cash": 158,
-    "cur": "у.е.",
-    "vat": 158
-   },
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI (Hi-MO X10) LR7-54HVH-485-485Wp (BFR)(33.40V 13.40A)(1800x1134x30), Q36",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 485,
-   "dim": "1800×1134",
-   "size": "med",
-   "price": {
-    "cash": 162,
-    "cur": "у.е.",
-    "vat": 162
-   },
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-66HIH-495M HI-MO (45.5V 13.85A)(2093x1134x35mm), 25.3kg. Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 495,
-   "dim": "2093×1134",
-   "size": "large",
-   "price": {
-    "vat": 79.2,
-    "cur": "у.е."
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-66HIH-500M Hi-MO Silver Frame, 500W, (38.38V 13.03A) IP68, 2093x1134x35mm, 25.3kg. Q31/C682",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 500,
-   "dim": "2093×1134",
-   "size": "large",
-   "price": {
-    "cash": 83,
-    "cur": "у.е.",
-    "vat": 92
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-66HTH-530M-530 Wp (BFR)(40.22V 13.18A)(2094х1134х35), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 530,
-   "dim": "2094×1134",
-   "size": "large",
-   "price": {
-    "cash": 94,
-    "cur": "у.е.",
-    "vat": 94
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-66HTH-535M-535 Wp (BFR)(40.38V 13.18A)(2280х1134х35), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 535,
-   "dim": "2280×1134",
-   "size": "large",
-   "price": {
-    "cash": 99,
-    "cur": "у.е.",
-    "vat": 99
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HPH-555M-555 Wp (42.10V 13.19A)( 2278х1133х35)",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 555,
-   "dim": "2278×1133",
-   "size": "large",
-   "price": {
-    "cash": 95,
-    "cur": "у.е.",
-    "vat": 95
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HTH-565M-565 Wp HI-MO (SilverFR)(43.61V 12.96)(2278х1134х35), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 565,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 108,
-    "cur": "у.е.",
-    "vat": 108
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HBD-570МB, Bificial, 42.07V, 13.55A, Duble glass, (2278х1134х30mm), 31,8 kg",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 570,
-   "dim": "2278×1134",
-   "size": "large"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HTH-570M-570Wp (42.07V 13.55A) (2278х1134х35)",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 570,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 136,
-    "cur": "у.е.",
-    "vat": 136
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HTH-580M-580 Wp (44.06V 13.17A)(2278х1134х35), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 580,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 108,
-    "cur": "у.е.",
-    "vat": 108
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HTH-585M-585 Wp (SFR)(44.21V 13.24A)(2278х1134х35), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 585,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 101,
-    "cur": "у.е.",
-    "vat": 101
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HGD-595M Wp (Bifacial)(44.011V 13.52A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 595,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 105,
-    "cur": "у.е.",
-    "vat": 105
-   },
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR5-72HTH-590M 590W, TIER 1, КПД - 22,6%, (2278х1134х30mm), 27.5 kg",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 590,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 109,
-    "cur": "у.е.",
-    "vat": 109
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HGD-600M-600 Wp (44.12V 13.6A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 600,
-   "dim": "2382×1134",
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HGD-605M-605 Wp (44V 13.75A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 605,
-   "dim": "2382×1134",
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL LR7-72HGD-610M, 610Вт, (44,11В 13.83А), (2382Х1134Х30мм), 33,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 610,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 95.4,
-    "cur": "у.е.",
-    "vat": 95.4
-   },
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL LR7-72HGD-620M, 620Вт, (44,33В 13.99А), (2278Х1134Х30мм), 33,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 620,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 96,
-    "cur": "у.е.",
-    "vat": 96
-   },
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HTH-610М-610 Wp (44.34V 13.76A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 610,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 112,
-    "cur": "у.е.",
-    "vat": 112
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-66HGD-610M-610Wp(Bifacia)(40.51V 15.06)(2382×1134×30мм), 33,5kg",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 610,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 109,
-    "cur": "у.е.",
-    "vat": 109
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-66HGD-620M (Bifacia)(40.91V 15.16)(2382×1134×30мм), 33,5kg",
-   "sup": "YugTorg",
-   "avail": "yes",
-   "watt": 620,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 118,
-    "cur": "у.е.",
-    "vat": 146
-   },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL LR7-72HGD-615M, 615Вт, (41,65В 14.77А), (2278Х1134Х30мм), 32,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 615,
-   "dim": "2278×1134",
-   "size": "large",
-   "price": {
-    "cash": 94.5,
-    "cur": "у.е.",
-    "vat": 94.5
-   },
-   "ds": "https://drive.google.com/file/d/1PDTfzF7RApdLF7sG3ySxyDg_xUmyheRv/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI HI-MO X6MAX LR7-72HTHF-615Wp (SFR) (44.33V 13.88A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 615,
-   "dim": "2382×1134",
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HTH-615M, 615Вт, (44,33В 13.88А), (2382Х1134Х30мм), 28,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 615,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 113,
-    "cur": "у.е.",
-    "vat": 113
-   },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-66HGD-615M-615 Wp (Bifacal) (40,71V 15,11A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 615,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 114,
-    "cur": "у.е.",
-    "vat": 114
-   },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR8-66HGD-615M-615 Wp (Bifacial)(40.71V 15.11A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 615,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 125,
-    "cur": "у.е.",
-    "vat": 140
-   },
-   "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL Hi-MO 9 LR7-72HYD-645M, 645Вт, (44,77В 14.41А), (2382Х1134Х30мм), 33,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 645,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 112,
-    "cur": "у.е.",
-    "vat": 112
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL Hi-MO 9 LR8-66HYD-640M, 640Вт, (47,06В 13.16А), (2382Х1134Х30мм), 32,7 кг.",
-   "sup": "YugTorg",
-   "avail": "yes",
-   "watt": 640,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 122,
-    "cur": "у.е.",
-    "vat": 148
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HVD-645M-645 Wp (SFR)(44.77V 14.41A)(2382х1134х30), Q31",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 645,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 165,
-    "cur": "у.е.",
-    "vat": 165
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HVH-640M, 640Вт, (44,36В 14.43А), (2382Х1134Х30мм), 28,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 640,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 122,
-    "cur": "у.е.",
-    "vat": 122
-   }
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HVH-645M, 645Вт, (44,46В 14.51А), (2382Х1134Х30мм), 28,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 645,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 127,
-    "cur": "у.е.",
-    "vat": 127
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI BIFACIAL Hi-MO 9 LR7-72HYD-650M, 650Вт, (44,87В 14.49А), (2382Х1134Х30мм), 33,5 кг.",
-   "sup": "YugTorg",
-   "avail": "no",
-   "watt": 650,
-   "dim": "2382×1134",
-   "size": "large",
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
-  },
-  {
-   "cat": "pan",
-   "model": "Солнечная панель LONGI LR7-72HVD-650M-650 HI-MO X10 (44.87V 14.49A)(2382х1134х30), 32,5кг,Q36",
-   "sup": "YugTorg",
-   "avail": "yes",
-   "watt": 650,
-   "dim": "2382×1134",
-   "size": "large",
-   "price": {
-    "cash": 115,
-    "cur": "у.е.",
-    "vat": 140
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "Солнечная панель Trina Solar TSM-435NEG9RC.27 435Вт(Bifacal)(43,60V 9,99A)(1762x1134x30), 21,1kg",
    "sup": "YugTorg",
    "avail": "no",
@@ -2641,23 +2031,9 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-P (6 кВт, 1 фаза, 2 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kw": 6,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 765,
-    "vat": 918,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-20K-SG05LP3-EU-SM2 (20 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 20,
    "ph": 3,
    "hv": false,
@@ -2672,7 +2048,7 @@
    "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-10K-SG05LP3-EU-SM2 (10 кВт, 3 фази, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "yes",
+   "avail": "no",
    "kw": 10,
    "ph": 3,
    "hv": false,
@@ -2682,21 +2058,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ykGv9Sg3N6BPZ7KqYPYolM8dIwDQSzG8/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-10K-SG02LP1-EU-AM3-PLUS (10 кВт, 1 фаза, 3 МРРТ, LV)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kw": 10,
-   "ph": 1,
-   "hv": false,
-   "price": {
-    "cash": 1370,
-    "vat": 1644,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2715,18 +2076,17 @@
   },
   {
    "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
+   "model": "Інвертор гібридний Deye SUN-6K-SG05LP1-AM2-P (6 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
-   "avail": "no",
-   "kw": 12,
+   "avail": "soon",
+   "kw": 6,
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 1435,
-    "vat": 1722,
+    "cash": 765,
+    "vat": 918,
     "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
+   }
   },
   {
    "cat": "inv",
@@ -2741,6 +2101,21 @@
     "vat": 2100,
     "cur": "$"
    }
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-12K-SG02LP1-EU-AM3-PLUS (12 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 12,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1435,
+    "vat": 1722,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2799,6 +2174,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1fjs6tWGfMI20ASXNTmtBZjXSNJlhYcv6/view?usp=sharing"
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-10K-SG02LP1-EU-AM3-PLUS (10 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kw": 10,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1370,
+    "vat": 1644,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
   {
    "cat": "inv",
@@ -2942,60 +2332,6 @@
   },
   {
    "cat": "bat",
-   "model": "Комплект Deye BOS-B Pro Стійка + БМС + АКБ (10 АКБ по 16,08 = 160 кВт-год)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 160,
-   "hv": true,
-   "price": {
-    "cash": 17649.94,
-    "vat": 20951.57,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
-   "model": "Комплект Deye BOS-B Pro Стійка + БМС + АКБ (15 АКБ по 16,08 = 240 кВт-год)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 240,
-   "hv": true,
-   "price": {
-    "cash": 25699.9,
-    "vat": 30611.56,
-    "cur": "$"
-   }
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 5.12,
-   "hv": false,
-   "price": {
-    "cash": 750,
-    "vat": 900,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1iGNu9uSlCbYGsNkx8iJpPi7k88gkLYjr/view?usp=sharing"
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "kwh": 11.8,
-   "hv": false,
-   "price": {
-    "cash": 1500,
-    "vat": 1800,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/13bJKHU8_dRClwY8ArfHZpSZfwXbYCOED/view?usp=sharing"
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторна стійка 3U-HRack-2G 13floors для Deye BOS-G-Pack5.1 (BOS-G pro)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3036,6 +2372,34 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 750,
+    "vat": 900,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1iGNu9uSlCbYGsNkx8iJpPi7k88gkLYjr/view?usp=sharing"
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторний блок Deye SE-F12-C (11,8 кВт·год/51,2 В LV)",
+   "sup": "Atmo",
+   "avail": "no",
+   "kwh": 11.8,
+   "hv": false,
+   "price": {
+    "cash": 1500,
+    "vat": 1800,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/13bJKHU8_dRClwY8ArfHZpSZfwXbYCOED/view?usp=sharing"
+  },
+  {
+   "cat": "bat",
    "model": "Акумуляторний блок Deye HV BOS-G-Pack5.1 (BOS-G pro) (5,12 кВт·год/51,2 В)",
    "sup": "Atmo",
    "avail": "soon",
@@ -3047,6 +2411,32 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1i3AF809n7lRRBuZOAkXcy6XxyUPBUPjE/view?usp=sharing"
+  },
+  {
+   "cat": "bat",
+   "model": "Комплект Deye BOS-B Pro Стійка + БМС + АКБ (10 АКБ по 16,08 = 160 кВт-год)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kwh": 160,
+   "hv": true,
+   "price": {
+    "cash": 17649.94,
+    "vat": 20951.57,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "bat",
+   "model": "Комплект Deye BOS-B Pro Стійка + БМС + АКБ (15 АКБ по 16,08 = 240 кВт-год)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kwh": 240,
+   "hv": true,
+   "price": {
+    "cash": 25699.9,
+    "vat": 30611.56,
+    "cur": "$"
+   }
   },
   {
    "cat": "bat",
@@ -3159,21 +2549,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bificial, n-type",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 630,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 95.8,
-    "vat": 114.92,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-66HD635 635Wp N-type Bifacial (200-400mm cable)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3186,36 +2561,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 635,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 96.52,
-    "vat": 115.86,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 465,
-   "dim": null,
-   "size": "small",
-   "price": {
-    "cash": 72.98,
-    "vat": 87.58,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3234,6 +2579,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 465,
+   "dim": null,
+   "size": "small",
+   "price": {
+    "cash": 72.98,
+    "vat": 87.58,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль JA Solar JAM72D40-605/LB 605 Wp, Bifacial N-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3248,33 +2608,33 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-54HVH-485, 485Wp, Mono (Black Frame)",
+   "model": "PV модуль JA Solar JAM66D45-635/LB 635 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 485,
-   "dim": null,
-   "size": "med",
-   "price": {
-    "cash": 83.27,
-    "vat": 100.18,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
+   "watt": 635,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 104,
-    "vat": 124.8,
+    "cash": 96.52,
+    "vat": 115.86,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+   "ds": "https://drive.google.com/file/d/1PTHpfwXQ-JbaTy02E2BaJdFNb-qgECF4/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM66D45-630/LB 630 Wp, Bificial, n-type",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 630,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 95.8,
+    "vat": 114.92,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/19JSAtWLa-1qLTDawNAy4aMpk_gDqApcM/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3308,18 +2668,18 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-66HD630 630Wp N-type Bifacial",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
-   "watt": 630,
+   "watt": 645,
    "dim": null,
    "size": "large",
    "price": {
-    "cash": 93.25,
-    "vat": 111.86,
+    "cash": 103.2,
+    "vat": 123.84,
     "cur": "$"
    },
-   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3353,21 +2713,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 650,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 104,
-    "vat": 124.8,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR8-66HGD-615, 615Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -3383,6 +2728,36 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMNH-66HD630 630Wp N-type Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 630,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 93.25,
+    "vat": 111.86,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 104,
+    "vat": 124.8,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль Tongwei Solar TWMNH-66HD615 615 Wp N-type Bifacial",
    "sup": "Atmo",
    "avail": "yes",
@@ -3395,6 +2770,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AFethTZcjcnyyIA4SwEev56cSmKRNc8b/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-650M, 650Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 650,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 104,
+    "vat": 124.8,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/18vt_4LfNzNBPMKKYBYMTfVZ-M1-IO7AC/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3458,21 +2848,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 103.2,
-    "vat": 123.84,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR7-54HVH-480, 480Wp, Mono (Black Frame)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3499,6 +2874,21 @@
     "vat": 109.48,
     "cur": "$"
    }
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Longi LR7-54HVH-485, 485Wp, Mono (Black Frame)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 485,
+   "dim": null,
+   "size": "med",
+   "price": {
+    "cash": 83.27,
+    "vat": 100.18,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1DJ40A4QXEG71i5j1QOE6r2C2iqNFkcC_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4819,20 +4209,6 @@
   },
   {
    "cat": "inv",
-   "model": "Гібридний інвертор SUN-10K-SG05LP3-EU-SM2 Deye WiFi (10 kW, 3 фази, 2 MPPT, LV)",
-   "sup": "Price H",
-   "avail": "yes",
-   "kw": 10,
-   "ph": 3,
-   "hv": false,
-   "price": {
-    "cur": "$",
-    "cash": 1450
-   },
-   "ds": "https://drive.google.com/file/d/1ykGv9Sg3N6BPZ7KqYPYolM8dIwDQSzG8/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
    "model": "Гібридний інвертор SUN-12K-SG02LP1-EU-AM3 Deye WiFi (12 kW, 1 фаза, 3 MPPT, LV)",
    "sup": "Price H",
    "avail": "soon",
@@ -5079,7 +4455,7 @@
    "cat": "inv",
    "model": "Deye Система зберігання енергії P100-8-H FoxESS (Гібридний інвертор (8 кВт, 1 фаза, 3 MPPT), Акумуляторна батарея 10 кВт, BMS)",
    "sup": "Price H",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 8,
    "ph": 1,
    "hv": false,
