@@ -5346,7 +5346,11 @@
    "avail": "soon",
    "kw": 8,
    "ph": 1,
-   "hv": false
+   "hv": false,
+   "price": {
+    "cash": 1129,
+    "cur": "$"
+   }
   },
   {
    "cat": "inv",
