@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14",
+ "generated": "2026-10-15",
  "note": "Постачальники вживу: YugTorg, Atmo, Sakoenergy, Intersolar, SunRise, Price H, RaTech, Avtonomka, Slavik, Solarity (дзеркало). Altek/Vimmer — снимок. Бренди: Deye + Felicity. Ціни: Готівка/ПДВ під постачальника, Solarity −5% лише на панелі.",
  "items": [
   {
@@ -1837,7 +1837,7 @@
    "price": {
     "cash": 1540,
     "cur": "у.е.",
-    "vat": 1700
+    "vat": 1650
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
   },
@@ -1893,9 +1893,9 @@
    "ph": 1,
    "hv": false,
    "price": {
-    "cash": 2250,
+    "cash": 2300,
     "cur": "у.е.",
-    "vat": 2900
+    "vat": 2550
    }
   },
   {
@@ -1937,9 +1937,9 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 1980,
+    "cash": 1850,
     "cur": "у.е.",
-    "vat": 2200
+    "vat": 1980
    }
   },
   {
@@ -1968,7 +1968,7 @@
    "price": {
     "cash": 2050,
     "cur": "у.е.",
-    "vat": 2320
+    "vat": 2250
    }
   },
   {
@@ -1995,9 +1995,9 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2550,
+    "cash": 2200,
     "cur": "у.е.",
-    "vat": 2950
+    "vat": 2400
    },
    "ds": "https://drive.google.com/file/d/13C4I1_FAQFuGYJrJTsTJfuuZY1J055uT/view?usp=sharing"
   },
@@ -2010,9 +2010,9 @@
    "ph": 3,
    "hv": false,
    "price": {
-    "cash": 2550,
+    "cash": 2380,
     "cur": "у.е.",
-    "vat": 2850
+    "vat": 2600
    }
   },
   {
