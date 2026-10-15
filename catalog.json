@@ -1946,7 +1946,7 @@
    "cat": "inv",
    "model": "Гибридный инвертор (hybrid) Deye SUN-12K-SG05LP3-EU-SM2, WI-FI,12кВт,трехфазный, (MPPT 160-650/240A/DC48В)Parallel",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "soon",
    "kw": 12,
    "ph": 3,
    "hv": false,
@@ -2521,7 +2521,7 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 350,
+    "cash": 370,
     "cur": "у.е.",
     "vat": 390
    }
@@ -2589,7 +2589,7 @@
    "price": {
     "cash": 1770,
     "cur": "у.е.",
-    "vat": 1990
+    "vat": 2050
    },
    "ds": "https://drive.google.com/file/d/1yHTbpTvkjUj1R1ugKm69yhPopt8dFw2E/view?usp=drive_link"
   },
@@ -3284,21 +3284,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Tongwei Solar TWMNH-66HD635 635Wp N-type Bifacial",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 635,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 95.25,
-    "vat": 114.3,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM54D40 465/LR, 465Wp, Mono (Black Frame)",
    "sup": "Atmo",
    "avail": "yes",
@@ -3311,6 +3296,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1AbwcWmCHFu9JeLwTtWZ1nMq0zICzerp8/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль Tongwei Solar TWMNH-66HD635 635Wp N-type Bifacial",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 635,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 95.25,
+    "vat": 114.3,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1ThTksIrKQ-NMf87g2FFOJgruU-Q-vvT8/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3493,21 +3493,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 610,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 88.66,
-    "vat": 106.29,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль JA Solar JAM66D45-625/LB 625 Wp, Bificial, n-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -3563,6 +3548,21 @@
     "vat": 86.25,
     "cur": "$"
    }
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM72D40-610/LB 610 Wp, Bifacial N-type",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 610,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 88.66,
+    "vat": 106.29,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1fHykKDHWKVpoZWy9q7PMKX4Y8fHiX6Xz/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -4377,19 +4377,6 @@
   },
   {
    "cat": "bat",
-   "model": "Акумуляторна батарея Deye SE-F12-C 51.2V 230Ah (12 кВт*год)",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "kwh": 12,
-   "hv": false,
-   "price": {
-    "cash": 1570,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/13bJKHU8_dRClwY8ArfHZpSZfwXbYCOED/view?usp=sharing"
-  },
-  {
-   "cat": "bat",
    "model": "Акумуляторна батарея Deye SE-F12 Max 51.2V 230Ah IP65 без підігріву (12 кВт*год)",
    "sup": "Intersolar",
    "avail": "yes",
@@ -4460,7 +4447,7 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 790,
+    "cash": 770,
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1i3AF809n7lRRBuZOAkXcy6XxyUPBUPjE/view?usp=sharing"
@@ -4473,7 +4460,7 @@
    "kwh": null,
    "hv": true,
    "price": {
-    "cash": 790,
+    "cash": 740,
     "cur": "$"
    }
   },
@@ -5068,6 +5055,71 @@
   },
   {
    "cat": "inv",
+   "model": "Мережевий інвертор SUN-06K-G05P1-EU-AM2 Deye WiFi (6 kW, 1 фаза, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 6,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 391
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-08K-G02P1-EU-AM2 Deye WiFi (8 kW, 1 фаза, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 8,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 510
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-12K-G06P3-EU-BM2-P1 Deye WiFi (12 kW, 3 фази, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 12,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 493
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-15K-G06P3-EU-BM2-P! Deye WiFi (15 kW, 3 фази, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 15,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 621
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-20K-G05 Deye WiFi (20 kW, 3 фази, 2 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 20,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 706
+   }
+  },
+  {
+   "cat": "inv",
    "model": "Мережевий інвертор SUN-30K-G04 Deye WiFi (30 kW, 3 фази, 2 MPPT)",
    "sup": "Price H",
    "avail": "yes",
@@ -5076,6 +5128,7 @@
    "hv": false,
    "price": {
     "cur": "$",
+    "cash": 952,
     "vat": 1120
    }
   },
@@ -5091,6 +5144,45 @@
     "cur": "$",
     "cash": 1260,
     "vat": 1500
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-80K-G04 Deye WiFi (80 kW, 3 фази, 4 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 80,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 2083
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-125K-G01P3-EU-AM8 Deye WiFi (125 kW, 3 фази, 8 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 125,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 3188
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Мережевий інвертор SUN-135K-G01P3-EU-AM8 Deye WiFi (135 kW, 3 фази, 8 MPPT)",
+   "sup": "Price H",
+   "avail": "yes",
+   "kw": 135,
+   "ph": 3,
+   "hv": false,
+   "price": {
+    "cur": "$",
+    "cash": 3570
    }
   },
   {
