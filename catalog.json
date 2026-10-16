@@ -232,7 +232,7 @@
    "cat": "inv",
    "model": "Сетевой солнечный инвертор трехфазный (on-grid) Deye SUN-30K-G04, 30кВт, 2 МРРT(200-1000V), WiFi, RS485/RS232, IP65, (647×537×303mm), 28,7 кг",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kw": 30,
    "ph": 3,
    "hv": false,
@@ -4402,6 +4402,19 @@
     "cash": 920,
     "cur": "$"
    }
+  },
+  {
+   "cat": "bat",
+   "model": "Акумуляторна батарея Deye SE-F12-C 51.2V 230Ah (12 кВт*год)",
+   "sup": "Intersolar",
+   "avail": "yes",
+   "kwh": 12,
+   "hv": false,
+   "price": {
+    "cash": 1600,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/13bJKHU8_dRClwY8ArfHZpSZfwXbYCOED/view?usp=sharing"
   },
   {
    "cat": "bat",
