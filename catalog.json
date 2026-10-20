@@ -2072,6 +2072,20 @@
   },
   {
    "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-15K-SG01HP3-EU-AM2 (15 кВт, 3 фази, 2 МРРТ, HV)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "kw": 15,
+   "ph": 3,
+   "hv": true,
+   "price": {
+    "cash": 1500,
+    "vat": 1800,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
    "model": "Інвертор гібридний Deye SUN-5K-SG05LP1-EU-AM2-PLUS (5 кВт, 1 фаза, 2 МРРТ, LV)",
    "sup": "Atmo",
    "avail": "no",
@@ -2142,20 +2156,6 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1hXaL0yRyD0RsTSEo5uxCl5eolqc7up0D/view?usp=sharing"
-  },
-  {
-   "cat": "inv",
-   "model": "Інвертор гібридний Deye SUN-15K-SG01HP3-EU-AM2 (15 кВт, 3 фази, 2 МРРТ, HV)",
-   "sup": "Atmo",
-   "avail": "no",
-   "kw": 15,
-   "ph": 3,
-   "hv": true,
-   "price": {
-    "cash": 1500,
-    "vat": 1800,
-    "cur": "$"
-   }
   },
   {
    "cat": "inv",
@@ -2692,36 +2692,6 @@
   },
   {
    "cat": "pan",
-   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 103.2,
-    "vat": 123.84,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
-   "model": "PV модуль JA Solar JAM72D42-645/LB 645 Wp, Bificial, n-type (200-400mm cable)",
-   "sup": "Atmo",
-   "avail": "yes",
-   "watt": 645,
-   "dim": null,
-   "size": "large",
-   "price": {
-    "cash": 99.78,
-    "vat": 120.07,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
-  },
-  {
-   "cat": "pan",
    "model": "PV модуль Longi LR8-66HVD-650M, 650Wp, Mono",
    "sup": "Atmo",
    "avail": "yes",
@@ -2752,6 +2722,21 @@
   },
   {
    "cat": "pan",
+   "model": "PV модуль Longi LR7-72HVD-645, 645Wp, Mono",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 103.2,
+    "vat": 123.84,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1awbrcqFqujX77zM1CCkLPVTOH6ZThu6R/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
    "model": "PV модуль JA Solar JAM72D40-605/LB 605 Wp, Bifacial N-type",
    "sup": "Atmo",
    "avail": "yes",
@@ -2778,6 +2763,21 @@
     "cur": "$"
    },
    "ds": "https://drive.google.com/file/d/1MlcaC8l-yIgtavlFrtcqZR98h6gM_0MF/view?usp=sharing"
+  },
+  {
+   "cat": "pan",
+   "model": "PV модуль JA Solar JAM72D42-645/LB 645 Wp, Bificial, n-type (200-400mm cable)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "watt": 645,
+   "dim": null,
+   "size": "large",
+   "price": {
+    "cash": 99.78,
+    "vat": 120.07,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1eTdcKnEmSge1LgnMpB0VuYth7PXovvE_/view?usp=sharing"
   },
   {
    "cat": "pan",
@@ -3823,19 +3823,6 @@
     "cash": 920,
     "cur": "$"
    }
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторна батарея Deye SE-F12-C 51.2V 230Ah (12 кВт*год)",
-   "sup": "Intersolar",
-   "avail": "yes",
-   "kwh": 12,
-   "hv": false,
-   "price": {
-    "cash": 1600,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/13bJKHU8_dRClwY8ArfHZpSZfwXbYCOED/view?usp=sharing"
   },
   {
    "cat": "bat",
@@ -5117,7 +5104,7 @@
    "cat": "inv",
    "model": "Deye SUN-30K-SG02HP3-EU-AM3 New",
    "sup": "Solarity",
-   "avail": "yes",
+   "avail": "soon",
    "kw": 30,
    "ph": 3,
    "hv": true,
@@ -5181,11 +5168,11 @@
    "cat": "bat",
    "model": "Deye BOS-G PRO LiFePO4 HV 51.2v 100AH 5.12kwh",
    "sup": "Solarity",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": 5.12,
    "hv": true,
    "price": {
-    "cash": 806,
+    "cash": 839,
     "vat": 968,
     "cur": "$"
    },
@@ -5337,7 +5324,7 @@
    "cat": "inv",
    "model": "DEYE SUN-10K-SG05LP3",
    "sup": "RaTech",
-   "avail": "soon",
+   "avail": "yes",
    "kw": 10,
    "ph": 3,
    "hv": false,
@@ -5621,7 +5608,7 @@
    "cat": "bat",
    "model": "DEYE SE-F16-C",
    "sup": "RaTech",
-   "avail": "soon",
+   "avail": "yes",
    "kwh": null,
    "hv": false,
    "price": {
@@ -5635,7 +5622,7 @@
    "cat": "bat",
    "model": "DEYE BOS-G PRO",
    "sup": "RaTech",
-   "avail": "yes",
+   "avail": "soon",
    "kwh": null,
    "hv": true,
    "price": {
@@ -5805,6 +5792,28 @@
      null,
      0.203,
      0.203
+    ]
+   }
+  },
+  {
+   "cat": "pan",
+   "model": "Astronergy 460M-96",
+   "sup": "RaTech",
+   "avail": "soon",
+   "watt": 460,
+   "dim": "1762×1134",
+   "size": "small",
+   "price": {
+    "cur": "$/Вт",
+    "cashTiers": [
+     0.185,
+     0.18,
+     0.18
+    ],
+    "vatTiers": [
+     null,
+     0.209,
+     0.209
     ]
    }
   },
@@ -5999,7 +6008,7 @@
    "kwh": 5.12,
    "hv": false,
    "price": {
-    "cash": 840,
+    "cash": 770,
     "cur": "$"
    }
   },
