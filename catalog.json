@@ -1887,7 +1887,7 @@
    "cat": "bat",
    "model": "Акумуляторная батарея DEYE BOS-G PRO, LiFePO4, HV, 51.2v 100AH, 5.12kwh",
    "sup": "YugTorg",
-   "avail": "no",
+   "avail": "yes",
    "kwh": 5.12,
    "hv": true,
    "price": {
@@ -2282,6 +2282,20 @@
    "price": {
     "cash": 765,
     "vat": 918,
+    "cur": "$"
+   }
+  },
+  {
+   "cat": "inv",
+   "model": "Інвертор гібридний Deye SUN-16K-SG01LP1-EU-AM3-P (16 кВт, 1 фаза, 3 МРРТ, LV)",
+   "sup": "Atmo",
+   "avail": "soon",
+   "kw": 16,
+   "ph": 1,
+   "hv": false,
+   "price": {
+    "cash": 1750,
+    "vat": 2100,
     "cur": "$"
    }
   },
