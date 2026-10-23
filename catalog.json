@@ -2023,7 +2023,7 @@
    "kwh": 16.08,
    "hv": true,
    "price": {
-    "cash": 1770,
+    "cash": 1850,
     "cur": "у.е.",
     "vat": 2050
    },
@@ -2427,6 +2427,20 @@
   },
   {
    "cat": "bat",
+   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
+   "sup": "Atmo",
+   "avail": "yes",
+   "kwh": 5.12,
+   "hv": false,
+   "price": {
+    "cash": 750,
+    "vat": 900,
+    "cur": "$"
+   },
+   "ds": "https://drive.google.com/file/d/1iGNu9uSlCbYGsNkx8iJpPi7k88gkLYjr/view?usp=sharing"
+  },
+  {
+   "cat": "bat",
    "model": "Система керування Deye CONTROL BOX BOS-A-PDU-2 для Deye BOS-A-Pack7.68",
    "sup": "Atmo",
    "avail": "yes",
@@ -2437,20 +2451,6 @@
     "vat": 1098.2,
     "cur": "$"
    }
-  },
-  {
-   "cat": "bat",
-   "model": "Акумуляторний блок Deye LV SE-F5 Pro-C (5,12 кВт·год/51,2 В)",
-   "sup": "Atmo",
-   "avail": "soon",
-   "kwh": 5.12,
-   "hv": false,
-   "price": {
-    "cash": 750,
-    "vat": 900,
-    "cur": "$"
-   },
-   "ds": "https://drive.google.com/file/d/1iGNu9uSlCbYGsNkx8iJpPi7k88gkLYjr/view?usp=sharing"
   },
   {
    "cat": "bat",
